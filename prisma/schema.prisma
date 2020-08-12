@@ -1,0 +1,115 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id       Int       @default(autoincrement()) @id
+  name     String    @unique
+  chapters Chapter[]
+}
+
+model Case {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Chapter {
+  id     Int     @default(autoincrement()) @id
+  number Int
+  bookId Int
+  book   Book    @relation(fields: [bookId], references: [id])
+  verses Verse[]
+
+  @@unique([bookId, number], name: "Chapter_bookId_number_key")
+}
+
+model Degree {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Gender {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Lemma {
+  id    Int    @default(autoincrement()) @id
+  title String @unique
+  // words Word[]
+}
+
+model Mood {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Number {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Person {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Speech {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Tense {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Verse {
+  id        Int     @default(autoincrement()) @id
+  number    Int
+  chapterId Int
+  chapter   Chapter @relation(fields: [chapterId], references: [id])
+  // words     Word[]
+
+  @@unique([chapterId, number], name: "Verse_chapterId_number_key")
+}
+
+model Voice {
+  id          Int    @default(autoincrement()) @id
+  description String @unique
+  // words       Word[]
+}
+
+model Word {
+  id         Int     @default(autoincrement()) @id
+  code       String
+  text       String
+  word       String
+  normalized String
+  lemma      String
+  book     Int?
+  chapter  Int?
+  verse    Int?
+  speech   String?
+  person   String?
+  tense    String?
+  voice    String?
+  mood     String?
+  case     String?
+  number   String?
+  gender   String?
+  degree   String?
+}
