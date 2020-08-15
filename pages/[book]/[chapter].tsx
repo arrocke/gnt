@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import client from "../../prisma/client";
+import ChapterSelector from "../../components/ChapterSelector";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const books = await client.book.findMany({
@@ -45,9 +46,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function ChapterPage({ book }: any) {
   const { chapters: [chapter] } = book
   const { verses } = chapter
+  const name = book.name.split(' ').map((word: string) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`).join(' ')
   return (
     <div>
-      <h1>{book.name.charAt().toUpperCase() + book.name.slice(1)} {chapter.number}</h1>
+      <h1>{name} {chapter.number}</h1>
+      <ChapterSelector />
       <div>
         {verses.map((verse: any) => (
           <p key={verse.id}>
