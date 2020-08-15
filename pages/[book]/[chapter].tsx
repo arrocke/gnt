@@ -1,8 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import { PrismaClient } from '@prisma/client';
+import client from "../../prisma/client";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const client = new PrismaClient()
   const books = await client.book.findMany({
     include: {
       chapters: true
@@ -13,7 +13,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const client = new PrismaClient()
   const bookName = params?.book as string
   const chapterNumber = Number(params?.chapter)
   console.log(bookName, chapterNumber)
