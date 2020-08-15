@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps } from "next"
-import { PrismaClient } from '@prisma/client';
 import client from "../../prisma/client";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -8,14 +7,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
       chapters: true
     }
   })
-  const paths = books.flatMap(book => book.chapters.map(chapter => `/${book.name.toLowerCase()}/${chapter.number}`))
+  const paths = books.flatMap(book => book.chapters.map(chapter => `/${book.name.replace(' ', '-').toLowerCase()}/${chapter.number}`))
   return { paths, fallback: false }
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const bookName = params?.book as string
+  const bookName = (params?.book as string).replace('-', ' ')
   const chapterNumber = Number(params?.chapter)
-  console.log(bookName, chapterNumber)
   const book = await client.book.findOne({
     where: { name: bookName },
     include: {
@@ -52,7 +50,7 @@ export default function ChapterPage({ book }: any) {
       <h1>{book.name.charAt().toUpperCase() + book.name.slice(1)} {chapter.number}</h1>
       <div>
         {verses.map((verse: any) => (
-          <p>
+          <p key={verse.id}>
             <strong>{verse.number}</strong>{' '}
             <span>
               {verse.words.map((verse: any) => verse.text).join(' ')}
