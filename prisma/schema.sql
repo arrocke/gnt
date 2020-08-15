@@ -26,47 +26,56 @@ CREATE TABLE "public"."Lemma" (
 
 CREATE TABLE "public"."Speech" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  description TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Person" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Tense" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Voice" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Mood" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Case" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Number" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Gender" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Degree" (
   id SERIAL PRIMARY KEY NOT NULL,
-  "description" TEXT UNIQUE NOT NULL
+  "description" TEXT UNIQUE NOT NULL,
+  code TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE "public"."Word" (
@@ -75,39 +84,26 @@ CREATE TABLE "public"."Word" (
   "text" TEXT NOT NULL,
   word TEXT NOT NULL,
   normalized TEXT NOT NULL,
-  lemma TEXT NOT NULL,
-  "book" INTEGER,
-  "chapter" INTEGER,
-  "verse" INTEGER,
-  "speech" TEXT,
-  "person" TEXT,
-  "tense" TEXT,
-  "voice" TEXT,
-  "mood" TEXT,
-  "case" TEXT,
-  "number" TEXT,
-  "gender" TEXT,
-  "degree" TEXT
-  -- "verseId" INTEGER NOT NULL,
-  -- "lemmaId" INTEGER NOT NULL,
-  -- "speechId" INTEGER NOT NULL,
-  -- "personId" INTEGER,
-  -- "tenseId" INTEGER,
-  -- "voiceId" INTEGER,
-  -- "moodId" INTEGER,
-  -- "caseId" INTEGER,
-  -- "numberId" INTEGER,
-  -- "genderId" INTEGER,
-  -- "degreeId" INTEGER,
-  -- FOREIGN KEY ("verseId") REFERENCES "public"."Verse"(id),
-  -- FOREIGN KEY ("lemmaId") REFERENCES "public"."Lemma"(id),
-  -- FOREIGN KEY ("speechId") REFERENCES "public"."Speech"(id),
-  -- FOREIGN KEY ("personId") REFERENCES "public"."Person"(id),
-  -- FOREIGN KEY ("tenseId") REFERENCES "public"."Tense"(id),
-  -- FOREIGN KEY ("voiceId") REFERENCES "public"."Voice"(id),
-  -- FOREIGN KEY ("moodId") REFERENCES "public"."Mood"(id),
-  -- FOREIGN KEY ("caseId") REFERENCES "public"."Case"(id),
-  -- FOREIGN KEY ("numberId") REFERENCES "public"."Number"(id),
-  -- FOREIGN KEY ("genderId") REFERENCES "public"."Gender"(id),
-  -- FOREIGN KEY ("degreeId") REFERENCES "public"."Degree"(id)
+  "verseId" INTEGER NOT NULL,
+  "lemmaId" INTEGER NOT NULL
+  "speechId" INTEGER NOT NULL,
+  "personId" INTEGER,
+  "tenseId" INTEGER,
+  "voiceId" INTEGER,
+  "moodId" INTEGER,
+  "caseId" INTEGER,
+  "numberId" INTEGER,
+  "genderId" INTEGER,
+  "degreeId" INTEGER,
+  FOREIGN KEY ("verseId") REFERENCES "public"."Verse"(id),
+  FOREIGN KEY ("lemmaId") REFERENCES "public"."Lemma"(id),
+  FOREIGN KEY ("speechId") REFERENCES "public"."Speech"(id),
+  FOREIGN KEY ("personId") REFERENCES "public"."Person"(id),
+  FOREIGN KEY ("tenseId") REFERENCES "public"."Tense"(id),
+  FOREIGN KEY ("voiceId") REFERENCES "public"."Voice"(id),
+  FOREIGN KEY ("moodId") REFERENCES "public"."Mood"(id),
+  FOREIGN KEY ("caseId") REFERENCES "public"."Case"(id),
+  FOREIGN KEY ("numberId") REFERENCES "public"."Number"(id),
+  FOREIGN KEY ("genderId") REFERENCES "public"."Gender"(id),
+  FOREIGN KEY ("degreeId") REFERENCES "public"."Degree"(id)
 );

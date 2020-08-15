@@ -16,7 +16,8 @@ model Book {
 model Case {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Chapter {
@@ -32,49 +33,56 @@ model Chapter {
 model Degree {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Gender {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Lemma {
   id    Int    @default(autoincrement()) @id
   title String @unique
-  // words Word[]
+  words  Word[]
 }
 
 model Mood {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Number {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Person {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Speech {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String
+  words       Word[]
 }
 
 model Tense {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words       Word[]
 }
 
 model Verse {
@@ -82,7 +90,7 @@ model Verse {
   number    Int
   chapterId Int
   chapter   Chapter @relation(fields: [chapterId], references: [id])
-  // words     Word[]
+  words     Word[]
 
   @@unique([chapterId, number], name: "Verse_chapterId_number_key")
 }
@@ -90,7 +98,8 @@ model Verse {
 model Voice {
   id          Int    @default(autoincrement()) @id
   description String @unique
-  // words       Word[]
+  code        String @default("")
+  words        Word[]
 }
 
 model Word {
@@ -99,17 +108,26 @@ model Word {
   text       String
   word       String
   normalized String
-  lemma      String
-  book     Int?
-  chapter  Int?
-  verse    Int?
-  speech   String?
-  person   String?
-  tense    String?
-  voice    String?
-  mood     String?
-  case     String?
-  number   String?
-  gender   String?
-  degree   String?
+  lemmaId    Int
+  speechId   Int
+  personId   Int?
+  tenseId    Int?
+  voiceId    Int?
+  moodId     Int?
+  caseId     Int?
+  numberId   Int?
+  genderId   Int?
+  degreeId   Int?
+  verseId    Int
+  speech     Speech  @relation(fields: [speechId], references: [id])
+  case       Case?   @relation(fields: [caseId], references: [id])
+  person     Person? @relation(fields: [personId], references: [id])
+  degree     Degree? @relation(fields: [degreeId], references: [id])
+  gender     Gender? @relation(fields: [genderId], references: [id])
+  lemma      Lemma   @relation(fields: [lemmaId], references: [id])
+  mood       Mood?   @relation(fields: [moodId], references: [id])
+  number     Number? @relation(fields: [numberId], references: [id])
+  tense      Tense?  @relation(fields: [tenseId], references: [id])
+  verse      Verse   @relation(fields: [verseId], references: [id])
+  voice      Voice?  @relation(fields: [voiceId], references: [id])
 }
