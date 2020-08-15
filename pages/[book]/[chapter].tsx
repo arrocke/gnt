@@ -46,16 +46,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function ChapterPage({ book }: any) {
   const { chapters: [chapter] } = book
   const { verses } = chapter
-  const name = book.name.split(' ').map((word: string) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`).join(' ')
   return (
-    <div>
-      <h1>{name} {chapter.number}</h1>
-      <ChapterSelector />
-      <div>
+    <div className="max-w-screen-md mx-auto px-4 sm:px-8">
+      <ChapterSelector className="mt-4" book={book.name} chapter={chapter.number} />
+      <h1 className="font-bold mt-4">{book.name.toUpperCase()}</h1>
+      <h2 className="font-bold mt-2 text-sm">CHAPTER {chapter.number}</h2>
+      <div className="mt-4 leading-relaxed">
         {verses.map((verse: any) => (
           <p key={verse.id}>
-            <strong>{verse.number}</strong>{' '}
-            <span>
+            <span className="font-bold text-xs">{verse.number}{' '}</span>
+            <span className="font-greek">
               {verse.words.map((verse: any) => verse.text).join(' ')}
             </span>
           </p>

@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Link from 'next/link'
+import SelectInput from "./SelectInput"
+import LinkButton from "./LinkButton"
 
 const books: { [book: string]: number } = {
   "matthew": 28,
@@ -35,27 +37,66 @@ function toDisplayName(book: string) {
   return book.split(' ').map(word => `${word.charAt(0).toUpperCase()}${word.slice(1)}`).join(' ')
 }
 
-const ChapterSelector: React.FC = () => {
-  const [book, setBook] = useState('matthew')
-  const [chapter, setChapter] = useState(1)
+export interface ChapterSelectorProps {
+  className?: string
+  book?: string
+  chapter?: number
+}
 
-  return <div>
-    <select value={book} onChange={(e: any) => {
-      setBook(e.target.value)
-      setChapter(1)
-    }}>
-      {
-        Object.keys(books).map(book =>
-          <option value={book} key={book}>{toDisplayName(book)}</option>)
-      }
-    </select>
-    <select value={chapter} onChange={(e: any) => setChapter(e.target.value)}>
-      {
-        Array.from({ length: books[book] }, (_, chapter) =>
-          <option value={chapter + 1} key={chapter}>{chapter + 1}</option>)
-      }
-    </select>
-    <Link href={`/${book.replace(' ', '-')}/${chapter}`}><a>Go</a></Link>
+const ChapterSelector: React.FC<ChapterSelectorProps> = ({
+  className = '',
+  book: defaultBook = 'matthew',
+  chapter: defaultChapter = 1
+}) => {
+  const [book, setBook] = useState(defaultBook)
+  const [chapter, setChapter] = useState(defaultChapter)
+
+  const bookId = `select-book`
+  const chapterId = `select-chapter`
+
+  return <div
+    className={`
+      flex
+      ${className}
+    `}
+  >
+    <div className="-ml-1">
+      <label className="block font-bold text-xs h-5 ml-1" htmlFor={bookId}>BOOK</label>
+      <SelectInput
+        id={bookId}
+        value={book}
+        onChange={(e: any) => {
+          setBook(e.target.value)
+          setChapter(1)
+        }}
+      >
+        {
+          Object.keys(books).map(book =>
+            <option value={book} key={book}>{toDisplayName(book)}</option>)
+        }
+      </SelectInput>
+    </div>
+    <div className="ml-4">
+      <label className="block font-bold text-xs h-5 ml-1" htmlFor={chapterId}>CHAPTER</label>
+      <SelectInput
+        className="w-20"
+        id={chapterId}
+        value={chapter}
+        onChange={(e: any) => setChapter(e.target.value)}
+        aria-label="Chapter"
+      >
+        {
+          Array.from({ length: books[book] }, (_, chapter) =>
+            <option value={chapter + 1} key={chapter}>{chapter + 1}</option>)
+        }
+      </SelectInput>
+    </div>
+    <Link
+      href={`/${book.replace(' ', '-')}/${chapter}`}
+      passHref
+    >
+      <LinkButton className="ml-4 mt-5">Go</LinkButton>
+    </Link>
   </div>
 }
 
