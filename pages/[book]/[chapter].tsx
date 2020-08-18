@@ -1,6 +1,25 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import client from "../../prisma/client";
 import ChapterSelector from "../../components/ChapterSelector";
+import { Book, Chapter, Verse, Word, Lemma } from "@prisma/client";
+import Popover from "../../components/Popover";
+import { useState, useEffect } from "react";
+import { CLIENT_RENEG_WINDOW } from "tls";
+import { makeDocument } from "@prisma/client/runtime";
+
+interface Props {
+  book: (Book & {
+    chapters: (Chapter & {
+        verses: (Verse & {
+            words: (Word & {
+                lemma: {
+                    title: string;
+                };
+            })[];
+        })[];
+    })[];
+}) | null
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const books = await client.book.findMany({
@@ -12,7 +31,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const bookName = (params?.book as string).replace('-', ' ')
   const chapterNumber = Number(params?.chapter)
   const book = await client.book.findOne({
@@ -26,8 +45,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
             include: {
               words: {
                 orderBy: [{ id: 'asc' }],
-                select: {
-                  text: true
+                include: {
+                  lemma: {
+                    select: {
+                      title: true
+                    }
+                  }
                 }
               }
             }
@@ -43,24 +66,47 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 }
 
-export default function ChapterPage({ book }: any) {
-  const { chapters: [chapter] } = book
-  const { verses } = chapter
-  return (
-    <div className="max-w-screen-md mx-auto px-4 sm:px-8">
-      <ChapterSelector className="mt-4" book={book.name} chapter={chapter.number} />
-      <h1 className="font-bold mt-4">{book.name.toUpperCase()}</h1>
-      <h2 className="font-bold mt-2 text-sm">CHAPTER {chapter.number}</h2>
-      <div className="mt-4 leading-relaxed">
-        {verses.map((verse: any) => (
-          <p key={verse.id}>
-            <span className="font-bold text-xs">{verse.number}{' '}</span>
-            <span className="font-greek">
-              {verse.words.map((verse: any) => verse.text).join(' ')}
-            </span>
-          </p>
-        ))}
+const ChapterPage: React.FC<Props> = ({ book }) => {
+  const [wordPopover, setWordPopover] = useState<number | null>(null)
+
+  if (book) {
+    const { chapters: [chapter] } = book
+    const { verses } = chapter
+    return (
+      <div className="max-w-screen-md mx-auto px-4 sm:px-8" onClick={() => setWordPopover(null)}>
+        <ChapterSelector className="mt-4" book={book.name} chapter={chapter.number} />
+        <h1 className="font-bold mt-4">{book.name.toUpperCase()}</h1>
+        <h2 className="font-bold mt-2 text-sm">CHAPTER {chapter.number}</h2>
+        <div className="mt-4 leading-relaxed">
+          {verses.map((verse) => (
+            <p key={verse.id}>
+              <span className="font-bold text-xs">{verse.number}{' '}</span>
+              <span className="font-greek">
+                {verse.words.map((word) => (
+                  <> 
+                    <span
+                      className="relative inline-block"
+                      key={word.id}
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        setWordPopover(word.id)
+                      }}
+                    >
+                      {word.text}
+                      <Popover visible={wordPopover === word.id}>
+                        {word.lemma.title}
+                      </Popover>
+                    </span>{' '}
+                  </>
+                ))}
+              </span>
+            </p>
+          ))}
+        </div>
       </div>
-    </div>
-  )
+    )
+  } else {
+    return null
+  }
 }
+export default ChapterPage
