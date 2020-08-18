@@ -21,7 +21,11 @@ CREATE TABLE "public"."Verse" (
 
 CREATE TABLE "public"."Lemma" (
   id SERIAL PRIMARY KEY NOT NULL,
-  title TEXT UNIQUE NOT NULL
+  title TEXT UNIQUE NOT NULL,
+  "fullLemma" TEXT UNIQUE,
+  strongs INTEGER UNIQUE,
+  brief TEXT,
+  description TEXT
 );
 
 CREATE TABLE "public"."Speech" (
@@ -107,3 +111,20 @@ CREATE TABLE "public"."Word" (
   FOREIGN KEY ("genderId") REFERENCES "public"."Gender"(id),
   FOREIGN KEY ("degreeId") REFERENCES "public"."Degree"(id)
 );
+
+CREATE VIEW "Text" AS
+    SELECT
+	"Word".id, "Word"."verseId", "Word".text, "Lemma".title AS lemma, "Speech".code AS "speech",
+	CONCAT(COALESCE("Person".code, '-'), COALESCE("Tense".code, '-'), COALESCE("Voice".code, '-'), COALESCE("Mood".code, '-'), COALESCE("Case".code, '-'), COALESCE("Number".code, '-'), COALESCE("Gender".code, '-'), COALESCE("Degree".code, '-')) AS parsing
+	FROM "Word"
+	INNER JOIN "Speech" ON "Word"."speechId" = "Speech".id
+	LEFT JOIN "Person" ON "Word"."personId" = "Person".id
+	LEFT JOIN "Tense" ON "Word"."tenseId" = "Tense".id
+	LEFT JOIN "Voice" ON "Word"."voiceId" = "Voice".id
+	LEFT JOIN "Mood" ON "Word"."moodId" = "Mood".id
+	LEFT JOIN "Case" ON "Word"."caseId" = "Case".id
+	LEFT JOIN "Number" ON "Word"."numberId" = "Number".id
+	LEFT JOIN "Gender" ON "Word"."genderId" = "Gender".id
+	LEFT JOIN "Degree" ON "Word"."degreeId" = "Degree".id
+	LEFT JOIN "Lemma" ON "Word"."lemmaId" = "Lemma".id
+	ORDER BY "Word".id

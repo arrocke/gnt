@@ -45,9 +45,13 @@ model Gender {
 }
 
 model Lemma {
-  id    Int    @default(autoincrement()) @id
-  title String @unique
-  words  Word[]
+  id          Int     @default(autoincrement()) @id
+  title       String  @unique
+  fullLemma   String  @unique
+  words       Word[]
+  strongs     Int?    @unique
+  brief       String?
+  description String?
 }
 
 model Mood {
@@ -91,6 +95,7 @@ model Verse {
   chapterId Int
   chapter   Chapter @relation(fields: [chapterId], references: [id])
   words     Word[]
+  text      Text[]
 
   @@unique([chapterId, number], name: "Verse_chapterId_number_key")
 }
@@ -130,4 +135,15 @@ model Word {
   tense      Tense?  @relation(fields: [tenseId], references: [id])
   verse      Verse   @relation(fields: [verseId], references: [id])
   voice      Voice?  @relation(fields: [voiceId], references: [id])
+}
+
+model Text {
+  id      Int    @id
+  verseId Int
+  text    String
+  lemma   String
+  speech  String
+  parsing String
+
+  verse   Verse   @relation(fields: [verseId], references: [id])
 }

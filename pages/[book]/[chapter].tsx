@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import client from "../../prisma/client";
 import ChapterSelector from "../../components/ChapterSelector";
-import { Book, Chapter, Verse, Word, Lemma } from "@prisma/client";
+import { Book, Chapter, Verse, Word, Lemma, Text } from "@prisma/client";
 import Popover from "../../components/Popover";
 import { useState, useEffect } from "react";
 import { CLIENT_RENEG_WINDOW } from "tls";
@@ -11,11 +11,7 @@ interface Props {
   book: (Book & {
     chapters: (Chapter & {
         verses: (Verse & {
-            words: (Word & {
-                lemma: {
-                    title: string;
-                };
-            })[];
+          text: Text[]
         })[];
     })[];
 }) | null
@@ -43,16 +39,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
           verses: {
             orderBy: [{ number: 'asc' }],
             include: {
-              words: {
-                orderBy: [{ id: 'asc' }],
-                include: {
-                  lemma: {
-                    select: {
-                      title: true
-                    }
-                  }
-                }
-              }
+              text: true
             }
           }
         }
@@ -82,7 +69,7 @@ const ChapterPage: React.FC<Props> = ({ book }) => {
             <p key={verse.id}>
               <span className="font-bold text-xs">{verse.number}{' '}</span>
               <span className="font-greek">
-                {verse.words.map((word) => (
+                {verse.text.map((word) => (
                   <> 
                     <span
                       className="relative inline-block"
@@ -94,7 +81,8 @@ const ChapterPage: React.FC<Props> = ({ book }) => {
                     >
                       {word.text}
                       <Popover visible={wordPopover === word.id}>
-                        {word.lemma.title}
+                        <p>{word.lemma}</p>
+                        <p className="whitespace-no-wrap">{word.parsing}</p>
                       </Popover>
                     </span>{' '}
                   </>
