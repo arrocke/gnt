@@ -53,6 +53,89 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   };
 }
 
+const speechMap: {[code: string]: string } = {
+  A: 'adjective',
+  C: "conjunction",
+  D: "adverb",
+  I: "interjection",
+  N: "noun",
+  P: "preposition",
+  RA: "definite article",
+  RD: "demonstrative pronoun",
+  RI: "interrogative or indefinite pronoun",
+  RP: "personal pronoun",
+  RR: "relative pronoun",
+  V: "verb",
+  X: "particle"
+}
+
+const personMap: {[code: string]: string } = {
+  '1': '1st',
+  '2': '2nd',
+  '3': '3rd'
+}
+
+const tenseMap: {[code: string]: string } = {
+  "P":	"present",
+  "I":	"imperfect",
+  "F":	"future",
+  "A":	"aorist",
+  "X":	"perfect",
+  "Y":	"pluperfect",
+}
+
+const voiceMap: {[code: string]: string } = {
+  "A":	"active",
+  "M":	"middle",
+  "P":	"passive"
+}
+
+const moodMap: {[code: string]: string } = {
+  "I":	"indicative",
+  "D":	"imperative",
+  "S":	"subjunctive",
+  "O":	"optative",
+  "N":	"infinitive",
+  "P":	"participle",
+}
+
+const caseMap: {[code: string]: string } = {
+  "N":	"nominative",
+  "G":	"genitive",
+  "D":	"dative",
+  "A":	"accusative",
+}
+
+const numberMap: {[code: string]: string } = {
+  P: 'plural',
+  S: 'singular'
+}
+
+const genderMap: {[code: string]: string } = {
+  M: 'masculine',
+  F: 'feminine',
+  N: 'neuter'
+}
+
+const degreeMap: {[code: string]: string } = {
+  "C":	"comparative",
+  "S":	"superlative"
+}
+
+function convertCodeToParsing(code: string) {
+  return [
+    personMap[code[0]],
+    tenseMap[code[1]],
+    voiceMap[code[2]],
+    moodMap[code[3]],
+    caseMap[code[4]],
+    numberMap[code[5]],
+    genderMap[code[6]],
+    degreeMap[code[7]]
+  ].filter(x => !!x).join(' ')
+}
+
+
 const ChapterPage: React.FC<Props> = ({ book }) => {
   const [wordPopover, setWordPopover] = useState<number | null>(null)
 
@@ -80,9 +163,12 @@ const ChapterPage: React.FC<Props> = ({ book }) => {
                       }}
                     >
                       {word.text}
-                      <Popover visible={wordPopover === word.id}>
-                        <p>{word.lemma}</p>
-                        <p className="whitespace-no-wrap">{word.parsing}</p>
+                      <Popover className="font-sans whitespace-no-wrap" visible={wordPopover === word.id}>
+                        <p>
+                          {word.lemma}
+                        </p>
+                        <p className="font-bold text-xs">{speechMap[word.speech].toUpperCase()}</p>
+                        <p className="text-sm">{convertCodeToParsing(word.parsing)}</p>
                       </Popover>
                     </span>{' '}
                   </>
