@@ -19,6 +19,12 @@ CREATE TABLE "public"."Verse" (
   FOREIGN KEY ("chapterId") REFERENCES "public"."Chapter"(id)
 );
 
+CREATE TABLE "public"."Paragraph" (
+  id SERIAL PRIMARY KEY NOT NULL,
+  "bookId" INTEGER NOT NULL,
+  FOREIGN KEY ("bookId") REFERENCES "public"."Book"(id)
+);
+
 CREATE TABLE "public"."Lemma" (
   id SERIAL PRIMARY KEY NOT NULL,
   title TEXT UNIQUE NOT NULL,
@@ -89,6 +95,7 @@ CREATE TABLE "public"."Word" (
   word TEXT NOT NULL,
   normalized TEXT NOT NULL,
   "verseId" INTEGER NOT NULL,
+  "paragraphId" INTEGER NOT NULL,
   "lemmaId" INTEGER NOT NULL
   "speechId" INTEGER NOT NULL,
   "personId" INTEGER,
@@ -100,6 +107,7 @@ CREATE TABLE "public"."Word" (
   "genderId" INTEGER,
   "degreeId" INTEGER,
   FOREIGN KEY ("verseId") REFERENCES "public"."Verse"(id),
+  FOREIGN KEY ("paragraphId") REFERENCES "public"."Paragraph"(id),
   FOREIGN KEY ("lemmaId") REFERENCES "public"."Lemma"(id),
   FOREIGN KEY ("speechId") REFERENCES "public"."Speech"(id),
   FOREIGN KEY ("personId") REFERENCES "public"."Person"(id),
@@ -114,7 +122,7 @@ CREATE TABLE "public"."Word" (
 
 CREATE VIEW "Text" AS
     SELECT
-	"Word".id, "Word"."verseId", "Word".text, "Lemma".title AS lemma, "Speech".code AS "speech",
+	"Word".id, "Word"."verseId", "Word"."paragraphId", "Word".text, "Lemma".title AS lemma, "Speech".code AS "speech",
 	CONCAT(COALESCE("Person".code, '-'), COALESCE("Tense".code, '-'), COALESCE("Voice".code, '-'), COALESCE("Mood".code, '-'), COALESCE("Case".code, '-'), COALESCE("Number".code, '-'), COALESCE("Gender".code, '-'), COALESCE("Degree".code, '-')) AS parsing
 	FROM "Word"
 	INNER JOIN "Speech" ON "Word"."speechId" = "Speech".id

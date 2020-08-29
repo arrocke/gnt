@@ -8,9 +8,10 @@ datasource db {
 }
 
 model Book {
-  id       Int       @default(autoincrement()) @id
-  name     String    @unique
-  chapters Chapter[]
+  id         Int         @default(autoincrement()) @id
+  name       String      @unique
+  chapters   Chapter[]
+  paragraphs Paragraph[]
 }
 
 model Case {
@@ -68,6 +69,14 @@ model Number {
   words       Word[]
 }
 
+model Paragraph {
+  id     Int    @default(autoincrement()) @id
+  bookId Int
+  book   Book   @relation(fields: [bookId], references: [id])
+  words  Word[]
+  text   Text[]
+}
+
 model Person {
   id          Int    @default(autoincrement()) @id
   description String @unique
@@ -108,42 +117,46 @@ model Voice {
 }
 
 model Word {
-  id         Int     @default(autoincrement()) @id
-  code       String
-  text       String
-  word       String
-  normalized String
-  lemmaId    Int
-  speechId   Int
-  personId   Int?
-  tenseId    Int?
-  voiceId    Int?
-  moodId     Int?
-  caseId     Int?
-  numberId   Int?
-  genderId   Int?
-  degreeId   Int?
-  verseId    Int
-  speech     Speech  @relation(fields: [speechId], references: [id])
-  case       Case?   @relation(fields: [caseId], references: [id])
-  person     Person? @relation(fields: [personId], references: [id])
-  degree     Degree? @relation(fields: [degreeId], references: [id])
-  gender     Gender? @relation(fields: [genderId], references: [id])
-  lemma      Lemma   @relation(fields: [lemmaId], references: [id])
-  mood       Mood?   @relation(fields: [moodId], references: [id])
-  number     Number? @relation(fields: [numberId], references: [id])
-  tense      Tense?  @relation(fields: [tenseId], references: [id])
-  verse      Verse   @relation(fields: [verseId], references: [id])
-  voice      Voice?  @relation(fields: [voiceId], references: [id])
+  id          Int       @default(autoincrement()) @id
+  code        String
+  text        String
+  word        String
+  normalized  String
+  lemmaId     Int
+  speechId    Int
+  personId    Int?
+  tenseId     Int?
+  voiceId     Int?
+  moodId      Int?
+  caseId      Int?
+  numberId    Int?
+  genderId    Int?
+  degreeId    Int?
+  verseId     Int
+  paragraphId Int
+  speech      Speech    @relation(fields: [speechId], references: [id])
+  case        Case?     @relation(fields: [caseId], references: [id])
+  person      Person?   @relation(fields: [personId], references: [id])
+  degree      Degree?   @relation(fields: [degreeId], references: [id])
+  gender      Gender?   @relation(fields: [genderId], references: [id])
+  lemma       Lemma     @relation(fields: [lemmaId], references: [id])
+  mood        Mood?     @relation(fields: [moodId], references: [id])
+  number      Number?   @relation(fields: [numberId], references: [id])
+  paragraph   Paragraph @relation(fields: [paragraphId], references: [id])
+  tense       Tense?    @relation(fields: [tenseId], references: [id])
+  verse       Verse     @relation(fields: [verseId], references: [id])
+  voice       Voice?    @relation(fields: [voiceId], references: [id])
 }
 
 model Text {
-  id      Int    @id
-  verseId Int
-  text    String
-  lemma   String
-  speech  String
-  parsing String
+  id          Int    @id
+  verseId     Int
+  paragraphId Int
+  text        String
+  lemma       String
+  speech      String
+  parsing     String
 
-  verse   Verse   @relation(fields: [verseId], references: [id])
+  verse       Verse     @relation(fields: [verseId], references: [id])
+  paragraph   Paragraph @relation(fields: [paragraphId], references: [id])
 }
