@@ -68,7 +68,7 @@ const ChapterPage: React.FC<Props> = ({ book }) => {
     const { chapters: [chapter] } = book
     const { verses } = chapter
     return (
-      <div className="max-w-screen-md mx-auto px-4 sm:px-8" onClick={() => setWord(null)}>
+      <div className="max-w-screen-md mx-auto px-4 sm:px-8" onClick={() => setWord(undefined)}>
         <ChapterSelector className="mt-4" book={book.name} chapter={chapter.number} />
         <h1 className="font-bold mt-4">{book.name.toUpperCase()}</h1>
         <h2 className="font-bold mt-2 text-sm">CHAPTER {chapter.number}</h2>
