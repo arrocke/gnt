@@ -122,8 +122,19 @@ CREATE TABLE "public"."Word" (
 
 CREATE VIEW "Text" AS
     SELECT
-	"Word".id, "Word"."verseId", "Word"."paragraphId", "Word".text, "Lemma".title AS lemma, "Speech".code AS "speech",
-	CONCAT(COALESCE("Person".code, '-'), COALESCE("Tense".code, '-'), COALESCE("Voice".code, '-'), COALESCE("Mood".code, '-'), COALESCE("Case".code, '-'), COALESCE("Number".code, '-'), COALESCE("Gender".code, '-'), COALESCE("Degree".code, '-')) AS parsing
+		"Word".id, "Word"."verseId", "Word"."paragraphId",
+		"Verse".number AS "verseNumber", "Chapter".number AS chapter, "Book".name AS book,
+		"Word".text, "Lemma".title AS lemma, "Speech".code AS "speech",
+		CONCAT(
+			COALESCE("Person".code, '-'),
+			COALESCE("Tense".code, '-'),
+			COALESCE("Voice".code, '-'),
+			COALESCE("Mood".code, '-'),
+			COALESCE("Case".code, '-'),
+			COALESCE("Number".code, '-'),
+			COALESCE("Gender".code, '-'),
+			COALESCE("Degree".code, '-')
+		) AS parsing
 	FROM "Word"
 	INNER JOIN "Speech" ON "Word"."speechId" = "Speech".id
 	LEFT JOIN "Person" ON "Word"."personId" = "Person".id
@@ -135,4 +146,7 @@ CREATE VIEW "Text" AS
 	LEFT JOIN "Gender" ON "Word"."genderId" = "Gender".id
 	LEFT JOIN "Degree" ON "Word"."degreeId" = "Degree".id
 	LEFT JOIN "Lemma" ON "Word"."lemmaId" = "Lemma".id
+	LEFT JOIN "Verse" ON "Word"."verseId" = "Verse".id
+	LEFT JOIN "Chapter" ON "Verse"."chapterId" = "Chapter".id
+	LEFT JOIN "Book" ON "Chapter"."bookId" = "Book".id
 	ORDER BY "Word".id

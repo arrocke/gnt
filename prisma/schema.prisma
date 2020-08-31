@@ -152,6 +152,9 @@ model Text {
   id          Int    @id
   verseId     Int
   paragraphId Int
+  verseNumber Int
+  chapter     Int
+  book        String
   text        String
   lemma       String
   speech      String
