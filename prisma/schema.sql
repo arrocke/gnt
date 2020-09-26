@@ -121,7 +121,7 @@ CREATE TABLE "public"."Word" (
 );
 
 CREATE VIEW "Text" AS
-    SELECT
+  SELECT
 		"Word".id, "Word"."verseId", "Word"."paragraphId",
 		"Verse".number AS "verseNumber", "Chapter".number AS chapter, "Book".name AS book,
 		"Word".text, "Lemma".title AS lemma, "Speech".code AS "speech",
@@ -150,3 +150,14 @@ CREATE VIEW "Text" AS
 	LEFT JOIN "Chapter" ON "Verse"."chapterId" = "Chapter".id
 	LEFT JOIN "Book" ON "Chapter"."bookId" = "Book".id
 	ORDER BY "Word".id
+
+CREATE VIEW "ParagraphMetadata" AS
+  SELECT
+  	"paragraphId",
+  	MIN(chapter) AS "startChapter",
+  	MIN("verseNumber") AS "startVerse",
+  	MAX(chapter) AS "endChapter",
+  	MAX("verseNumber") AS "endVerse"
+  FROM "Text"
+  GROUP BY "Text"."paragraphId"
+  ORDER BY "paragraphId";

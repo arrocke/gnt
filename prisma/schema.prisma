@@ -48,7 +48,7 @@ model Gender {
 model Lemma {
   id          Int     @default(autoincrement()) @id
   title       String  @unique
-  fullLemma   String  @unique
+  fullLemma   String? @unique
   words       Word[]
   strongs     Int?    @unique
   brief       String?
@@ -75,6 +75,8 @@ model Paragraph {
   book   Book   @relation(fields: [bookId], references: [id])
   words  Word[]
   text   Text[]
+
+  metadata   ParagraphMetadata @relation(fields: [id], references: [id])
 }
 
 model Person {
@@ -162,4 +164,14 @@ model Text {
 
   verse       Verse     @relation(fields: [verseId], references: [id])
   paragraph   Paragraph @relation(fields: [paragraphId], references: [id])
+}
+
+model ParagraphMetadata {
+  id           Int    @id
+  startChapter Int
+  startVerse   Int
+  endChapter   Int
+  endVerse     Int
+
+  paragraph   Paragraph
 }
