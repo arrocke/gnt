@@ -13,7 +13,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     parseInt(req.query.limit as string) || DEFAULT_LIMIT
   ))
   const reference = REFERENCE_REGEX.exec((req.query.reference as string))
-  console.log(reference)
   const next = parseInt(req.query.next as string)
 
   const query: ParagraphWhereInput = {}
@@ -58,6 +57,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       id: true,
       text: {
         select: {
+          id: true,
           chapter: true,
           verseNumber: true,
           text: true,
