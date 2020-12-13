@@ -17,6 +17,7 @@
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-infinite-scroll-component": "5.1.0",
     "react-query": "2.26.4",
     "xml2js": "^0.4.23"
   },

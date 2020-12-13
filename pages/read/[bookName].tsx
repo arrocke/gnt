@@ -4,7 +4,8 @@ import { Text, Paragraph } from "@prisma/client";
 import { useState, useEffect, Fragment } from "react";
 import usePopover from '../../components/usePopover'
 import WordPopover from "../../components/WordPopover";
-import { useQuery } from "react-query";
+import { useInfiniteQuery } from "react-query";
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 interface QueryResult {
   data: (Paragraph & {
@@ -14,10 +15,18 @@ interface QueryResult {
 
 const ReadPage: React.FC = () => {
   const router = useRouter()
-  const bookName = router.query.book as string
-  const bookQuery = useQuery<QueryResult>(['book-paragraphs', bookName], async (key, bookName) => {
-    const response = await fetch(`/api/paragraphs?reference=${bookName}-1:1`)
+  const bookName = (router.query.bookName as string || '').replace('-', ' ')
+  const bookQuery = useInfiniteQuery<QueryResult>(['book-paragraphs', bookName], async (key, bookName, start = 0) => {
+    const response = await fetch(`/api/books/${bookName}?page[size]=15&page[start]=${start}`)
     return response.json()
+  }, {
+    getFetchMore(previous) {
+      if (previous.data.length === 0) {
+        return false
+      } else {
+        return previous.data[previous.data.length - 1].id
+      }
+    }
   })
 
   const [selectedWord, setWord] = useState<Text | undefined>(undefined)
@@ -34,11 +43,19 @@ const ReadPage: React.FC = () => {
   if (bookQuery.data) {
     return (
       <div className="max-w-screen-md mx-auto px-4 sm:px-8" onClick={() => setWord(undefined)}>
-        {/* <ChapterSelector className="mt-4" book={book.name} chapter={chapter.number} /> */}
+        <ChapterSelector className="mt-4" book={bookName} chapter={1} />
         <h1 className="font-bold mt-4">{bookName.toUpperCase()}</h1>
+        <WordPopover key="popover" ref={popoverRef} word={selectedWord} />
         <div className="mt-4 leading-relaxed">
-          <WordPopover key="popover" ref={popoverRef} word={selectedWord} />
-          {bookQuery.data?.data?.map(paragraph => (
+          <InfiniteScroll
+            dataLength={bookQuery.data.length}
+            next={() => bookQuery.fetchMore()}
+            hasMore={bookQuery.canFetchMore ?? true}
+            loader={<p className="mt-6 mb-12 text-center">Loading...</p>}
+            scrollThreshold="60%"
+            endMessage={<p className="mt-6 mb-12 text-center">End of Chapter</p>}
+          >
+          {bookQuery.data.map(group =>  group.data?.map(paragraph => (
             <p key={paragraph.id} className="mt-2">
               {paragraph.text.map((word, i, words) => (
                 <Fragment key={word.id}> 
@@ -60,7 +77,8 @@ const ReadPage: React.FC = () => {
                 </Fragment>
               ))}
             </p>
-          ))}
+          )))}
+          </InfiniteScroll>
         </div>
       </div>
     )
