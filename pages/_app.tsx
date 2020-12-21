@@ -1,17 +1,17 @@
 import '../styles/index.css'
 import type { AppProps } from 'next/app'
 import { ReactQueryDevtools } from 'react-query-devtools'
-import { QueryCache, ReactQueryCacheProvider } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
-const queryCache = new QueryCache()
+const queryClient = new QueryClient()
 
 function App(props: AppProps) {
   const { Component, pageProps } = props
   return <>
-    <ReactQueryCacheProvider queryCache={queryCache}>
+    <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools />
       <Component {...pageProps} />
-    </ReactQueryCacheProvider>
+    </QueryClientProvider>
   </>
 }
 

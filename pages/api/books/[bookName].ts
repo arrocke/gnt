@@ -80,17 +80,44 @@ function verifyCursors(start?: number, end?: number) {
   }
 }
 
+function getReference(query: { [key: string]: string | string[] }) {
+  const queryStringValue = query['reference'] as string
+  const queryValue = Array.isArray(queryStringValue) ? queryStringValue[0] : queryStringValue
+
+  if (!queryValue) {
+    return {}
+  }
+
+  const match = /^(\d+):(\d+)/i.exec(queryValue)
+  if (match) {
+    const chapterNumber = parseInt(match[0])
+    const verseNumber = parseInt(match[1])
+    if (chapterNumber > 0 && verseNumber > 0) {
+      return { value: [chapterNumber, verseNumber] }
+    }
+  }
+  return {
+    error: {
+      "title": "Invalid Parameter",
+      "detail": "reference must be a valid chapter and verse reference",
+      "source": { "parameter": "reference" },
+    }
+  }
+}
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const pageSizeResult = getPageSize(req.query)
   const startCursorResult = getCursor('start', req.query)
   const endCursorResult = getCursor('end', req.query)
   const verifyCursorsResult = verifyCursors(startCursorResult.value, endCursorResult.value)
+  const referenceResult = getReference(req.query)
 
   const errors = [
     pageSizeResult.error,
     startCursorResult.error,
     endCursorResult.error,
-    verifyCursorsResult.error
+    verifyCursorsResult.error,
+    referenceResult.error,
   ].filter(result => result)
 
   if (errors.length > 0) {
@@ -101,12 +128,44 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const startCursor = startCursorResult.value
   const endCursor = endCursorResult.value
   const bookName = (req.query.bookName as string).replace('-', ' ')
+  const reference = referenceResult.value
 
   const paragraphQuery: ParagraphWhereInput = {
     book: { name: bookName }
   }
 
-  if (startCursor) {
+  if (reference) {
+    const [{ verses: [verse] = [] } = {}] = await client.book.findOne({
+      where: {
+        name: bookName 
+      }
+    }).chapters({
+      where: {
+        number: reference[0]
+      },
+      select: {
+        verses: {
+          where: {
+            number: reference[1]
+          },
+          select: {
+            words: {
+              take: 1,
+              select: {
+                paragraphId: true
+              }
+            }
+          }
+        }
+      }
+    })
+    if (verse) {
+      console.log(verse)
+      paragraphQuery.id = { gt: verse.words[0].paragraphId }
+    } else {
+      res.status(400).end()
+    }
+  } else if (startCursor) {
     paragraphQuery.id = { gt: startCursor }
   } else if (endCursor) {
     paragraphQuery.id = { gt: endCursor - pageSize - 1 }
