@@ -1,97 +1,113 @@
-import { ReactNode, Reducer, useCallback, useEffect, useReducer, useRef, useState } from "react"
+import { ReactNode, Reducer, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from "react"
 
 interface LoaderFn {
-  (): void | Promise<void>
+  (): Promise<any>
 }
 
 export interface InfiniteScrollContainerProps {
   className?: string
   loadNext?: LoaderFn
   loadPrev?: LoaderFn
-  loadingPrev?: ReactNode
-  loadingNext?: ReactNode
 }
 
-type ReducerAction = 'prev' | 'next'
-type ReducerState = [boolean, boolean]
+const InfiniteScrollContainer: React.FC<InfiniteScrollContainerProps> = (props) => {
+  const {
+    className,
+    children,
+    loadNext = () => {},
+    loadPrev = () => {}
+  } = props
 
-function reducer(loadPrev: LoaderFn, loadNext: LoaderFn) {
-  return (action: ReducerAction, state: ReducerState) => {
-    switch(action) {
-      case 'prev': {
-        if (!state[0]) {
-          return [true, state[1]]
-        }
-      }
-      case 'next': {
-        return [state[0], true]
-      }
+  const container = useRef<HTMLDivElement>(null);
+  const startSentinel = useRef<HTMLDivElement>(null);
+  const endSentinel = useRef<HTMLDivElement>(null);
+  const observer = useRef<IntersectionObserver>();
+  const loading = useRef<[boolean, boolean]>([false, false])
+  const [isLoading, setLoadingState] = useState<[boolean, boolean]>([false, false])
+  const scrollState = useRef({ scrollHeight: 0, clientHeight: 0, position: 0 })
+
+  useLayoutEffect(() => {
+    if (container.current) {
+      // if (loading.current?.[0]) {
+      //   const { scrollHeight, clientHeight } = container.current
+      //   const diff = scrollHeight - scrollState.current.scrollHeight
+      //   const position = scrollState.current.position + diff
+      //   container.current.scrollTo(0, position)
+      //   scrollState.current = { scrollHeight, clientHeight, position }
+      // } else {
+        const { scrollHeight, clientHeight } = container.current
+        scrollState.current = { scrollHeight, clientHeight, position: scrollState.current.position }
+      // }
     }
-  }
-}
 
-const InfiniteScrollContainer: React.FC<InfiniteScrollContainerProps> = ({
-  className,
-  children,
-  loadNext = () => {},
-  loadPrev = () => {},
-  loadingNext,
-  loadingPrev
-}) => {
-  const loadingStateRef = useRef<[boolean, boolean]>([false, false])
-  const [loadingState, setLoadingState] = useState<[boolean, boolean]>([false, false])
-  const startElement = useRef<HTMLDivElement | null>(null)
-  const endElement = useRef<HTMLDivElement | null>(null)
-  const containerElement = useRef<HTMLDivElement | null>(null)
-  const observer = useRef<IntersectionObserver | null>(null)
+    // Check the sentinels again.
+    // This will load the next page if the container isn't full.
+    if (observer.current) {
+      console.log('test')
+      observer.current.disconnect()
+      if (endSentinel.current)
+        observer.current.observe(endSentinel.current)
+      if (startSentinel.current)
+        observer.current.observe(startSentinel.current)
+    }
+  }, [children])
 
   const setLoading = useCallback((fn: ((state: [boolean, boolean]) => [boolean, boolean])) => {
     setLoadingState(fn)
-    loadingStateRef.current = fn(loadingStateRef.current)
+    loading.current = fn(loading.current)
   }, [])
-
-  // Can I use a reducer to track loading state and execute data loading functions?
 
   useEffect(() => {
     observer.current = new IntersectionObserver(async (entries) => {
-      const start = entries.find(entry => entry.target === startElement.current)
-      const end = entries.find(entry => entry.target === endElement.current)
-      if (start && start.isIntersecting && !loadingStateRef.current[0]) {
-        setLoading(([, next]) => [true, next])
-        await loadPrev()
-        setLoading(([, next]) => [false, next])
-      }
-      if (end && end.isIntersecting && !loadingStateRef.current[1]) {
-        setLoading(([prev]) => [prev, true])
+      const end = entries.find(entry => entry.target === endSentinel.current)
+      if (end?.isIntersecting && !loading.current[1]) {
+        setLoading(([l]) => [l, true])
         await loadNext()
-        setLoading(([prev]) => [prev, false])
+        setLoading(([l]) => [l, false])
       }
+
+      // Wait to load previous pages until container is full.
+      if (scrollState.current.scrollHeight > scrollState.current.clientHeight) {
+        const start = entries.find(entry => entry.target === startSentinel.current)
+        if (start?.isIntersecting && !loading.current[0]) {
+          setLoading(([,l]) => [true, l])
+          await loadPrev()
+          setLoading(([,l]) => [false, l])
+        }
+      }
+
     }, {
-      root: containerElement.current,
-      // This will start loading when one screen full of data is still left to scroll.
-      rootMargin: '100% 0px'
+      root: container.current, 
+      rootMargin: '30% 0px'
     })
-    if (endElement.current) {
-      observer.current.observe(endElement.current)
-    }
-    if (startElement.current) {
-      observer.current.observe(startElement.current)
-    }
+
+    if (startSentinel.current)
+      observer.current.observe(startSentinel.current)
+    if (endSentinel.current)
+      observer.current.observe(endSentinel.current)
+
     return () => observer.current?.disconnect()
   }, [])
 
-  return <div ref={containerElement} className={className}>
-    <div ref={startElement}/>
-    {loadingState[0] ? loadingPrev : null}
-    {children}
-    {loadingState[1] ? loadingNext : null}
-    <div ref={endElement}/>
+  return <div className={className}>
+    <div
+      ref={container}
+      className="m-auto w-1/2 h-full bg-red-300 overflow-auto"
+      onScroll={() => {
+        scrollState.current = {
+          scrollHeight: container.current?.scrollHeight ?? 0,
+          clientHeight: container.current?.clientHeight ?? 0,
+          position: container.current?.scrollTop ?? 0
+        }
+      }}
+    >
+      <div ref={startSentinel}/>
+      {/* {isLoading[0] ? <div>Loading...</div> : null} */}
+      {children}
+      {/* {isLoading[1] ? <div>Loading...</div> : null} */}
+      <div ref={endSentinel}/>
+    </div>
   </div>
-}
-
-export interface InfiniteScrollItemProps {
-  isLast?: boolean
-  isFirst?: boolean
 }
 
 export default InfiniteScrollContainer

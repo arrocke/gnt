@@ -9,7 +9,7 @@ function App(props: AppProps) {
   const { Component, pageProps } = props
   return <>
     <QueryClientProvider client={queryClient}>
-      <ReactQueryDevtools />
+      {/* <ReactQueryDevtools /> */}
       <Component {...pageProps} />
     </QueryClientProvider>
   </>
