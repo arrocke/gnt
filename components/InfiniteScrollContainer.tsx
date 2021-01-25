@@ -1,13 +1,23 @@
-import { ReactNode, Reducer, useCallback, useEffect, useLayoutEffect, useReducer, useRef, useState } from "react"
+import next from "next"
+import { Children, cloneElement, forwardRef, isValidElement, ReactElement,  ReactNode,  useCallback, useEffect, useLayoutEffect, useRef, useState } from "react"
 
-interface LoaderFn {
-  (): Promise<any>
-}
+export const InfiniteScrollElement = forwardRef<HTMLElement, { children: ReactNode }>(
+  function InfiniteScrollElement({ children }, ref) {
+    const child = Children.only(children)
+    if (child && isValidElement(child)) {
+      return cloneElement(child, { ref })
+    } else {
+      return null
+    }
+  }
+)
 
 export interface InfiniteScrollContainerProps {
   className?: string
-  loadNext?: LoaderFn
-  loadPrev?: LoaderFn
+  loadNext?(): Promise<any>
+  loadPrev?(): Promise<any>
+  loadingNext?: ReactElement
+  loadingPrev?: ReactElement
 }
 
 const InfiniteScrollContainer: React.FC<InfiniteScrollContainerProps> = (props) => {
@@ -15,98 +25,96 @@ const InfiniteScrollContainer: React.FC<InfiniteScrollContainerProps> = (props) 
     className,
     children,
     loadNext = () => {},
-    loadPrev = () => {}
+    loadPrev = () => {},
+    loadingNext,
+    loadingPrev
   } = props
 
+  const loadingRef = useRef<string>()
+  const [loadingState, setLoadingState] = useState(loadingRef.current)
+
+  const setLoading = useCallback((state?: string) => {
+    loadingRef.current = state
+    setLoadingState(state)
+  }, [])
+
   const container = useRef<HTMLDivElement>(null);
+  const pageContainer = useRef<HTMLDivElement>(null);
   const startSentinel = useRef<HTMLDivElement>(null);
   const endSentinel = useRef<HTMLDivElement>(null);
+  const nextFirstPage = useRef<HTMLElement | null>(null);
+  const firstPage = useRef<HTMLElement | null>(null);
+  const scrollHeight = useRef<number>();
+
   const observer = useRef<IntersectionObserver>();
-  const loading = useRef<[boolean, boolean]>([false, false])
-  const [isLoading, setLoadingState] = useState<[boolean, boolean]>([false, false])
-  const scrollState = useRef({ scrollHeight: 0, clientHeight: 0, position: 0 })
-
-  useLayoutEffect(() => {
-    if (container.current) {
-      // if (loading.current?.[0]) {
-      //   const { scrollHeight, clientHeight } = container.current
-      //   const diff = scrollHeight - scrollState.current.scrollHeight
-      //   const position = scrollState.current.position + diff
-      //   container.current.scrollTo(0, position)
-      //   scrollState.current = { scrollHeight, clientHeight, position }
-      // } else {
-        const { scrollHeight, clientHeight } = container.current
-        scrollState.current = { scrollHeight, clientHeight, position: scrollState.current.position }
-      // }
-    }
-
-    // Check the sentinels again.
-    // This will load the next page if the container isn't full.
-    if (observer.current) {
-      console.log('test')
-      observer.current.disconnect()
-      if (endSentinel.current)
-        observer.current.observe(endSentinel.current)
-      if (startSentinel.current)
-        observer.current.observe(startSentinel.current)
-    }
-  }, [children])
-
-  const setLoading = useCallback((fn: ((state: [boolean, boolean]) => [boolean, boolean])) => {
-    setLoadingState(fn)
-    loading.current = fn(loading.current)
-  }, [])
 
   useEffect(() => {
-    observer.current = new IntersectionObserver(async (entries) => {
+    observer.current = new IntersectionObserver(async (entries: IntersectionObserverEntry[]) => {
+      const start = entries.find(entry => entry.target === startSentinel.current)
       const end = entries.find(entry => entry.target === endSentinel.current)
-      if (end?.isIntersecting && !loading.current[1]) {
-        setLoading(([l]) => [l, true])
+
+      if (end?.isIntersecting && loadingRef.current !== 'next') {
+        setLoading('next')
         await loadNext()
-        setLoading(([l]) => [l, false])
+        setLoading()
+      } else if (start?.isIntersecting && loadingRef.current !== 'prev') {
+        setLoading('prev')
+        await loadPrev()
+        setLoading()
       }
-
-      // Wait to load previous pages until container is full.
-      if (scrollState.current.scrollHeight > scrollState.current.clientHeight) {
-        const start = entries.find(entry => entry.target === startSentinel.current)
-        if (start?.isIntersecting && !loading.current[0]) {
-          setLoading(([,l]) => [true, l])
-          await loadPrev()
-          setLoading(([,l]) => [false, l])
-        }
-      }
-
     }, {
-      root: container.current, 
-      rootMargin: '30% 0px'
+      root: container.current,
+      rootMargin: '100% 0px'
     })
 
-    if (startSentinel.current)
-      observer.current.observe(startSentinel.current)
     if (endSentinel.current)
-      observer.current.observe(endSentinel.current)
+      observer.current?.observe(endSentinel.current)
+    if (startSentinel.current)
+      observer.current?.observe(startSentinel.current)
 
     return () => observer.current?.disconnect()
-  }, [])
+  }, [loadNext])
 
-  return <div className={className}>
-    <div
-      ref={container}
-      className="m-auto w-1/2 h-full bg-red-300 overflow-auto"
-      onScroll={() => {
-        scrollState.current = {
-          scrollHeight: container.current?.scrollHeight ?? 0,
-          clientHeight: container.current?.clientHeight ?? 0,
-          position: container.current?.scrollTop ?? 0
-        }
-      }}
-    >
-      <div ref={startSentinel}/>
-      {/* {isLoading[0] ? <div>Loading...</div> : null} */}
-      {children}
-      {/* {isLoading[1] ? <div>Loading...</div> : null} */}
-      <div ref={endSentinel}/>
+  useEffect(() => {
+    if (endSentinel.current)
+      observer.current?.observe(endSentinel.current)
+    if (startSentinel.current)
+      observer.current?.observe(startSentinel.current)
+
+    return () => observer.current?.disconnect()
+  }, [children])
+
+  useLayoutEffect(() => {
+    if (firstPage.current !== nextFirstPage.current) {
+      if (container.current && scrollHeight.current) {
+        const diff = container.current.scrollHeight - scrollHeight.current
+        container.current.scrollTop += diff
+      }
+      firstPage.current = nextFirstPage.current
+    }
+    scrollHeight.current = pageContainer.current?.scrollHeight
+  })
+
+  let renderedChildren = Children.toArray(children)
+  if (renderedChildren.length > 0) {
+    renderedChildren = Children.toArray(children)
+    const first = renderedChildren[0]
+    if (isValidElement(first)) {
+      renderedChildren[0] = cloneElement(first, { ref: nextFirstPage })
+    }
+  }
+
+  return <div
+    ref={container}
+    className={`overflow-auto ${className ?? ''}`}
+  >
+    {loadingState === 'prev' ? loadingPrev : null}
+    <div ref={startSentinel}/>
+    <div ref={pageContainer}>
+      {renderedChildren}
     </div>
+    <div ref={endSentinel}/>
+    {loadingState === 'next' ? loadingNext : null}
   </div>
 }
 

@@ -90,8 +90,8 @@ function getReference(query: { [key: string]: string | string[] }) {
 
   const match = /^(\d+):(\d+)/i.exec(queryValue)
   if (match) {
-    const chapterNumber = parseInt(match[0])
-    const verseNumber = parseInt(match[1])
+    const chapterNumber = parseInt(match[1])
+    const verseNumber = parseInt(match[2])
     if (chapterNumber > 0 && verseNumber > 0) {
       return { value: [chapterNumber, verseNumber] }
     }
@@ -160,8 +160,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       }
     })
     if (verse) {
-      console.log(verse)
-      paragraphQuery.id = { gt: verse.words[0].paragraphId }
+      paragraphQuery.id = { gte: verse.words[0].paragraphId }
     } else {
       res.status(400).end()
     }

@@ -13,10 +13,7 @@ interface QueryResult {
   })[];
 }
 
-const PAGE_SIZE = 2
-
-// TODO: perserve scroll position when loading previous pages
-// TODO: progressively load until screen is full
+const PAGE_SIZE = 6 
 
 const ReadPage: React.FC = () => {
   const router = useRouter()
@@ -66,15 +63,14 @@ const ReadPage: React.FC = () => {
         <h1 className="max-w-screen-md w-full mx-auto px-4 sm:px-8 font-bold mt-4">{bookName.toUpperCase()}</h1>
         <WordPopover key="popover" ref={popoverRef} word={selectedWord} />
         <InfiniteScrollContainer
-          className="w-full mt-4 leading-relaxed flex-1 overflow-auto"
+          className="w-full mt-4 leading-relaxed flex-1"
           loadNext={async () => { await fetchNextPage() }}
           loadPrev={async () => { await fetchPreviousPage() }}
           loadingPrev={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
           loadingNext={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
         >
-          <div className="max-w-screen-md mx-auto px-4 sm:px-8">
             {data.pages.map(group =>  group.data?.map(paragraph => (
-              <p key={paragraph.id} className="mt-2">
+              <p key={paragraph.id} className="pt-2 max-w-screen-md mx-auto px-4 sm:px-8">
                 {paragraph.text.map((word, i, words) => (
                   <Fragment key={word.id}> 
                     {(i === 0 || words[i - 1].verseNumber !== word.verseNumber) && (
@@ -96,7 +92,6 @@ const ReadPage: React.FC = () => {
                 ))}
               </p>
             )))}
-          </div>
         </InfiniteScrollContainer>
       </div>
     )
