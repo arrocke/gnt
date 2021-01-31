@@ -1,0 +1,6806 @@
+[
+  {
+    "orth": "ἄλφα",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the first letter of the Greek alphabet"
+      },
+      {
+        "_role": "full",
+        "__text": "alpha; the first letter of the Greek alphabet."
+      }
+    ],
+    "_n": "ἄλφα | 0001"
+  },
+  {
+    "orth": "ἀποσκευάζομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I prepare for a journey, depart"
+      },
+      {
+        "_role": "full",
+        "__text": "I prepare for a journey, depart."
+      }
+    ],
+    "_n": "ἀποσκευάζομαι | 0643"
+  },
+  {
+    "orth": "Ἀκελδαμά",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Akeldama"
+      },
+      {
+        "_role": "full",
+        "__text": "Akeldama (in Aramaic: field of blood)."
+      }
+    ],
+    "_n": "Ἀκελδαμά | 0184"
+  },
+  {
+    "orth": "ἀνεμίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am blown with the wind"
+      },
+      {
+        "_role": "full",
+        "__text": "I am blown with the wind (referring to the gentler motions of the\n                  air)."
+      }
+    ],
+    "_n": "ἀνεμίζω | 0416"
+  },
+  {
+    "orth": "Ἰουδαΐζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I live as a Jew"
+      },
+      {
+        "_role": "full",
+        "__text": "I live as a Jew (in religion, ceremonially)."
+      }
+    ],
+    "_n": "Ἰουδαΐζω | 2450"
+  },
+  {
+    "orth": "πυρός, ά, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "red, fire-colored"
+      },
+      {
+        "_role": "full",
+        "__text": "red, fire-colored."
+      }
+    ],
+    "_n": "πυρός | 4450"
+  },
+  {
+    "orth": "ἔνεδρον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "ambush"
+      },
+      {
+        "_role": "full",
+        "__text": "ambush."
+      }
+    ],
+    "_n": "ἔνεδρον | 1749"
+  },
+  {
+    "orth": "χρήσιμος, η, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "useful, profitable"
+      },
+      {
+        "_role": "full",
+        "__text": "useful, profitable."
+      }
+    ],
+    "_n": "χρήσιμος | 5539"
+  },
+  {
+    "orth": "ἀνατίθημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I lay a case before, impart, communicate, relate"
+      },
+      {
+        "_role": "full",
+        "__text": "I lay (a case) before, impart, communicate, declare, relate (with a\n                  view to consulting)."
+      }
+    ],
+    "_n": "ἀνατίθημι | 0394"
+  },
+  {
+    "orth": "ἀπορρίπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I throw away from, throw overboard"
+      },
+      {
+        "_role": "full",
+        "__text": "I throw away from, throw overboard."
+      }
+    ],
+    "_n": "ἀπορρίπτω | 0641"
+  },
+  {
+    "orth": "ἀκατάσχετος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "unrestrainable, unruly, untamable"
+      },
+      {
+        "_role": "full",
+        "__text": "unrestrainable, unruly, untamable."
+      }
+    ],
+    "_n": "ἀκατάσχετος | 0183"
+  },
+  {
+    "orth": "παραλύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I relax, enfeeble"
+      },
+      {
+        "_role": "full",
+        "__text": "I relax, enfeeble, weaken."
+      }
+    ],
+    "_n": "παραλύω | 3886"
+  },
+  {
+    "orth": "ἀπέχομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I abstain from"
+      },
+      {
+        "_role": "full",
+        "__text": "I abstain from, keep myself away from."
+      }
+    ],
+    "_n": "ἀπέχομαι | 0567"
+  },
+  {
+    "orth": "εὐκοπώτερον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "easier"
+      },
+      {
+        "_role": "full",
+        "__text": "easier."
+      }
+    ],
+    "_n": "εὐκοπώτερον | 2123"
+  },
+  {
+    "orth": "ἐκλανθάνομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I forget entirely"
+      },
+      {
+        "_role": "full",
+        "__text": "I forget entirely, make to forget."
+      }
+    ],
+    "_n": "ἐκλανθάνομαι | 1585"
+  },
+  {
+    "orth": "αὐτόφωρος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "in the very act"
+      },
+      {
+        "_role": "full",
+        "__text": "in the very act."
+      }
+    ],
+    "_n": "αὐτόφωρος | 1888"
+  },
+  {
+    "orth": "ἀφίστημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I lead away, seduce, depart, abstain from"
+      },
+      {
+        "_role": "full",
+        "__text": "I make to stand away, draw away, repel, take up a position away from,\n                  withdraw from, leave, abstain from."
+      }
+    ],
+    "_n": "ἀφίστημι | 0868"
+  },
+  {
+    "orth": "Ἀριμαθαία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Arimathea"
+      },
+      {
+        "_role": "full",
+        "__text": "Arimathea, a place in Palestine."
+      }
+    ],
+    "_n": "Ἀριμαθαία | 0707"
+  },
+  {
+    "orth": "ἀντίληψις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "help, ministration"
+      },
+      {
+        "_role": "full",
+        "__text": "help, ministration; one who aids."
+      }
+    ],
+    "_n": "ἀντίληψις | 0484"
+  },
+  {
+    "orth": "Ἀμών, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Amon"
+      },
+      {
+        "_role": "full",
+        "__text": "Amon (Amos), son of Manasseh and father of Josiah, an ancestor of\n                  Jesus."
+      }
+    ],
+    "_n": "Ἀμών | 0300"
+  },
+  {
+    "orth": "ἀναγνωρίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I make known to again, make to be recognized"
+      },
+      {
+        "_role": "full",
+        "__text": "I recognize; pass: I am made known, cause myself to be\n                  recognized."
+      }
+    ],
+    "_n": "ἀναγνωρίζω | 0319"
+  },
+  {
+    "orth": "ἀδιαφθορία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "incorruptibility, soundness, integrity"
+      },
+      {
+        "_role": "full",
+        "__text": "incorruptibility, soundness, integrity, purity."
+      }
+    ],
+    "_n": "ἀδιαφθορία | 0090"
+  },
+  {
+    "orth": "ἀναμάρτητος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "without blame, faultless"
+      },
+      {
+        "_role": "full",
+        "__text": "without blame, faultless, unerring."
+      }
+    ],
+    "_n": "ἀναμάρτητος | 0361"
+  },
+  {
+    "orth": "ἑκατονταέτης, ες",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a hundred years old"
+      },
+      {
+        "_role": "full",
+        "__text": "a hundred years old."
+      }
+    ],
+    "_n": "ἑκατονταέτης | 1541"
+  },
+  {
+    "orth": "διαγνωρίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I tell abroad, make known"
+      },
+      {
+        "_role": "full",
+        "__text": "I tell abroad, make known."
+      }
+    ],
+    "_n": "διαγνωρίζω | 1232"
+  },
+  {
+    "orth": "Βαριωνᾶς, ᾶ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Bar-Jonas"
+      },
+      {
+        "_role": "full",
+        "__text": "Bar-Jonas, son of Jonas, the surname of Simon Peter."
+      }
+    ],
+    "_n": "Βαριωνᾶς | 0920"
+  },
+  {
+    "orth": "γέννησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "nativity, birth"
+      },
+      {
+        "_role": "full",
+        "__text": "nativity, birth."
+      }
+    ],
+    "_n": "γέννησις | 1083"
+  },
+  {
+    "orth": "Βαρνάβας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Barnabas"
+      },
+      {
+        "_role": "full",
+        "__text": "Barnabas, a Cypriote Jew, uncle of John Mark; his other name was\n                  Joseph."
+      }
+    ],
+    "_n": "Βαρνάβας | 0921"
+  },
+  {
+    "orth": "ἐθελοθρησκεία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "arbitrary worship"
+      },
+      {
+        "_role": "full",
+        "__text": "arbitrary worship, self-imposed worship."
+      }
+    ],
+    "_n": "ἐθελοθρησκεία | 1479"
+  },
+  {
+    "orth": "δήποτε",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "even at that time, whenever"
+      },
+      {
+        "_role": "full",
+        "__text": "even at that time, whenever."
+      }
+    ],
+    "_n": "δήποτε | 1221"
+  },
+  {
+    "orth": "Ἕβερ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Eber"
+      },
+      {
+        "_role": "full",
+        "__text": "Eber, father of Peleg and son of Shelah."
+      }
+    ],
+    "_n": "Ἕβερ | 1443"
+  },
+  {
+    "orth": "παραβουλεύομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I expose myself to danger, am reckless"
+      },
+      {
+        "_role": "full",
+        "__text": "I expose myself to danger; I am adventuresome, reckless."
+      }
+    ],
+    "_n": "παραβουλεύομαι | 3851"
+  },
+  {
+    "orth": "σπάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I draw (as a sword)"
+      },
+      {
+        "_role": "full",
+        "__text": "I draw (as a sword), pull."
+      }
+    ],
+    "_n": "σπάω | 4685"
+  },
+  {
+    "orth": "ἐπανίστημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I rise up against"
+      },
+      {
+        "_role": "full",
+        "__text": "intrans. tenses: I rise up against."
+      }
+    ],
+    "_n": "ἐπανίστημι | 1881"
+  },
+  {
+    "orth": "μεθύσκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I make drunk"
+      },
+      {
+        "_role": "full",
+        "__text": "I make drunk; pass: I become drunk."
+      }
+    ],
+    "_n": "μεθύσκω | 3182"
+  },
+  {
+    "orth": "Ἐσλί, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Esli"
+      },
+      {
+        "_role": "full",
+        "__text": "Esli, son of Naggai and father of Nahum."
+      }
+    ],
+    "_n": "Ἐσλί | 2069"
+  },
+  {
+    "orth": "ἐκγαμίσκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I give in marriage"
+      },
+      {
+        "_role": "full",
+        "__text": "I give in marriage."
+      }
+    ],
+    "_n": "ἐκγαμίσκω | 1548"
+  },
+  {
+    "orth": "Ἀχείμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Achim"
+      },
+      {
+        "_role": "full",
+        "__text": "Achim, son of Zadok and father of Eliud."
+      }
+    ],
+    "_n": "Ἀχείμ | 0885"
+  },
+  {
+    "orth": "Ἀμπλίας, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Ampliatus"
+      },
+      {
+        "_role": "full",
+        "__text": "Ampliatus (Amplias), a male member of the church at Rome, probably of\n                  the imperial household."
+      }
+    ],
+    "_n": "Ἀμπλίας | 0291"
+  },
+  {
+    "orth": "ἀποτρέπω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I turn away from, shun"
+      },
+      {
+        "_role": "full",
+        "__text": "I turn away from, shun."
+      }
+    ],
+    "_n": "ἀποτρέπω | 0665"
+  },
+  {
+    "orth": "βαλάντιον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a purse, money-bag"
+      },
+      {
+        "_role": "full",
+        "__text": "a purse, money-bag."
+      }
+    ],
+    "_n": "βαλάντιον | 0905"
+  },
+  {
+    "orth": "Βοόζ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Boaz"
+      },
+      {
+        "_role": "full",
+        "__text": "Boaz, son of Salmon and Rahab, husband of Ruth, father of Obed."
+      }
+    ],
+    "_n": "Βοόζ | 1003"
+  },
+  {
+    "orth": "Ζαρά, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Zerah"
+      },
+      {
+        "_role": "full",
+        "__text": "Zerah, son of Judah and Tamar."
+      }
+    ],
+    "_n": "Ζαρά | 2196"
+  },
+  {
+    "orth": "ᾍδης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Hades"
+      },
+      {
+        "_role": "full",
+        "__text": "Hades, the unseen world."
+      }
+    ],
+    "_n": "ᾍδης | 0086"
+  },
+  {
+    "orth": "Ἄννας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Annas"
+      },
+      {
+        "_role": "full",
+        "__text": "Annas, high priest at Jerusalem."
+      }
+    ],
+    "_n": "Ἄννας | 0452"
+  },
+  {
+    "orth": "Ἀνανίας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Ananias"
+      },
+      {
+        "_role": "full",
+        "__text": "Ananias, (a) husband of Sapphira, a member of the early church at\n                  Jerusalem, (b) a member of the church at Damascus, (c) the high priest at\n                  Jerusalem."
+      }
+    ],
+    "_n": "Ἀνανίας | 0367"
+  },
+  {
+    "orth": "ἀναβάλλω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I postpone, defer"
+      },
+      {
+        "_role": "full",
+        "__text": "I postpone, defer, especially: I postpone the trial of."
+      }
+    ],
+    "_n": "ἀναβάλλω | 0306"
+  },
+  {
+    "orth": "δεῖ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "it is necessary, inevitable"
+      },
+      {
+        "_role": "full",
+        "__text": "it is necessary, inevitable; less frequently: it is a duty, what is\n                  proper."
+      }
+    ],
+    "_n": "δεῖ | 1163"
+  },
+  {
+    "orth": "ἀποπλύνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I wash, rinse"
+      },
+      {
+        "_role": "full",
+        "__text": "I wash, rinse."
+      }
+    ],
+    "_n": "ἀποπλύνω | 0637"
+  },
+  {
+    "orth": "διαπρίω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I cut to the quick"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit: I saw through), I cut to the quick (with indignation and\n                  envy)."
+      }
+    ],
+    "_n": "διαπρίω | 1282"
+  },
+  {
+    "orth": "ἀνώγεον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "an upper room"
+      },
+      {
+        "_role": "full",
+        "__text": "an upper room."
+      }
+    ],
+    "_n": "ἀνώγεον | 0508"
+  },
+  {
+    "orth": "Ἐμμόρ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Hamor"
+      },
+      {
+        "_role": "full",
+        "__text": "Hamor, a man whose sons sold a field at Shechem to Jacob."
+      }
+    ],
+    "_n": "Ἐμμόρ | 1697"
+  },
+  {
+    "orth": "βαΐον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a palm branch"
+      },
+      {
+        "_role": "full",
+        "__text": "a palm branch."
+      }
+    ],
+    "_n": "βαΐον | 0902"
+  },
+  {
+    "orth": "βαττολογέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I chatter, utter empty words"
+      },
+      {
+        "_role": "full",
+        "__text": "I chatter, am long-winded, utter empty words, stammer, repeat."
+      }
+    ],
+    "_n": "βαττολογέω | 0945"
+  },
+  {
+    "orth": "ἀρέσκεια, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "pleasing, willing service"
+      },
+      {
+        "_role": "full",
+        "__text": "pleasing, willing service."
+      }
+    ],
+    "_n": "ἀρέσκεια | 0699"
+  },
+  {
+    "orth": "ἦ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "truly, surely"
+      },
+      {
+        "_role": "full",
+        "__text": "truly, surely."
+      }
+    ],
+    "_n": "ἦ | 2229"
+  },
+  {
+    "orth": "ἅλς, ἁλός, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "salt"
+      },
+      {
+        "_role": "full",
+        "__text": "salt."
+      }
+    ],
+    "_n": "ἅλς | 0251"
+  },
+  {
+    "orth": "ἀνάληψις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a taking up, lifting up"
+      },
+      {
+        "_role": "full",
+        "__text": "a taking up, lifting up."
+      }
+    ],
+    "_n": "ἀνάληψις | 0354"
+  },
+  {
+    "orth": "Ἄππιος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Appius"
+      },
+      {
+        "_role": "full",
+        "__text": "the township Appi Forum on the Appian Way, 43 Roman miles from Rome,\n                  was named."
+      }
+    ],
+    "_n": "Ἄππιος | 0675"
+  },
+  {
+    "orth": "ἀντικρύ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "right opposite, over against"
+      },
+      {
+        "_role": "full",
+        "__text": "right opposite, off (nautical sense), over against."
+      }
+    ],
+    "_n": "ἀντικρύ | 0481"
+  },
+  {
+    "orth": "ἐκστρέφω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I change for the worse, corrupt, pervert"
+      },
+      {
+        "_role": "full",
+        "__text": "I change for the worse, corrupt, pervert."
+      }
+    ],
+    "_n": "ἐκστρέφω | 1612"
+  },
+  {
+    "orth": "βραδυτής, τῆτος, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "tardiness, slowness"
+      },
+      {
+        "_role": "full",
+        "__text": "tardiness, slowness, delay."
+      }
+    ],
+    "_n": "βραδυτής | 1022"
+  },
+  {
+    "orth": "ἀπωθέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I push or thrust away, reject"
+      },
+      {
+        "_role": "full",
+        "__text": "I push (thrust) away, repulse, reject, refuse."
+      }
+    ],
+    "_n": "ἀπωθέω | 0683"
+  },
+  {
+    "orth": "γε",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "at least, indeed, really"
+      },
+      {
+        "_role": "full",
+        "__text": "an enclitic, emphasizing particle: at least, indeed, really, but\n                  generally too subtle to be represented in English."
+      }
+    ],
+    "_n": "γε | 1065"
+  },
+  {
+    "orth": "Ἀρέτας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Aretas"
+      },
+      {
+        "_role": "full",
+        "__text": "Aretas IV, King of the Nabataeans."
+      }
+    ],
+    "_n": "Ἀρέτας | 0702"
+  },
+  {
+    "orth": "ἀντιπέραν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "on the opposite side or shore"
+      },
+      {
+        "_role": "full",
+        "__text": "on the opposite side or shore."
+      }
+    ],
+    "_n": "ἀντιπέραν | 0495"
+  },
+  {
+    "orth": "βουλεύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I deliberate, take counsel"
+      },
+      {
+        "_role": "full",
+        "__text": "I deliberate, take counsel, determine."
+      }
+    ],
+    "_n": "βουλεύω | 1011"
+  },
+  {
+    "orth": "Γαββαθᾶ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Gabbatha"
+      },
+      {
+        "_role": "full",
+        "__text": "Gabbatha, a sort of paved square, on which the procurator had his\n                  judgment seat."
+      }
+    ],
+    "_n": "Γαββαθᾶ | 1042"
+  },
+  {
+    "orth": "Ἐλαιών, ῶνος, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Olive-grove, Olive-yard, the mount Olivet"
+      },
+      {
+        "_role": "full",
+        "__text": "Olive-grove, Olive-yard, the mount Olivet."
+      }
+    ],
+    "_n": "Ἐλαιών | 1638"
+  },
+  {
+    "orth": "Ναθάν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Nathan"
+      },
+      {
+        "_role": "full",
+        "__text": "Nathan, son of David, and an ancestor of Jesus."
+      }
+    ],
+    "_n": "Ναθάν | 3481"
+  },
+  {
+    "orth": "ὀρέγω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I stretch forth, long for"
+      },
+      {
+        "_role": "full",
+        "__text": "I stretch forth, mid: I hanker after, long for, am eager for, aspire\n                  to."
+      }
+    ],
+    "_n": "ὀρέγω | 3713"
+  },
+  {
+    "orth": "κρείσσων, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "stronger, more excellent"
+      },
+      {
+        "_role": "full",
+        "__text": "stronger, more excellent."
+      }
+    ],
+    "_n": "κρείσσων | 2908"
+  },
+  {
+    "orth": "Αὐγούστος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Augustus"
+      },
+      {
+        "_role": "full",
+        "__text": "Augustus, a title conferred on the first Roman Emperor, C. Iulius\n                  Octauianus, denoting sanctity (almost divinity)."
+      }
+    ],
+    "_n": "Αὐγούστος | 0828"
+  },
+  {
+    "orth": "ἐκδαπανάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I spend completely"
+      },
+      {
+        "_role": "full",
+        "__text": "I spend (give out) completely, exhaust."
+      }
+    ],
+    "_n": "ἐκδαπανάω | 1550"
+  },
+  {
+    "orth": "συντίθημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I make an agreement, agree"
+      },
+      {
+        "_role": "full",
+        "__text": "mid. and pass: I make a compact (agreement) with (together), covenant\n                  with, agree."
+      }
+    ],
+    "_n": "συντίθημι | 4934"
+  },
+  {
+    "orth": "στρωννύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I spread, make a bed"
+      },
+      {
+        "_role": "full",
+        "__text": "I spread, make a bed."
+      }
+    ],
+    "_n": "στρωννύω | 4766"
+  },
+  {
+    "orth": "κύκλος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a circle"
+      },
+      {
+        "_role": "full",
+        "__text": "a circle, ring."
+      }
+    ],
+    "_n": "κύκλος | 2945"
+  },
+  {
+    "orth": "νηφαλέος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "sober, temperate"
+      },
+      {
+        "_role": "full",
+        "__text": "sober, not intoxicated (with wine), temperate, vigilant."
+      }
+    ],
+    "_n": "νηφαλέος | 3524"
+  },
+  {
+    "orth": "ἐξαιτέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I demand of, ask for"
+      },
+      {
+        "_role": "full",
+        "__text": "I demand of, ask for, beg earnestly for."
+      }
+    ],
+    "_n": "ἐξαιτέω | 1809"
+  },
+  {
+    "orth": "Ἑβραϊκός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Hebrew"
+      },
+      {
+        "_role": "full",
+        "__text": "Hebrew."
+      }
+    ],
+    "_n": "Ἑβραϊκός | 1444"
+  },
+  {
+    "orth": "τεσσαράκοντα",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "forty"
+      },
+      {
+        "_role": "full",
+        "__text": "forty."
+      }
+    ],
+    "_n": "τεσσαράκοντα | 5062"
+  },
+  {
+    "orth": "μηκύνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I lengthen"
+      },
+      {
+        "_role": "full",
+        "__text": "I lengthen, extend, grow."
+      }
+    ],
+    "_n": "μηκύνω | 3373"
+  },
+  {
+    "orth": "πρόσληψις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a receiving"
+      },
+      {
+        "_role": "full",
+        "__text": "a receiving, a taking to one's self, acceptance."
+      }
+    ],
+    "_n": "πρόσληψις | 4356"
+  },
+  {
+    "orth": "μητραλῴας, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a matricide"
+      },
+      {
+        "_role": "full",
+        "__text": "a matricide, smiter of his mother."
+      }
+    ],
+    "_n": "μητραλῴας | 3389"
+  },
+  {
+    "orth": "ἐνδόμησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the material of a building, a structure"
+      },
+      {
+        "_role": "full",
+        "__text": "the material of a building, a structure."
+      }
+    ],
+    "_n": "ἐνδόμησις | 1739"
+  },
+  {
+    "orth": "ἐμπλέκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I enfold, entangle"
+      },
+      {
+        "_role": "full",
+        "__text": "I enfold, entangle; pass: I am involved in."
+      }
+    ],
+    "_n": "ἐμπλέκω | 1707"
+  },
+  {
+    "orth": "ῥιπτέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I throw away"
+      },
+      {
+        "_role": "full",
+        "__text": "I throw off or away, cast, hurl."
+      }
+    ],
+    "_n": "ῥιπτέω | 4495"
+  },
+  {
+    "orth": "ἀπολείχω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I lick off, lick clean"
+      },
+      {
+        "_role": "full",
+        "__text": "I lick off, lick clean, lick up."
+      }
+    ],
+    "_n": "ἀπολείχω | 0621"
+  },
+  {
+    "orth": "μήπως",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "lest in any way, lest perhaps"
+      },
+      {
+        "_role": "full",
+        "__text": "lest in any way, lest perhaps."
+      }
+    ],
+    "_n": "μήπως | 3381"
+  },
+  {
+    "orth": "ἐνάλιος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "living in the sea"
+      },
+      {
+        "_role": "full",
+        "__text": "marine, living in the sea."
+      }
+    ],
+    "_n": "ἐνάλιος | 1724"
+  },
+  {
+    "orth": "ἐνδέχομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I allow, it is possible"
+      },
+      {
+        "_role": "full",
+        "__text": "I allow, it is possible."
+      }
+    ],
+    "_n": "ἐνδέχομαι | 1735"
+  },
+  {
+    "orth": "βιθυνία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Bithynia"
+      },
+      {
+        "_role": "full",
+        "__text": "Bithynia, a Roman province, north-west of Asia Minor and south-west of\n                  the Black Sea."
+      }
+    ],
+    "_n": "βιθυνία | 0978"
+  },
+  {
+    "orth": "Ἰωσῆ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "gen. of Joses"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), gen. case of Joses (a) son of Eliezer, (b) son of Mary,\n                  brother of Jesus, (c) surnamed Barnabas (also called Joseph)."
+      }
+    ],
+    "_n": "Ἰωσῆ | 2499"
+  },
+  {
+    "orth": "λάσκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I burst asunder with a loud noise"
+      },
+      {
+        "_role": "full",
+        "__text": "I burst asunder with a loud noise."
+      }
+    ],
+    "_n": "λάσκω | 2997"
+  },
+  {
+    "orth": "Ἰσαχάρ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Issachar"
+      },
+      {
+        "_role": "full",
+        "__text": "Issachar, a proper name."
+      }
+    ],
+    "_n": "Ἰσαχάρ | 2466"
+  },
+  {
+    "orth": "Ἐλισσαῖος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Elisha"
+      },
+      {
+        "_role": "full",
+        "__text": "Elisha."
+      }
+    ],
+    "_n": "Ἐλισσαῖος | 1666"
+  },
+  {
+    "orth": "μεταπέμπω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I send for, summon"
+      },
+      {
+        "_role": "full",
+        "__text": "I send for, summon."
+      }
+    ],
+    "_n": "μεταπέμπω | 3343"
+  },
+  {
+    "orth": "ἐπιρρίπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I throw upon, cast upon"
+      },
+      {
+        "_role": "full",
+        "__text": "I throw (cast) (upon), as of cares."
+      }
+    ],
+    "_n": "ἐπιρρίπτω | 1977"
+  },
+  {
+    "orth": "ψιχίον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a crumb"
+      },
+      {
+        "_role": "full",
+        "__text": "a crumb."
+      }
+    ],
+    "_n": "ψιχίον | 5589"
+  },
+  {
+    "orth": "μυλών, ῶνος, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a mill-house"
+      },
+      {
+        "_role": "full",
+        "__text": "a mill-house, the place where grain was ground."
+      }
+    ],
+    "_n": "μυλών | 3459"
+  },
+  {
+    "orth": "δευτερόπρωτος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "second-first"
+      },
+      {
+        "_role": "full",
+        "__text": "second-first, a word of uncertain meaning."
+      }
+    ],
+    "_n": "δευτερόπρωτος | 1207"
+  },
+  {
+    "orth": "ἔκγονος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "descended, a descendant"
+      },
+      {
+        "_role": "full",
+        "__text": "descended, subst: a descendant."
+      }
+    ],
+    "_n": "ἔκγονος | 1549"
+  },
+  {
+    "orth": "διασώζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I save, bring safely to"
+      },
+      {
+        "_role": "full",
+        "__text": "I save (rescue) through (some danger), bring safely to, escaped\n                  to."
+      }
+    ],
+    "_n": "διασώζω | 1295"
+  },
+  {
+    "orth": "Λῖνος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Linus"
+      },
+      {
+        "_role": "full",
+        "__text": "Linus, a Christian in Rome."
+      }
+    ],
+    "_n": "Λῖνος | 3044"
+  },
+  {
+    "orth": "ἐξηχέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I sound out"
+      },
+      {
+        "_role": "full",
+        "__text": "I sound out (forth) (referring either to the clearness or to the\n                  loudness of the sound)."
+      }
+    ],
+    "_n": "ἐξηχέω | 1837"
+  },
+  {
+    "orth": "βιβλιδάριον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a little papyrus roll"
+      },
+      {
+        "_role": "full",
+        "__text": "a little papyrus roll."
+      }
+    ],
+    "_n": "βιβλιδάριον | 0974"
+  },
+  {
+    "orth": "ἀπαγγέλλω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I report, bring a report, announce"
+      },
+      {
+        "_role": "full",
+        "__text": "I report (from one place to another), bring a report, announce,\n                  declare."
+      }
+    ],
+    "_n": "ἀπαγγέλλω | 0518"
+  },
+  {
+    "orth": "σάπφειρος, ου, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a sapphire"
+      },
+      {
+        "_role": "full",
+        "__text": "a sapphire."
+      }
+    ],
+    "_n": "σάπφειρος | 4552"
+  },
+  {
+    "orth": "Ἁλληλούϊα",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Hallelujah, Praise the Lord"
+      },
+      {
+        "_role": "full",
+        "__text": "Hallelujah, Praise the Lord."
+      }
+    ],
+    "_n": "Ἁλληλούϊα | 0239"
+  },
+  {
+    "orth": "ἀνεξερεύνητος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "that cannot be searched into, inscrutable"
+      },
+      {
+        "_role": "full",
+        "__text": "that cannot be searched into, inscrutable, unfathomable."
+      }
+    ],
+    "_n": "ἀνεξερεύνητος | 0419"
+  },
+  {
+    "orth": "ἀχρειόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am good for nothing"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit: I become sour, I turn, of milk), I am good for nothing, render\n                  useless; met: I become corrupt."
+      }
+    ],
+    "_n": "ἀχρειόω | 0889"
+  },
+  {
+    "orth": "βελτίων, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "better"
+      },
+      {
+        "_role": "full",
+        "__text": "better; adv: very well."
+      }
+    ],
+    "_n": "βελτίων | 0957"
+  },
+  {
+    "orth": "Βοανεργές",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Boanerges"
+      },
+      {
+        "_role": "full",
+        "__text": "Boanerges, \"sons of thunder\"."
+      }
+    ],
+    "_n": "Βοανεργές | 0993"
+  },
+  {
+    "orth": "ἀνθυπατεύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "to act as proconsul, be a deputy"
+      },
+      {
+        "_role": "full",
+        "__text": "to act as proconsul, be a deputy."
+      }
+    ],
+    "_n": "ἀνθυπατεύω | 0445"
+  },
+  {
+    "orth": "Ἄρειος πάγος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the Areopagus"
+      },
+      {
+        "_role": "full",
+        "__text": "Areopagus, or Mar's Hill, an open space on a hill in Athens where the\n                  supreme court was held."
+      }
+    ],
+    "_n": "Ἄρειος πάγος | 0697"
+  },
+  {
+    "orth": "ἁρμόζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I fit, join"
+      },
+      {
+        "_role": "full",
+        "__text": "I fit, join; mid: (the middle indicating deep personal interest) I\n                  espouse, betroth; mid: I take a wife, give in marriage."
+      }
+    ],
+    "_n": "ἁρμόζω | 0718"
+  },
+  {
+    "orth": "ἀπροσωπολήπτως",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "impartially"
+      },
+      {
+        "_role": "full",
+        "__text": "(literary and Jewish), without any preference (undue favor, partiality)\n                  for a person."
+      }
+    ],
+    "_n": "ἀπροσωπολήπτως | 0678"
+  },
+  {
+    "orth": "Βελίαρ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Beliar"
+      },
+      {
+        "_role": "full",
+        "__text": "Belial, a demon, and in fact a name for Satan."
+      }
+    ],
+    "_n": "Βελίαρ | 0955"
+  },
+  {
+    "orth": "ἀπολούω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I wash off, wash away"
+      },
+      {
+        "_role": "full",
+        "__text": "I wash off, mid: I wash away (my sins, in baptism)."
+      }
+    ],
+    "_n": "ἀπολούω | 0628"
+  },
+  {
+    "orth": "ἀκριβέστατος",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "most exact, strict"
+      },
+      {
+        "_role": "full",
+        "__text": "most exact, strict."
+      }
+    ],
+    "_n": "ἀκριβέστατος | 0196"
+  },
+  {
+    "orth": "ἄλυπος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "free from pain, grief, trouble"
+      },
+      {
+        "_role": "full",
+        "__text": "free from pain (grief, trouble)."
+      }
+    ],
+    "_n": "ἄλυπος | 0253"
+  },
+  {
+    "orth": "δογματίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I subject to regulations, decree"
+      },
+      {
+        "_role": "full",
+        "__text": "I subject to regulations, decree; mid: I subject myself to regulations,\n                  am decree-ridden."
+      }
+    ],
+    "_n": "δογματίζω | 1379"
+  },
+  {
+    "orth": "Βαρϊησοῦς, οῦ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Bar-Jesus"
+      },
+      {
+        "_role": "full",
+        "__text": "Bar-Jesus, the name of the magician and false prophet at Paphos in\n                  Cyprus; he is also called Elymas."
+      }
+    ],
+    "_n": "Βαρϊησοῦς | 0919"
+  },
+  {
+    "orth": "Εὔα, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Eve"
+      },
+      {
+        "_role": "full",
+        "__text": "Eve, the first woman; wife of first man Adam."
+      }
+    ],
+    "_n": "Εὔα | 2096"
+  },
+  {
+    "orth": "θαμβέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I amaze"
+      },
+      {
+        "_role": "full",
+        "__text": "I amaze; pass: I am amazed (almost terrified)."
+      }
+    ],
+    "_n": "θαμβέω | 2284"
+  },
+  {
+    "orth": "ἐνεός, ά, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "dumb, speechless"
+      },
+      {
+        "_role": "full",
+        "__text": "dumb, speechless (as with amazement)."
+      }
+    ],
+    "_n": "ἐνεός | 1769"
+  },
+  {
+    "orth": "ἑλκύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I drag, draw, pull, persuade"
+      },
+      {
+        "_role": "full",
+        "__text": "I drag, draw, pull, persuade, unsheathe."
+      }
+    ],
+    "_n": "ἑλκύω | 1670"
+  },
+  {
+    "orth": "συσχηματίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I conform to"
+      },
+      {
+        "_role": "full",
+        "__text": "I conform to."
+      }
+    ],
+    "_n": "συσχηματίζω | 4964"
+  },
+  {
+    "orth": "μνηστεύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I ask in marriage"
+      },
+      {
+        "_role": "full",
+        "__text": "I ask in marriage; pass: I am betrothed."
+      }
+    ],
+    "_n": "μνηστεύω | 3423"
+  },
+  {
+    "orth": "ἀλλοτριοεπίσκοπος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a prier into other men's affairs"
+      },
+      {
+        "_role": "full",
+        "__text": "one who meddles in things alien to his calling or in matters belonging\n                  to others; factious."
+      }
+    ],
+    "_n": "ἀλλοτριοεπίσκοπος | 0244"
+  },
+  {
+    "orth": "γενεαλογέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I put into a genealogy, reckon my descent"
+      },
+      {
+        "_role": "full",
+        "__text": "I put into a genealogy, reckon my descent."
+      }
+    ],
+    "_n": "γενεαλογέω | 1075"
+  },
+  {
+    "orth": "λῆψις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a receiving"
+      },
+      {
+        "_role": "full",
+        "__text": "a receiving."
+      }
+    ],
+    "_n": "λῆψις | 3028"
+  },
+  {
+    "orth": "γυμνητεύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am poorly clad"
+      },
+      {
+        "_role": "full",
+        "__text": "I am poorly clad; I am habitually wearing an under-garment only."
+      }
+    ],
+    "_n": "γυμνητεύω | 1130"
+  },
+  {
+    "orth": "Ἀλφαίος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Alphaeus"
+      },
+      {
+        "_role": "full",
+        "__text": "Alphaeus; apparently two persons, (a) father of Levi, and (b) father of\n                  James."
+      }
+    ],
+    "_n": "Ἀλφαίος | 0256"
+  },
+  {
+    "orth": "Ἀντίπας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Antipas"
+      },
+      {
+        "_role": "full",
+        "__text": "Antipas, a Christian martyr of Pergamum."
+      }
+    ],
+    "_n": "Ἀντίπας | 0493"
+  },
+  {
+    "orth": "δεξιόλαβος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "one posted on the right hand, a spear-man"
+      },
+      {
+        "_role": "full",
+        "__text": "one posted on the right hand, a spear-man."
+      }
+    ],
+    "_n": "δεξιόλαβος | 1187"
+  },
+  {
+    "orth": "ἀποχωρίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I separate from"
+      },
+      {
+        "_role": "full",
+        "__text": "I separate from; mid: I part; pass: I am swept aside."
+      }
+    ],
+    "_n": "ἀποχωρίζω | 0673"
+  },
+  {
+    "orth": "ἅπτομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I touch or handle"
+      },
+      {
+        "_role": "full",
+        "__text": "prop: I fasten to; I lay hold of, touch, know carnally."
+      }
+    ],
+    "_n": "ἅπτομαι | 0680"
+  },
+  {
+    "orth": "ἑλκόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I afflict with sores"
+      },
+      {
+        "_role": "full",
+        "__text": "I afflict with sores; pass: I am afflicted with sores."
+      }
+    ],
+    "_n": "ἑλκόω | 1669"
+  },
+  {
+    "orth": "ἄρχομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I begin"
+      },
+      {
+        "_role": "full",
+        "__text": "I begin."
+      }
+    ],
+    "_n": "ἄρχομαι | 0756"
+  },
+  {
+    "orth": "Ἀχαϊα, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Achaia"
+      },
+      {
+        "_role": "full",
+        "__text": "the Roman Province Achaia, governed by a proconsul, and practically\n                  conterminous with modern Greece before 1912."
+      }
+    ],
+    "_n": "Ἀχαϊα | 0882"
+  },
+  {
+    "orth": "ἀντεῖπον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I speak or say in opposition, I contradict"
+      },
+      {
+        "_role": "full",
+        "__text": "I speak or say in opposition, contradict (oppose, resist)."
+      }
+    ],
+    "_n": "ἀντεῖπον | 0471"
+  },
+  {
+    "orth": "ἐπιοῦσα, ης, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the next day"
+      },
+      {
+        "_role": "full",
+        "__text": "the next day."
+      }
+    ],
+    "_n": "ἐπιοῦσα | 1966"
+  },
+  {
+    "orth": "ἐξερευνάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I search diligently, examine carefully"
+      },
+      {
+        "_role": "full",
+        "__text": "I search diligently, I examine carefully (minutely)."
+      }
+    ],
+    "_n": "ἐξερευνάω | 1830"
+  },
+  {
+    "orth": "ἀπάγχω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I choke, strangle"
+      },
+      {
+        "_role": "full",
+        "__text": "I choke, strangle; mid: I strangle or hang myself."
+      }
+    ],
+    "_n": "ἀπάγχω | 0519"
+  },
+  {
+    "orth": "ἀπομάσσω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I wipe off"
+      },
+      {
+        "_role": "full",
+        "__text": "I wipe off, wipe clean; mid: I wipe myself off."
+      }
+    ],
+    "_n": "ἀπομάσσω | 0631"
+  },
+  {
+    "orth": "παχύνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I fatten"
+      },
+      {
+        "_role": "full",
+        "__text": "I fatten, thicken; pass. fig: I become stupid, dull, unfeeling."
+      }
+    ],
+    "_n": "παχύνω | 3975"
+  },
+  {
+    "orth": "Γεργεσηνός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "from Gerasene"
+      },
+      {
+        "_role": "full",
+        "__text": "from Gerasene."
+      }
+    ],
+    "_n": "Γεργεσηνός | 1086"
+  },
+  {
+    "orth": "ἀνεπίληπτος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "irreproachable"
+      },
+      {
+        "_role": "full",
+        "__text": "irreproachable, never caught doing wrong."
+      }
+    ],
+    "_n": "ἀνεπίληπτος | 0423"
+  },
+  {
+    "orth": "μαραίνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I die, wither"
+      },
+      {
+        "_role": "full",
+        "__text": "pass: I die, wither (like the grass)."
+      }
+    ],
+    "_n": "μαραίνω | 3133"
+  },
+  {
+    "orth": "εἰ δὲ μήγε",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "but if not, else, otherwise"
+      },
+      {
+        "_role": "full",
+        "__text": "but if not, else, otherwise."
+      }
+    ],
+    "_n": "εἰ δὲ μήγε | 1490"
+  },
+  {
+    "orth": "ἐκκακέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am faint, am weary"
+      },
+      {
+        "_role": "full",
+        "__text": "I am faint, am weary."
+      }
+    ],
+    "_n": "ἐκκακέω | 1573"
+  },
+  {
+    "orth": "Ἀπολλώς, ώ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Apollos"
+      },
+      {
+        "_role": "full",
+        "__text": "Apollos, a Jew of Alexandria."
+      }
+    ],
+    "_n": "Ἀπολλώς | 0625"
+  },
+  {
+    "orth": "δεσμέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I bind"
+      },
+      {
+        "_role": "full",
+        "__text": "I bind, confine."
+      }
+    ],
+    "_n": "δεσμέω | 1196"
+  },
+  {
+    "orth": "ὄψιος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "late"
+      },
+      {
+        "_role": "full",
+        "__text": "late, evening."
+      }
+    ],
+    "_n": "ὄψιος | 3798"
+  },
+  {
+    "orth": "κεφαλαιόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I wound in the head"
+      },
+      {
+        "_role": "full",
+        "__text": "I wound in the head."
+      }
+    ],
+    "_n": "κεφαλαιόω | 2775"
+  },
+  {
+    "orth": "προτρέπω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I encourage, exhort"
+      },
+      {
+        "_role": "full",
+        "__text": "I encourage, exhort, persuade."
+      }
+    ],
+    "_n": "προτρέπω | 4389"
+  },
+  {
+    "orth": "Ἐμμαούς, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Emmaus"
+      },
+      {
+        "_role": "full",
+        "__text": "Emmaus, a village not far from Jerusalem."
+      }
+    ],
+    "_n": "Ἐμμαούς | 1695"
+  },
+  {
+    "orth": "ἀνάθημα, ατος, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "an offering dedicated by a worshipper"
+      },
+      {
+        "_role": "full",
+        "__text": "an offering dedicated (hung up in a temple) by a worshipper; a gift or\n                  offering consecrated to God."
+      }
+    ],
+    "_n": "ἀνάθημα | 0334"
+  },
+  {
+    "orth": "αἱρέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I choose, prefer"
+      },
+      {
+        "_role": "full",
+        "__text": "I choose, prefer."
+      }
+    ],
+    "_n": "αἱρέω | 0138"
+  },
+  {
+    "orth": "Βαρτίμαιος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Bartimaeus"
+      },
+      {
+        "_role": "full",
+        "__text": "Bartimaeus, son of (?) Timaeus."
+      }
+    ],
+    "_n": "Βαρτίμαιος | 0924"
+  },
+  {
+    "orth": "ἀναμιμνήσκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I remind, admonish, remember"
+      },
+      {
+        "_role": "full",
+        "__text": "I remind, admonish, am reminded, remind myself; pass: I remember,\n                  recall."
+      }
+    ],
+    "_n": "ἀναμιμνήσκω | 0363"
+  },
+  {
+    "orth": "Ἀσά, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Asa"
+      },
+      {
+        "_role": "full",
+        "__text": "Asa, son of Abijah and father of Jehoshaphat, king of Judah about 900\n                  B.C. for 41 years."
+      }
+    ],
+    "_n": "Ἀσά | 0760"
+  },
+  {
+    "orth": "Ἐλμωδάμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Elmadam"
+      },
+      {
+        "_role": "full",
+        "__text": "Elmadam, father of Cosam, son of Er."
+      }
+    ],
+    "_n": "Ἐλμωδάμ | 1678"
+  },
+  {
+    "orth": "προσωπολήπτης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "one who shows partiality"
+      },
+      {
+        "_role": "full",
+        "__text": "one who shows partiality."
+      }
+    ],
+    "_n": "προσωπολήπτης | 4381"
+  },
+  {
+    "orth": "ταλιθά",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "little girl"
+      },
+      {
+        "_role": "full",
+        "__text": "(Aramaic), girl, little girl."
+      }
+    ],
+    "_n": "ταλιθά | 5008"
+  },
+  {
+    "orth": "θερμαίνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I warm"
+      },
+      {
+        "_role": "full",
+        "__text": "I warm; mid: I warm myself."
+      }
+    ],
+    "_n": "θερμαίνω | 2328"
+  },
+  {
+    "orth": "Ἰαρέδ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jared"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Jared, son of Mahalalel and father of Enoch."
+      }
+    ],
+    "_n": "Ἰαρέδ | 2391"
+  },
+  {
+    "orth": "ταραχή, ῆς, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a disturbance, tumult, sedition"
+      },
+      {
+        "_role": "full",
+        "__text": "a disturbance, tumult, sedition, trouble."
+      }
+    ],
+    "_n": "ταραχή | 5016"
+  },
+  {
+    "orth": "τρίστεγος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "having three stories, the third story"
+      },
+      {
+        "_role": "full",
+        "__text": "having three stories; subst: the third story."
+      }
+    ],
+    "_n": "τρίστεγος | 5152"
+  },
+  {
+    "orth": "ἔσθησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "clothing, a garment"
+      },
+      {
+        "_role": "full",
+        "__text": "clothing, a garment."
+      }
+    ],
+    "_n": "ἔσθησις | 2067"
+  },
+  {
+    "orth": "κυλίω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I roll"
+      },
+      {
+        "_role": "full",
+        "__text": "I roll, roll along, wallow."
+      }
+    ],
+    "_n": "κυλίω | 2947"
+  },
+  {
+    "orth": "ὀχλέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I trouble, torment, worry"
+      },
+      {
+        "_role": "full",
+        "__text": "I trouble, torment, worry, vex."
+      }
+    ],
+    "_n": "ὀχλέω | 3791"
+  },
+  {
+    "orth": "πρῴρα, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the prow of a ship"
+      },
+      {
+        "_role": "full",
+        "__text": "the prow of a ship."
+      }
+    ],
+    "_n": "πρῴρα | 4408"
+  },
+  {
+    "orth": "ἐφφαθά",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "be opened up"
+      },
+      {
+        "_role": "full",
+        "__text": "(Aramaic, meaning) be opened up."
+      }
+    ],
+    "_n": "ἐφφαθά | 2188"
+  },
+  {
+    "orth": "συγκατατίθημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I give a vote with, assent to"
+      },
+      {
+        "_role": "full",
+        "__text": "I give a vote with, assent to."
+      }
+    ],
+    "_n": "συγκατατίθημι | 4784"
+  },
+  {
+    "orth": "προσωποληπτέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I show partiality"
+      },
+      {
+        "_role": "full",
+        "__text": "I favor specially, show partiality."
+      }
+    ],
+    "_n": "προσωποληπτέω | 4380"
+  },
+  {
+    "orth": "μεταμορφόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I change the form, transform"
+      },
+      {
+        "_role": "full",
+        "__text": "I transform, transfigure."
+      }
+    ],
+    "_n": "μεταμορφόω | 3339"
+  },
+  {
+    "orth": "Καϊνάν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Cainan"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Cainan, one of the ancestors of Jesus."
+      }
+    ],
+    "_n": "Καϊνάν | 2536"
+  },
+  {
+    "orth": "παραδιατριβή, ῆς, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "useless debate"
+      },
+      {
+        "_role": "full",
+        "__text": "useless debate."
+      }
+    ],
+    "_n": "παραδιατριβή | 3859"
+  },
+  {
+    "orth": "πρᾳΰτης, τητος, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "mildness, gentleness"
+      },
+      {
+        "_role": "full",
+        "__text": "mildness, gentleness."
+      }
+    ],
+    "_n": "πρᾳΰτης | 4240"
+  },
+  {
+    "orth": "ἱερόν, οῦ, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a temple"
+      },
+      {
+        "_role": "full",
+        "__text": "a temple, either the whole building, or specifically the outer courts,\n                  open to worshippers."
+      }
+    ],
+    "_n": "ἱερόν | 2411"
+  },
+  {
+    "orth": "νοσφίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I rob, purloin"
+      },
+      {
+        "_role": "full",
+        "__text": "I rob; mid: I set apart for myself, appropriate for my own benefit,\n                  purloin."
+      }
+    ],
+    "_n": "νοσφίζω | 3557"
+  },
+  {
+    "orth": "Μαάθ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Maath"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Maath, an ancestor of Jesus."
+      }
+    ],
+    "_n": "Μαάθ | 3092"
+  },
+  {
+    "orth": "ὅτου",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "until"
+      },
+      {
+        "_role": "full",
+        "__text": "until."
+      }
+    ],
+    "_n": "ὅτου | 3755"
+  },
+  {
+    "orth": "νεοσσός, οῦ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a young bird, young one"
+      },
+      {
+        "_role": "full",
+        "__text": "a young bird, nestling; a young one."
+      }
+    ],
+    "_n": "νεοσσός | 3502"
+  },
+  {
+    "orth": "ἐκτρέπω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I turn aside, wander, forsake"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit: I turn out from); mid. and pass: I turn aside (from the right\n                  road), wander, forsake, and with an object: I remove from myself, shun,\n                  avoid."
+      }
+    ],
+    "_n": "ἐκτρέπω | 1624"
+  },
+  {
+    "orth": "πέρυσι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "last year"
+      },
+      {
+        "_role": "full",
+        "__text": "last year, a year ago."
+      }
+    ],
+    "_n": "πέρυσι | 4070"
+  },
+  {
+    "orth": "κάλλιον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "very well"
+      },
+      {
+        "_role": "full",
+        "__text": "very well."
+      }
+    ],
+    "_n": "κάλλιον | 2566"
+  },
+  {
+    "orth": "τυρβάζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I agitate or disturb in mind"
+      },
+      {
+        "_role": "full",
+        "__text": "I agitate or disturb in mind, trouble."
+      }
+    ],
+    "_n": "τυρβάζω | 5182"
+  },
+  {
+    "orth": "ἐμπρήθω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I burn, set on fire, suffer inflammation"
+      },
+      {
+        "_role": "full",
+        "__text": "I burn, set on fire, suffer inflammation."
+      }
+    ],
+    "_n": "ἐμπρήθω | 1714"
+  },
+  {
+    "orth": "Εὐροκλύδων, ωνος, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "an east-north-east wind"
+      },
+      {
+        "_role": "full",
+        "__text": "an east-north-east wind."
+      }
+    ],
+    "_n": "Εὐροκλύδων | 2148"
+  },
+  {
+    "orth": "εὐπορέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I have means, am prosperous"
+      },
+      {
+        "_role": "full",
+        "__text": "I have means, am prosperous, enjoy plenty."
+      }
+    ],
+    "_n": "εὐπορέω | 2141"
+  },
+  {
+    "orth": "Κανᾶ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Cana"
+      },
+      {
+        "_role": "full",
+        "__text": "Cana, a town in Galilee."
+      }
+    ],
+    "_n": "Κανᾶ | 2580"
+  },
+  {
+    "orth": "κηρίον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a honeycomb"
+      },
+      {
+        "_role": "full",
+        "__text": "a honeycomb."
+      }
+    ],
+    "_n": "κηρίον | 2781"
+  },
+  {
+    "orth": "προσκληρόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I assign by lot, allot"
+      },
+      {
+        "_role": "full",
+        "__text": "I assign by lot, allot, associate with, follow as a disciple."
+      }
+    ],
+    "_n": "προσκληρόω | 4345"
+  },
+  {
+    "orth": "Πατρόβας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Patrobas"
+      },
+      {
+        "_role": "full",
+        "__text": "Patrobas, a Christian in Rome."
+      }
+    ],
+    "_n": "Πατρόβας | 3969"
+  },
+  {
+    "orth": "καυσόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I burn up"
+      },
+      {
+        "_role": "full",
+        "__text": "I burn with great heat."
+      }
+    ],
+    "_n": "καυσόω | 2741"
+  },
+  {
+    "orth": "Ταβηθά, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Tabitha, antelope"
+      },
+      {
+        "_role": "full",
+        "__text": "antelope; Tabitha, a Christian woman at Joppa."
+      }
+    ],
+    "_n": "Ταβηθά | 5000"
+  },
+  {
+    "orth": "ζωογονέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I preserve alive"
+      },
+      {
+        "_role": "full",
+        "__text": "I preserve alive (lit: bring to birth), save."
+      }
+    ],
+    "_n": "ζωογονέω | 2225"
+  },
+  {
+    "orth": "ὀργίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I irritate, provoke, am angry"
+      },
+      {
+        "_role": "full",
+        "__text": "I irritate, provoke, am angry."
+      }
+    ],
+    "_n": "ὀργίζω | 3710"
+  },
+  {
+    "orth": "ἐρημόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I destroy, strip, rob"
+      },
+      {
+        "_role": "full",
+        "__text": "(a) I make desolate, bring to desolation, destroy, waste, (b) of a\n                  person: I strip, rob."
+      }
+    ],
+    "_n": "ἐρημόω | 2049"
+  },
+  {
+    "orth": "δυσεντερία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "dysentery"
+      },
+      {
+        "_role": "full",
+        "__text": "dysentery."
+      }
+    ],
+    "_n": "δυσεντερία | 1420"
+  },
+  {
+    "orth": "κατακαλύπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I veil, cover the head"
+      },
+      {
+        "_role": "full",
+        "__text": "I veil, cover the head."
+      }
+    ],
+    "_n": "κατακαλύπτω | 2619"
+  },
+  {
+    "orth": "κατόρθωμα, ατος, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "anything happily and successfully accomplished"
+      },
+      {
+        "_role": "full",
+        "__text": "anything happily and successfully accomplished, a beneficial and worthy\n                  deed."
+      }
+    ],
+    "_n": "κατόρθωμα | 2735"
+  },
+  {
+    "orth": "εἴκοσι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "twenty"
+      },
+      {
+        "_role": "full",
+        "__text": "twenty."
+      }
+    ],
+    "_n": "εἴκοσι | 1501"
+  },
+  {
+    "orth": "στενοχωρέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I press upon, cramp, restrain"
+      },
+      {
+        "_role": "full",
+        "__text": "(I keep some one in a tight place), I press upon, cramp,\n                  restrain."
+      }
+    ],
+    "_n": "στενοχωρέω | 4729"
+  },
+  {
+    "orth": "εἰδωλολατρεία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "worship or service of an image"
+      },
+      {
+        "_role": "full",
+        "__text": "service (worship) of an image (an idol)."
+      }
+    ],
+    "_n": "εἰδωλολατρεία | 1495"
+  },
+  {
+    "orth": "ἐξουδενόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I ignore, despise"
+      },
+      {
+        "_role": "full",
+        "__text": "I set at naught, ignore, despise."
+      }
+    ],
+    "_n": "ἐξουδενόω | 1847"
+  },
+  {
+    "orth": "μισθόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I hire out, hire, engage"
+      },
+      {
+        "_role": "full",
+        "__text": "I hire out, mid: I hire, engage."
+      }
+    ],
+    "_n": "μισθόω | 3409"
+  },
+  {
+    "orth": "ἐμπίπλημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I fill up, satisfy"
+      },
+      {
+        "_role": "full",
+        "__text": "I fill up, satisfy."
+      }
+    ],
+    "_n": "ἐμπίπλημι | 1705"
+  },
+  {
+    "orth": "μονόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I leave alone"
+      },
+      {
+        "_role": "full",
+        "__text": "I leave alone (solitary), forsake."
+      }
+    ],
+    "_n": "μονόω | 3443"
+  },
+  {
+    "orth": "λυσιτελέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "it profits"
+      },
+      {
+        "_role": "full",
+        "__text": "it is advantageous to, it profits."
+      }
+    ],
+    "_n": "λυσιτελέω | 3081"
+  },
+  {
+    "orth": "Νεφθαλείμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Naphtali"
+      },
+      {
+        "_role": "full",
+        "__text": "Naphtali, son of Jacob, founder of a tribe which occupied\n                  territory."
+      }
+    ],
+    "_n": "Νεφθαλείμ | 3508"
+  },
+  {
+    "orth": "παροξύνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I provoke, irritate"
+      },
+      {
+        "_role": "full",
+        "__text": "I arouse anger, provoke, irritate."
+      }
+    ],
+    "_n": "παροξύνω | 3947"
+  },
+  {
+    "orth": "λιμά",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "why"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), why."
+      }
+    ],
+    "_n": "λιμά | 2982"
+  },
+  {
+    "orth": "μετάληψις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "participation, sharing in"
+      },
+      {
+        "_role": "full",
+        "__text": "participation, sharing in, receiving."
+      }
+    ],
+    "_n": "μετάληψις | 3336"
+  },
+  {
+    "orth": "ἰδέα, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "form, outward appearance"
+      },
+      {
+        "_role": "full",
+        "__text": "form, outward appearance."
+      }
+    ],
+    "_n": "ἰδέα | 2397"
+  },
+  {
+    "orth": "τυφόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I puff up, make haughty"
+      },
+      {
+        "_role": "full",
+        "__text": "I puff up, make haughty; pass: I am puffed up, am haughty."
+      }
+    ],
+    "_n": "τυφόω | 5187"
+  },
+  {
+    "orth": "προσκολλάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I join closely, cleave to"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit: I glue one thing to another), I join (unite) closely, cleave\n                  (to), follow as an adherent."
+      }
+    ],
+    "_n": "προσκολλάω | 4347"
+  },
+  {
+    "orth": "ἐρεῶ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I say, speak"
+      },
+      {
+        "_role": "full",
+        "__text": "(denoting speech in progress), (a) I say, speak; I mean, mention, tell,\n                  (b) I call, name, especially in the pass., (c) I tell, command."
+      }
+    ],
+    "_n": "ἐρεῶ | 2046"
+  },
+  {
+    "orth": "πτηνός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "winged"
+      },
+      {
+        "_role": "full",
+        "__text": "winged; subst: a bird, fowl."
+      }
+    ],
+    "_n": "πτηνός | 4421"
+  },
+  {
+    "orth": "συνδέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I bind together"
+      },
+      {
+        "_role": "full",
+        "__text": "I bind together; pass: I am bound together with, as of prisoners in\n                  chains."
+      }
+    ],
+    "_n": "συνδέω | 4887"
+  },
+  {
+    "orth": "ὑπερεῖδον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I overlook"
+      },
+      {
+        "_role": "full",
+        "__text": "I overlook, take no notice of, disregard."
+      }
+    ],
+    "_n": "ὑπερεῖδον | 5237"
+  },
+  {
+    "orth": "Ἄχαζ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Ahaz"
+      },
+      {
+        "_role": "full",
+        "__text": "Ahaz, son of Jotham and father of Hezekiah."
+      }
+    ],
+    "_n": "Ἄχαζ | 0881"
+  },
+  {
+    "orth": "Διοτρεφής, ους, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Diotrephes"
+      },
+      {
+        "_role": "full",
+        "__text": "Diotrephes."
+      }
+    ],
+    "_n": "Διοτρεφής | 1361"
+  },
+  {
+    "orth": "ἔξεστιν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "it is permitted, lawful, possible"
+      },
+      {
+        "_role": "full",
+        "__text": "it is permitted, lawful, possible."
+      }
+    ],
+    "_n": "ἔξεστιν | 1832"
+  },
+  {
+    "orth": "ὑπάρχοντα",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "goods, property"
+      },
+      {
+        "_role": "full",
+        "__text": "things which one possesses, goods, property, belongings."
+      }
+    ],
+    "_n": "ὑπάρχοντα | 5224"
+  },
+  {
+    "orth": "συμπαραμένω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I remain or continue together with"
+      },
+      {
+        "_role": "full",
+        "__text": "I remain or continue together with."
+      }
+    ],
+    "_n": "συμπαραμένω | 4839"
+  },
+  {
+    "orth": "Ἄσσος, ου, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Assos"
+      },
+      {
+        "_role": "full",
+        "__text": "Assos, a port of Mysia, in the Roman province Asia."
+      }
+    ],
+    "_n": "Ἄσσος | 0789"
+  },
+  {
+    "orth": "δεκαδύο",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "twelve"
+      },
+      {
+        "_role": "full",
+        "__text": "twelve."
+      }
+    ],
+    "_n": "δεκαδύο | 1177"
+  },
+  {
+    "orth": "οἰκτείρω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I pity, have compassion on"
+      },
+      {
+        "_role": "full",
+        "__text": "I pity, have compassion on."
+      }
+    ],
+    "_n": "οἰκτείρω | 3627"
+  },
+  {
+    "orth": "διαρρήσσω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I tear asunder"
+      },
+      {
+        "_role": "full",
+        "__text": "I tear asunder, burst, rend."
+      }
+    ],
+    "_n": "διαρρήσσω | 1284"
+  },
+  {
+    "orth": "προσαπειλέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I utter additional threats"
+      },
+      {
+        "_role": "full",
+        "__text": "I utter additional threats."
+      }
+    ],
+    "_n": "προσαπειλέω | 4324"
+  },
+  {
+    "orth": "προσποιέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I pretend, regard"
+      },
+      {
+        "_role": "full",
+        "__text": "I pretend, regard, make a show of."
+      }
+    ],
+    "_n": "προσποιέω | 4364"
+  },
+  {
+    "orth": "Ἡλί, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Heli"
+      },
+      {
+        "_role": "full",
+        "__text": "Heli, an ancestor of Jesus."
+      }
+    ],
+    "_n": "Ἡλί | 2242"
+  },
+  {
+    "orth": "προέπω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I say previously, predict"
+      },
+      {
+        "_role": "full",
+        "__text": "I say previously, predict, proclaim, foretell."
+      }
+    ],
+    "_n": "προέπω | 4277"
+  },
+  {
+    "orth": "μελίσσιος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "coming from bees"
+      },
+      {
+        "_role": "full",
+        "__text": "belonging to bees, coming from bees."
+      }
+    ],
+    "_n": "μελίσσιος | 3193"
+  },
+  {
+    "orth": "κορβᾶν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a gift, offering"
+      },
+      {
+        "_role": "full",
+        "__text": "a gift, offering, anything consecrated to God."
+      }
+    ],
+    "_n": "κορβᾶν | 2878"
+  },
+  {
+    "orth": "τεσσαρακονταετής, ές",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "forty years of age"
+      },
+      {
+        "_role": "full",
+        "__text": "forty years of age."
+      }
+    ],
+    "_n": "τεσσαρακονταετής | 5063"
+  },
+  {
+    "orth": "Λευΐτης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a Levite"
+      },
+      {
+        "_role": "full",
+        "__text": "a Levite, properly a man of the tribe of Levi; hence: a priest's\n                  assistant, an under priest, as the members of that tribe were charged with this\n                  duty."
+      }
+    ],
+    "_n": "Λευΐτης | 3019"
+  },
+  {
+    "orth": "τύφω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I raise smoke"
+      },
+      {
+        "_role": "full",
+        "__text": "I raise smoke, smolder."
+      }
+    ],
+    "_n": "τύφω | 5188"
+  },
+  {
+    "orth": "ἐκγαμίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I give in marriage, marry"
+      },
+      {
+        "_role": "full",
+        "__text": "I give in marriage, marry."
+      }
+    ],
+    "_n": "ἐκγαμίζω | 1547"
+  },
+  {
+    "orth": "κοῦμι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "arise"
+      },
+      {
+        "_role": "full",
+        "__text": "(Aramaic) arise, stand up."
+      }
+    ],
+    "_n": "κοῦμι | 2891"
+  },
+  {
+    "orth": "ἐπαναμιμνήσκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I remind"
+      },
+      {
+        "_role": "full",
+        "__text": "I remind, possibly: I remind again."
+      }
+    ],
+    "_n": "ἐπαναμιμνήσκω | 1878"
+  },
+  {
+    "orth": "σπουδαιοτέρως",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "more earnestly, more carefully"
+      },
+      {
+        "_role": "full",
+        "__text": "more earnestly, diligently, zealously."
+      }
+    ],
+    "_n": "σπουδαιοτέρως | 4708"
+  },
+  {
+    "orth": "Σαμαρεῖτις, ιδος, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a Samaritan woman"
+      },
+      {
+        "_role": "full",
+        "__text": "a Samaritan woman."
+      }
+    ],
+    "_n": "Σαμαρεῖτις | 4542"
+  },
+  {
+    "orth": "ταβέρναι, ῶν, αἱ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "taverns"
+      },
+      {
+        "_role": "full",
+        "__text": "taverns; Three Taverns, the name of a village or town on the Appian\n                  Way, about thirty-three miles from Rome."
+      }
+    ],
+    "_n": "ταβέρναι | 4999"
+  },
+  {
+    "orth": "Ἰωάθαμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jotham"
+      },
+      {
+        "_role": "full",
+        "__text": "Jotham, son of Uzziah and father of Ahaz."
+      }
+    ],
+    "_n": "Ἰωάθαμ | 2488"
+  },
+  {
+    "orth": "προείδω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I see beforehand"
+      },
+      {
+        "_role": "full",
+        "__text": "I see beforehand, am mindful."
+      }
+    ],
+    "_n": "προείδω | 4275"
+  },
+  {
+    "orth": "Ἐφραΐμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Ephraim"
+      },
+      {
+        "_role": "full",
+        "__text": "Ephraim, a city."
+      }
+    ],
+    "_n": "Ἐφραΐμ | 2187"
+  },
+  {
+    "orth": "ἐποκέλλω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I force forward, run aground"
+      },
+      {
+        "_role": "full",
+        "__text": "I force forward, run (a ship) aground."
+      }
+    ],
+    "_n": "ἐποκέλλω | 2027"
+  },
+  {
+    "orth": "ἐκπλήσσω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am thunderstruck, astounded"
+      },
+      {
+        "_role": "full",
+        "__text": "I strike with panic or shock; I amaze, astonish."
+      }
+    ],
+    "_n": "ἐκπλήσσω | 1605"
+  },
+  {
+    "orth": "προσορμίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I anchor at a place"
+      },
+      {
+        "_role": "full",
+        "__text": "I anchor at a place."
+      }
+    ],
+    "_n": "προσορμίζω | 4358"
+  },
+  {
+    "orth": "μεθόριον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "confine, border"
+      },
+      {
+        "_role": "full",
+        "__text": "confine, border, boundary."
+      }
+    ],
+    "_n": "μεθόριον | 3181"
+  },
+  {
+    "orth": "θροέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I disturb, agitate"
+      },
+      {
+        "_role": "full",
+        "__text": "I disturb, agitate; pass: I am troubled, alarmed."
+      }
+    ],
+    "_n": "θροέω | 2360"
+  },
+  {
+    "orth": "ὅσπερ, ἥπερ, ὅπερ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the very one who"
+      },
+      {
+        "_role": "full",
+        "__text": "the very one who."
+      }
+    ],
+    "_n": "ὅσπερ | 3746"
+  },
+  {
+    "orth": "ὑπεραίρω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I raise beyond, uplift"
+      },
+      {
+        "_role": "full",
+        "__text": "lit: I raise beyond, uplift; mid: I lift myself up, exalt myself, am\n                  arrogant."
+      }
+    ],
+    "_n": "ὑπεραίρω | 5229"
+  },
+  {
+    "orth": "συμπαρακαλέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I invite, encourage along with others"
+      },
+      {
+        "_role": "full",
+        "__text": "I invite, encourage along with others; pass: I share in encouragement\n                  with."
+      }
+    ],
+    "_n": "συμπαρακαλέω | 4837"
+  },
+  {
+    "orth": "ῥιζόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I root, fix by the root"
+      },
+      {
+        "_role": "full",
+        "__text": "I cause to take root; met: I plant, fix firmly, establish."
+      }
+    ],
+    "_n": "ῥιζόω | 4492"
+  },
+  {
+    "orth": "στρατοπεδάρχης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "commander of the Roman emperor's body-guard"
+      },
+      {
+        "_role": "full",
+        "__text": "commander of the Roman emperor's body-guard."
+      }
+    ],
+    "_n": "στρατοπεδάρχης | 4759"
+  },
+  {
+    "orth": "πλείων, εῖον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "more, greater"
+      },
+      {
+        "_role": "full",
+        "__text": "more, greater, of higher value."
+      }
+    ],
+    "_n": "πλείων | 4119"
+  },
+  {
+    "orth": "ψύχω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I cool, grow cold"
+      },
+      {
+        "_role": "full",
+        "__text": "I cool, pass: I grow cold."
+      }
+    ],
+    "_n": "ψύχω | 5594"
+  },
+  {
+    "orth": "σκοτίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I darken"
+      },
+      {
+        "_role": "full",
+        "__text": "I darken."
+      }
+    ],
+    "_n": "σκοτίζω | 4654"
+  },
+  {
+    "orth": "Ἰούδα, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Judah, Judas, Jude"
+      },
+      {
+        "_role": "full",
+        "__text": "Judah, Judas, Jude."
+      }
+    ],
+    "_n": "Ἰούδα | 2448"
+  },
+  {
+    "orth": "σύν εἶμι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I come together"
+      },
+      {
+        "_role": "full",
+        "__text": "I come together."
+      }
+    ],
+    "_n": "σύν εἶμι | 4896"
+  },
+  {
+    "orth": "Καπερναούμ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Capernaum"
+      },
+      {
+        "_role": "full",
+        "__text": "Capernaum, a town of Galilee."
+      }
+    ],
+    "_n": "Καπερναούμ | 2584"
+  },
+  {
+    "orth": "πρώϊμος, η, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "dawning, early"
+      },
+      {
+        "_role": "full",
+        "__text": "dawning, early."
+      }
+    ],
+    "_n": "πρώϊμος | 4406"
+  },
+  {
+    "orth": "Ἰουνιᾶς, ᾶ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Junia"
+      },
+      {
+        "_role": "full",
+        "__text": "Junia, Junias, a Roman Christian."
+      }
+    ],
+    "_n": "Ἰουνιᾶς | 2458"
+  },
+  {
+    "orth": "Μαθουσάλα, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Methuselah"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew) Methuselah, son of Enoch and father of Lamech."
+      }
+    ],
+    "_n": "Μαθουσάλα | 3103"
+  },
+  {
+    "orth": "παρακαλύπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I hide, conceal, veil"
+      },
+      {
+        "_role": "full",
+        "__text": "I hide, conceal, veil."
+      }
+    ],
+    "_n": "παρακαλύπτω | 3871"
+  },
+  {
+    "orth": "θανάσιμος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "deadly, mortal"
+      },
+      {
+        "_role": "full",
+        "__text": "deadly, mortal, fatal."
+      }
+    ],
+    "_n": "θανάσιμος | 2286"
+  },
+  {
+    "orth": "οἰκειακός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "one of a family"
+      },
+      {
+        "_role": "full",
+        "__text": "one of a family, whether child or servant."
+      }
+    ],
+    "_n": "οἰκειακός | 3615"
+  },
+  {
+    "orth": "Σαπφείρη, ης, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Sapphira"
+      },
+      {
+        "_role": "full",
+        "__text": "Sapphira, wife of Ananias, an early Christian."
+      }
+    ],
+    "_n": "Σαπφείρη | 4551"
+  },
+  {
+    "orth": "θρῆνος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "wailing, lamentation"
+      },
+      {
+        "_role": "full",
+        "__text": "wailing, lamentation, dirge."
+      }
+    ],
+    "_n": "θρῆνος | 2355"
+  },
+  {
+    "orth": "Νεεμάν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Naaman"
+      },
+      {
+        "_role": "full",
+        "__text": "Naaman."
+      }
+    ],
+    "_n": "Νεεμάν | 3497"
+  },
+  {
+    "orth": "καυτηριάζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I cauterize, sear"
+      },
+      {
+        "_role": "full",
+        "__text": "I cauterize, burn with a hot iron; hence met: I sear."
+      }
+    ],
+    "_n": "καυτηριάζω | 2743"
+  },
+  {
+    "orth": "μικρόν, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a little, little while"
+      },
+      {
+        "_role": "full",
+        "__text": "a little, little while."
+      }
+    ],
+    "_n": "μικρόν | 3397"
+  },
+  {
+    "orth": "μογγιλάλος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "one speaking with difficulty, a stammerer"
+      },
+      {
+        "_role": "full",
+        "__text": "one speaking with difficulty, a stammerer."
+      }
+    ],
+    "_n": "μογγιλάλος | 3424"
+  },
+  {
+    "orth": "οἴμαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I think, suppose"
+      },
+      {
+        "_role": "full",
+        "__text": "I think, suppose, expect, imagine."
+      }
+    ],
+    "_n": "οἴμαι | 3633"
+  },
+  {
+    "orth": "θρῆσκος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "religious"
+      },
+      {
+        "_role": "full",
+        "__text": "(refers probably to a careful observance of religious restrictions),\n                  religious (probably in a limited sense), devout."
+      }
+    ],
+    "_n": "θρῆσκος | 2357"
+  },
+  {
+    "orth": "Ἐλιακείμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Eliakim"
+      },
+      {
+        "_role": "full",
+        "__text": "Eliakim, son of Abiud and father of Azor; son of Melea and father of\n                  Jonam."
+      }
+    ],
+    "_n": "Ἐλιακείμ | 1662"
+  },
+  {
+    "orth": "Βηθλεέμ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Bethlehem"
+      },
+      {
+        "_role": "full",
+        "__text": "Bethlehem, a town of Judea."
+      }
+    ],
+    "_n": "Βηθλεέμ | 0965"
+  },
+  {
+    "orth": "Θάμαρ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Tamar"
+      },
+      {
+        "_role": "full",
+        "__text": "Tamar, mother of Perez and Zerah by Judah, son of Jacob."
+      }
+    ],
+    "_n": "Θάμαρ | 2283"
+  },
+  {
+    "orth": "Ζοροβάβελ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Zerubbabel"
+      },
+      {
+        "_role": "full",
+        "__text": "Zerubbabel, son of Shealtiel (Salathiel) and father of Abiud and\n                  Rhesa."
+      }
+    ],
+    "_n": "Ζοροβάβελ | 2216"
+  },
+  {
+    "orth": "ἐρευνάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I search diligently"
+      },
+      {
+        "_role": "full",
+        "__text": "I search diligently, examine."
+      }
+    ],
+    "_n": "ἐρευνάω | 2045"
+  },
+  {
+    "orth": "εἴγε",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "if indeed, seeing that, unless"
+      },
+      {
+        "_role": "full",
+        "__text": "if indeed, seeing that, unless."
+      }
+    ],
+    "_n": "εἴγε | 1489"
+  },
+  {
+    "orth": "ἐκλύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am unstrung, become weak, fail"
+      },
+      {
+        "_role": "full",
+        "__text": "I loose, release, unloose (as a bow-string), relax, enfeeble; pass: I\n                  am faint, grow weary."
+      }
+    ],
+    "_n": "ἐκλύω | 1590"
+  },
+  {
+    "orth": "Λευϊτικός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Levitical"
+      },
+      {
+        "_role": "full",
+        "__text": "belonging to the tribe of Levi; Levitical."
+      }
+    ],
+    "_n": "Λευϊτικός | 3020"
+  },
+  {
+    "orth": "βίαζομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I use force, violence, suffer violence"
+      },
+      {
+        "_role": "full",
+        "__text": "(a) mid: I use force, force my way, come forward violently, (b) pass: I\n                  am forcibly treated, suffer violence."
+      }
+    ],
+    "_n": "βίαζομαι | 0971"
+  },
+  {
+    "orth": "Ματθαῖος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Matthew"
+      },
+      {
+        "_role": "full",
+        "__text": "Matthew."
+      }
+    ],
+    "_n": "Ματθαῖος | 3156"
+  },
+  {
+    "orth": "κακοπάθεια, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "suffering"
+      },
+      {
+        "_role": "full",
+        "__text": "experience of evil, suffering, distress, affliction,\n                  perseverance."
+      }
+    ],
+    "_n": "κακοπάθεια | 2552"
+  },
+  {
+    "orth": "λοιπόν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "finally, from now on, henceforth, beyond that"
+      },
+      {
+        "_role": "full",
+        "__text": "finally, from now on, henceforth, beyond that."
+      }
+    ],
+    "_n": "λοιπόν | 3063"
+  },
+  {
+    "orth": "Γεθσημανῆ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Gethsemane"
+      },
+      {
+        "_role": "full",
+        "__text": "Gethsemane, a small place between the brook Kidron and the Mount of\n                  Olives near Jerusalem."
+      }
+    ],
+    "_n": "Γεθσημανῆ | 1068"
+  },
+  {
+    "orth": "Φορτουνάτος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Fortunatus"
+      },
+      {
+        "_role": "full",
+        "__text": "Fortunatus, a Christian of Corinth."
+      }
+    ],
+    "_n": "Φορτουνάτος | 5415"
+  },
+  {
+    "orth": "κατιόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I rust"
+      },
+      {
+        "_role": "full",
+        "__text": "I rust; pass: I am rusted, tarnished."
+      }
+    ],
+    "_n": "κατιόω | 2728"
+  },
+  {
+    "orth": "κενόδοξας, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "vainglorious"
+      },
+      {
+        "_role": "full",
+        "__text": "vainglorious, boastful."
+      }
+    ],
+    "_n": "κενόδοξας | 2755"
+  },
+  {
+    "orth": "περιρρήγνυμι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I tear off"
+      },
+      {
+        "_role": "full",
+        "__text": "I tear off, as of garments."
+      }
+    ],
+    "_n": "περιρρήγνυμι | 4048"
+  },
+  {
+    "orth": "πυρόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I burn, am purified by fire"
+      },
+      {
+        "_role": "full",
+        "__text": "pass: I burn, am set on fire, am inflamed; glow with heat, am purified\n                  by fire."
+      }
+    ],
+    "_n": "πυρόω | 4448"
+  },
+  {
+    "orth": "συνδοξάζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I glorify together with"
+      },
+      {
+        "_role": "full",
+        "__text": "I glorify together with."
+      }
+    ],
+    "_n": "συνδοξάζω | 4888"
+  },
+  {
+    "orth": "ἧττων, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "lesser, inferior, weaker"
+      },
+      {
+        "_role": "full",
+        "__text": "lesser, inferior, weaker."
+      }
+    ],
+    "_n": "ἧττων | 2276"
+  },
+  {
+    "orth": "περισπάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I distract, trouble greatly"
+      },
+      {
+        "_role": "full",
+        "__text": "I distract, trouble greatly."
+      }
+    ],
+    "_n": "περισπάω | 4049"
+  },
+  {
+    "orth": "εὐπρόσεδρος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "devoted"
+      },
+      {
+        "_role": "full",
+        "__text": "constantly attending to, devoted."
+      }
+    ],
+    "_n": "εὐπρόσεδρος | 2145"
+  },
+  {
+    "orth": "θεομαχέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I fight against God"
+      },
+      {
+        "_role": "full",
+        "__text": "I fight against God."
+      }
+    ],
+    "_n": "θεομαχέω | 2313"
+  },
+  {
+    "orth": "πιστόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I convince, give assurance to"
+      },
+      {
+        "_role": "full",
+        "__text": "I convince, establish, give assurance to; pass: I am assured of."
+      }
+    ],
+    "_n": "πιστόω | 4104"
+  },
+  {
+    "orth": "εἰδωλόθυτος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "sacrificed to an image"
+      },
+      {
+        "_role": "full",
+        "__text": "(of meat), sacrificed to an image (or an idol)."
+      }
+    ],
+    "_n": "εἰδωλόθυτος | 1494"
+  },
+  {
+    "orth": "πανταχόθεν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "from all sides"
+      },
+      {
+        "_role": "full",
+        "__text": "from all sides, from all parts."
+      }
+    ],
+    "_n": "πανταχόθεν | 3836"
+  },
+  {
+    "orth": "ἐλεέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I pity, have mercy on"
+      },
+      {
+        "_role": "full",
+        "__text": "I pity, have mercy on."
+      }
+    ],
+    "_n": "ἐλεέω | 1653"
+  },
+  {
+    "orth": "καταποντίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I sink in the sea, am drowned"
+      },
+      {
+        "_role": "full",
+        "__text": "I sink in the sea, pass: I drown, am submerged."
+      }
+    ],
+    "_n": "καταποντίζω | 2670"
+  },
+  {
+    "orth": "ἀτιμόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I dishonor, treat shamefully"
+      },
+      {
+        "_role": "full",
+        "__text": "I dishonor, treat shamefully."
+      }
+    ],
+    "_n": "ἀτιμόω | 0821"
+  },
+  {
+    "orth": "λιθόστρωτον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a mosaic pavement"
+      },
+      {
+        "_role": "full",
+        "__text": "(adj: paved with stone), a mosaic pavement."
+      }
+    ],
+    "_n": "λιθόστρωτον | 3038"
+  },
+  {
+    "orth": "τάχιστα",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "most swiftly"
+      },
+      {
+        "_role": "full",
+        "__text": "most swiftly, most quickly, as quickly as possible."
+      }
+    ],
+    "_n": "τάχιστα | 5033"
+  },
+  {
+    "orth": "ξυράω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I shave"
+      },
+      {
+        "_role": "full",
+        "__text": "I shave, shear, cut off the hair."
+      }
+    ],
+    "_n": "ξυράω | 3587"
+  },
+  {
+    "orth": "Σατᾶν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Satan"
+      },
+      {
+        "_role": "full",
+        "__text": "Satan."
+      }
+    ],
+    "_n": "Σατᾶν | 4566"
+  },
+  {
+    "orth": "κολλάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I glue, cleave, keep company with"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit: I glue); hence: mid. and pass: I join myself closely, cleave,\n                  adhere (to), I keep company (with), of friendly intercourse."
+      }
+    ],
+    "_n": "κολλάω | 2853"
+  },
+  {
+    "orth": "Ῥουβίμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Reuben"
+      },
+      {
+        "_role": "full",
+        "__text": "Reuben, eldest son of the patriarch Jacob and founder of a tribe."
+      }
+    ],
+    "_n": "Ῥουβίμ | 4502"
+  },
+  {
+    "orth": "Μελχισεδέκ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Melchizedek"
+      },
+      {
+        "_role": "full",
+        "__text": "Melchizedek, king and priest of Salem."
+      }
+    ],
+    "_n": "Μελχισεδέκ | 3198"
+  },
+  {
+    "orth": "Κανανίτης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a Canaanite"
+      },
+      {
+        "_role": "full",
+        "__text": "a Canaanite."
+      }
+    ],
+    "_n": "Κανανίτης | 2581"
+  },
+  {
+    "orth": "χάλκοῦς, ῆ, οῦν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "made of bronze"
+      },
+      {
+        "_role": "full",
+        "__text": "made of bronze, bronze, brass."
+      }
+    ],
+    "_n": "χάλκοῦς | 5470"
+  },
+  {
+    "orth": "σκοτόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I darken"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit. or met.) I darken."
+      }
+    ],
+    "_n": "σκοτόω | 4656"
+  },
+  {
+    "orth": "περιποιέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I acquire, purchase"
+      },
+      {
+        "_role": "full",
+        "__text": "I acquire, earn, purchase, make my own, preserve alive."
+      }
+    ],
+    "_n": "περιποιέω | 4046"
+  },
+  {
+    "orth": "Ῥωμαϊκός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Roman, Latin"
+      },
+      {
+        "_role": "full",
+        "__text": "Roman, Latin."
+      }
+    ],
+    "_n": "Ῥωμαϊκός | 4513"
+  },
+  {
+    "orth": "Ἐνώχ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Enoch"
+      },
+      {
+        "_role": "full",
+        "__text": "Enoch, son of Jared and father of Methuselah."
+      }
+    ],
+    "_n": "Ἐνώχ | 1802"
+  },
+  {
+    "orth": "χρεωφειλέτης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a debtor"
+      },
+      {
+        "_role": "full",
+        "__text": "a debtor."
+      }
+    ],
+    "_n": "χρεωφειλέτης | 5533"
+  },
+  {
+    "orth": "εὐοδόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I cause to prosper, have a happy journey"
+      },
+      {
+        "_role": "full",
+        "__text": "I cause to prosper, pass: I have a happy (successful) journey, hence: I\n                  prosper."
+      }
+    ],
+    "_n": "εὐοδόω | 2137"
+  },
+  {
+    "orth": "Κορέ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Korah"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew) Korah."
+      }
+    ],
+    "_n": "Κορέ | 2879"
+  },
+  {
+    "orth": "Νεάπολις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Neapolis"
+      },
+      {
+        "_role": "full",
+        "__text": "Neapolis, a city of Thrace."
+      }
+    ],
+    "_n": "Νεάπολις | 3496"
+  },
+  {
+    "orth": "προσωποληψία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "partiality, favoritism"
+      },
+      {
+        "_role": "full",
+        "__text": "partiality, favoritism."
+      }
+    ],
+    "_n": "προσωποληψία | 4382"
+  },
+  {
+    "orth": "ἐπονομάζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I name, impose a name on"
+      },
+      {
+        "_role": "full",
+        "__text": "I name, impose a name on; pass: am named."
+      }
+    ],
+    "_n": "ἐπονομάζω | 2028"
+  },
+  {
+    "orth": "Ἰαννῆς, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jannes"
+      },
+      {
+        "_role": "full",
+        "__text": "Jannes, a sorcerer at the court of the Pharaoh."
+      }
+    ],
+    "_n": "Ἰαννῆς | 2389"
+  },
+  {
+    "orth": "ἐκκρεμάννυμι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I hang out, hang upon"
+      },
+      {
+        "_role": "full",
+        "__text": "I hang out, mid: I hang upon."
+      }
+    ],
+    "_n": "ἐκκρεμάννυμι | 1582"
+  },
+  {
+    "orth": "πορρωτέρω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "farther, beyond"
+      },
+      {
+        "_role": "full",
+        "__text": "farther, beyond."
+      }
+    ],
+    "_n": "πορρωτέρω | 4208"
+  },
+  {
+    "orth": "μιμνήσκομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I remember, recall"
+      },
+      {
+        "_role": "full",
+        "__text": "I remember, call to mind, recall, mention."
+      }
+    ],
+    "_n": "μιμνήσκομαι | 3403"
+  },
+  {
+    "orth": "πλεῖστος, η, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the greatest, the most"
+      },
+      {
+        "_role": "full",
+        "__text": "the greatest, the most, very great."
+      }
+    ],
+    "_n": "πλεῖστος | 4118"
+  },
+  {
+    "orth": "πτύρω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I frighten, terrify"
+      },
+      {
+        "_role": "full",
+        "__text": "I frighten, terrify."
+      }
+    ],
+    "_n": "πτύρω | 4426"
+  },
+  {
+    "orth": "οὕτως",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "thus, so, in this manner"
+      },
+      {
+        "_role": "full",
+        "__text": "thus, so, in this manner."
+      }
+    ],
+    "_n": "οὕτως | 3779"
+  },
+  {
+    "orth": "συζήτησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "mutual questioning, disputation"
+      },
+      {
+        "_role": "full",
+        "__text": "mutual questioning, disputation."
+      }
+    ],
+    "_n": "συζήτησις | 4803"
+  },
+  {
+    "orth": "Στωϊκός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Stoic"
+      },
+      {
+        "_role": "full",
+        "__text": "Stoic."
+      }
+    ],
+    "_n": "Στωϊκός | 4770"
+  },
+  {
+    "orth": "περικρύπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I conceal, hide"
+      },
+      {
+        "_role": "full",
+        "__text": "I conceal, hide (by putting something around it)."
+      }
+    ],
+    "_n": "περικρύπτω | 4032"
+  },
+  {
+    "orth": "κραταιόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I strengthen, confirm, grow strong"
+      },
+      {
+        "_role": "full",
+        "__text": "I strengthen, confirm; pass: I grow strong, become strong."
+      }
+    ],
+    "_n": "κραταιόω | 2901"
+  },
+  {
+    "orth": "οὐκουρός, οῦ, ὁ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a housekeeper"
+      },
+      {
+        "_role": "full",
+        "__text": "a keeper-at-home, a housekeeper."
+      }
+    ],
+    "_n": "οὐκουρός | 3626"
+  },
+  {
+    "orth": "πανοικί",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "with one's whole household or family"
+      },
+      {
+        "_role": "full",
+        "__text": "with one's whole household or family."
+      }
+    ],
+    "_n": "πανοικί | 3832"
+  },
+  {
+    "orth": "ὄρθριος, ία, ιον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "early in the morning"
+      },
+      {
+        "_role": "full",
+        "__text": "early in the morning."
+      }
+    ],
+    "_n": "ὄρθριος | 3721"
+  },
+  {
+    "orth": "πότερος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "which of two, whether"
+      },
+      {
+        "_role": "full",
+        "__text": "which of two, whether."
+      }
+    ],
+    "_n": "πότερος | 4220"
+  },
+  {
+    "orth": "ῥιπίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I toss to and fro"
+      },
+      {
+        "_role": "full",
+        "__text": "I toss to and fro, fan, blow."
+      }
+    ],
+    "_n": "ῥιπίζω | 4494"
+  },
+  {
+    "orth": "μασσάομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I bite, gnaw"
+      },
+      {
+        "_role": "full",
+        "__text": "I bite, gnaw, chew."
+      }
+    ],
+    "_n": "μασσάομαι | 3145"
+  },
+  {
+    "orth": "σηρικός, ή, όν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "silken"
+      },
+      {
+        "_role": "full",
+        "__text": "silken, silk."
+      }
+    ],
+    "_n": "σηρικός | 4596"
+  },
+  {
+    "orth": "συνεπίστημι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I rise up together against"
+      },
+      {
+        "_role": "full",
+        "__text": "I rise up together against."
+      }
+    ],
+    "_n": "συνεπίστημι | 4911"
+  },
+  {
+    "orth": "Κῶς, ῶ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Cos"
+      },
+      {
+        "_role": "full",
+        "__text": "Cos, an island in the Aegean Sea, south-west of Asia Minor."
+      }
+    ],
+    "_n": "Κῶς | 2972"
+  },
+  {
+    "orth": "Μελεᾶς, ᾶ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Melea"
+      },
+      {
+        "_role": "full",
+        "__text": "Melea, one of the ancestors of Jesus."
+      }
+    ],
+    "_n": "Μελεᾶς | 3190"
+  },
+  {
+    "orth": "περιλείπω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I leave behind"
+      },
+      {
+        "_role": "full",
+        "__text": "I leave behind; pass: I am left behind, remain, survive."
+      }
+    ],
+    "_n": "περιλείπω | 4035"
+  },
+  {
+    "orth": "Λευΐ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Levi"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Levi, (a) an ancestor of Jesus, (b) another ancestor of\n                  Jesus, (c) third son of Jacob, the patriarch, and founder of a tribe named after\n                  him, (d) son of Alphaeus, and called Matthew, a revenue officer and one of the\n                  twelve apostles of Jesus."
+      }
+    ],
+    "_n": "Λευΐ | 3017"
+  },
+  {
+    "orth": "ἐντρέφω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I nourish on, am educated in"
+      },
+      {
+        "_role": "full",
+        "__text": "I nourish (sustain) on, am educated in."
+      }
+    ],
+    "_n": "ἐντρέφω | 1789"
+  },
+  {
+    "orth": "ὑπερεκχύνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I pour out so that it overflows"
+      },
+      {
+        "_role": "full",
+        "__text": "I pour out so that it overflows."
+      }
+    ],
+    "_n": "ὑπερεκχύνω | 5240"
+  },
+  {
+    "orth": "συνθάπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I bury along with"
+      },
+      {
+        "_role": "full",
+        "__text": "I bury along with."
+      }
+    ],
+    "_n": "συνθάπτω | 4916"
+  },
+  {
+    "orth": "ἐπαθροίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I gather together, crowd upon, press around"
+      },
+      {
+        "_role": "full",
+        "__text": "I gather together, pass: I crowd upon (some one), press around."
+      }
+    ],
+    "_n": "ἐπαθροίζω | 1865"
+  },
+  {
+    "orth": "καταμόνας",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "alone, apart, in private"
+      },
+      {
+        "_role": "full",
+        "__text": "along, apart, in private."
+      }
+    ],
+    "_n": "καταμόνας | 2651"
+  },
+  {
+    "orth": "Ματθάτ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Matthat"
+      },
+      {
+        "_role": "full",
+        "__text": "Matthat, an ancestor of Jesus."
+      }
+    ],
+    "_n": "Ματθάτ | 3158"
+  },
+  {
+    "orth": "σπουδαιότερον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "more diligently"
+      },
+      {
+        "_role": "full",
+        "__text": "more diligently, earnestly, eagerly, zealously."
+      }
+    ],
+    "_n": "σπουδαιότερον | 4706"
+  },
+  {
+    "orth": "Λαοδικεία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Laodicea"
+      },
+      {
+        "_role": "full",
+        "__text": "Laodicea, a city in the Lycos valley in the Roman province Asia, near\n                  Colossae and Hierapolis."
+      }
+    ],
+    "_n": "Λαοδικεία | 2993"
+  },
+  {
+    "orth": "κίνησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a moving, stirring"
+      },
+      {
+        "_role": "full",
+        "__text": "a moving, stirring."
+      }
+    ],
+    "_n": "κίνησις | 2796"
+  },
+  {
+    "orth": "κύλισμα, ατος, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "rolling, wallowing"
+      },
+      {
+        "_role": "full",
+        "__text": "a place of wallowing."
+      }
+    ],
+    "_n": "κύλισμα | 2946"
+  },
+  {
+    "orth": "ἐπιβοάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I cry out to or against"
+      },
+      {
+        "_role": "full",
+        "__text": "I cry out to or against."
+      }
+    ],
+    "_n": "ἐπιβοάω | 1916"
+  },
+  {
+    "orth": "ἐπισύστασις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a gathering, concourse, tumult"
+      },
+      {
+        "_role": "full",
+        "__text": "a gathering, concourse, tumult."
+      }
+    ],
+    "_n": "ἐπισύστασις | 1999"
+  },
+  {
+    "orth": "μαρὰν ἀθά",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "our Lord cometh"
+      },
+      {
+        "_role": "full",
+        "__text": "(Aramaic), either: Our Lord hath come, or: Our Lord cometh (will come,\n                  is at hand)."
+      }
+    ],
+    "_n": "μαρὰν ἀθά | 3134"
+  },
+  {
+    "orth": "μετακαλέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I send for"
+      },
+      {
+        "_role": "full",
+        "__text": "mid: I summon to myself, send for."
+      }
+    ],
+    "_n": "μετακαλέω | 3333"
+  },
+  {
+    "orth": "συγκακουχέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I suffer ill-treatment with"
+      },
+      {
+        "_role": "full",
+        "__text": "I suffer ill-treatment with."
+      }
+    ],
+    "_n": "συγκακουχέω | 4778"
+  },
+  {
+    "orth": "νόσημα, ατος, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a trouble, disease"
+      },
+      {
+        "_role": "full",
+        "__text": "a trouble, disease, sickness."
+      }
+    ],
+    "_n": "νόσημα | 3553"
+  },
+  {
+    "orth": "πρᾷος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "mild, gentle"
+      },
+      {
+        "_role": "full",
+        "__text": "mild, gentle, meek, kind."
+      }
+    ],
+    "_n": "πρᾷος | 4235"
+  },
+  {
+    "orth": "προσεγγίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I approach"
+      },
+      {
+        "_role": "full",
+        "__text": "I approach, come near to."
+      }
+    ],
+    "_n": "προσεγγίζω | 4331"
+  },
+  {
+    "orth": "πάμπολυς, παμπόλλη, πάμπολυ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "very great"
+      },
+      {
+        "_role": "full",
+        "__text": "very great, very much."
+      }
+    ],
+    "_n": "πάμπολυς | 3827"
+  },
+  {
+    "orth": "συμφύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I grow at the same time"
+      },
+      {
+        "_role": "full",
+        "__text": "I grow at the same time."
+      }
+    ],
+    "_n": "συμφύω | 4855"
+  },
+  {
+    "orth": "σφυρόν, οῦ, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the ankle bone"
+      },
+      {
+        "_role": "full",
+        "__text": "the ankle bone."
+      }
+    ],
+    "_n": "σφυρόν | 4974"
+  },
+  {
+    "orth": "Κλαῦδη, ης, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Cauda, Clauda"
+      },
+      {
+        "_role": "full",
+        "__text": "Cauda, Clauda, an island twenty-three miles south of the western end of\n                  Crete."
+      }
+    ],
+    "_n": "Κλαῦδη | 2802"
+  },
+  {
+    "orth": "Ὠβήδ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Obed"
+      },
+      {
+        "_role": "full",
+        "__text": "Obed."
+      }
+    ],
+    "_n": "Ὠβήδ | 5601"
+  },
+  {
+    "orth": "Ἱερουσαλήμ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jerusalem"
+      },
+      {
+        "_role": "full",
+        "__text": "(Aramaic form), Jerusalem, the capital of Palestine: hence Judaism, and\n                  allegorically, Christendom, the Christian Church."
+      }
+    ],
+    "_n": "Ἱερουσαλήμ | 2419"
+  },
+  {
+    "orth": "Ασσαρών, ῶνος, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Sharon"
+      },
+      {
+        "_role": "full",
+        "__text": "Sharon, the maritime plain between Carmel and Joppa."
+      }
+    ],
+    "_n": "Ασσαρών | 4565"
+  },
+  {
+    "orth": "συνθλάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I break, break in pieces"
+      },
+      {
+        "_role": "full",
+        "__text": "I break, break in pieces, crush, shatter."
+      }
+    ],
+    "_n": "συνθλάω | 4917"
+  },
+  {
+    "orth": "Ματθίας, α, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Matthias"
+      },
+      {
+        "_role": "full",
+        "__text": "Matthias."
+      }
+    ],
+    "_n": "Ματθίας | 3159"
+  },
+  {
+    "orth": "Μάρκος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Mark"
+      },
+      {
+        "_role": "full",
+        "__text": "Mark, who also had the Hebrew name John, son of Mary, nephew of\n                  Barnabas, coadjutor of Barnabas, Paul, and Peter."
+      }
+    ],
+    "_n": "Μάρκος | 3138"
+  },
+  {
+    "orth": "κινάμωμον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "cinnamon"
+      },
+      {
+        "_role": "full",
+        "__text": "(a Semitic word) cinnamon."
+      }
+    ],
+    "_n": "κινάμωμον | 2792"
+  },
+  {
+    "orth": "ῥέδα, ης, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a chariot"
+      },
+      {
+        "_role": "full",
+        "__text": "a chariot."
+      }
+    ],
+    "_n": "ῥέδα | 4480"
+  },
+  {
+    "orth": "συστασιαστής, οῦ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a fellow insurgent"
+      },
+      {
+        "_role": "full",
+        "__text": "a fellow insurgent."
+      }
+    ],
+    "_n": "συστασιαστής | 4955"
+  },
+  {
+    "orth": "συναπόλλυμι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I perish along with"
+      },
+      {
+        "_role": "full",
+        "__text": "I perish along with."
+      }
+    ],
+    "_n": "συναπόλλυμι | 4881"
+  },
+  {
+    "orth": "δανειστής, οῦ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a lender, creditor"
+      },
+      {
+        "_role": "full",
+        "__text": "a money-lender, creditor."
+      }
+    ],
+    "_n": "δανειστής | 1157"
+  },
+  {
+    "orth": "ματαιόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I become vain"
+      },
+      {
+        "_role": "full",
+        "__text": "I become vain or foolish, am perverted."
+      }
+    ],
+    "_n": "ματαιόω | 3154"
+  },
+  {
+    "orth": "κακουχέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I treat evilly"
+      },
+      {
+        "_role": "full",
+        "__text": "I treat evilly, hurt, torment."
+      }
+    ],
+    "_n": "κακουχέω | 2558"
+  },
+  {
+    "orth": "μνάομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I remember, recollect"
+      },
+      {
+        "_role": "full",
+        "__text": "I remember, recollect."
+      }
+    ],
+    "_n": "μνάομαι | 3415"
+  },
+  {
+    "orth": "Σεμεΐ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Semein"
+      },
+      {
+        "_role": "full",
+        "__text": "Semein, an ancestor of Jesus."
+      }
+    ],
+    "_n": "Σεμεΐ | 4584"
+  },
+  {
+    "orth": "σιδήρεος, έα, εον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "made of iron"
+      },
+      {
+        "_role": "full",
+        "__text": "made of iron."
+      }
+    ],
+    "_n": "σιδήρεος | 4603"
+  },
+  {
+    "orth": "Νυμφᾶς, ᾶ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Nymphas"
+      },
+      {
+        "_role": "full",
+        "__text": "Nymphas, a proper name."
+      }
+    ],
+    "_n": "Νυμφᾶς | 3564"
+  },
+  {
+    "orth": "Μαϊνάν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Menna, Mainan"
+      },
+      {
+        "_role": "full",
+        "__text": "Menna, Mainan, a proper name."
+      }
+    ],
+    "_n": "Μαϊνάν | 3104"
+  },
+  {
+    "orth": "μεταβάλλω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I change, change my mind"
+      },
+      {
+        "_role": "full",
+        "__text": "I change; mid: I change my mind."
+      }
+    ],
+    "_n": "μεταβάλλω | 3328"
+  },
+  {
+    "orth": "θυμόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I provoke to anger, am full of angry passion"
+      },
+      {
+        "_role": "full",
+        "__text": "I provoke to anger; pass: I am wroth or very angry."
+      }
+    ],
+    "_n": "θυμόω | 2373"
+  },
+  {
+    "orth": "σαίνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I move, disturb"
+      },
+      {
+        "_role": "full",
+        "__text": "I fawn upon, flatter, beguile; pass: I am perturbed."
+      }
+    ],
+    "_n": "σαίνω | 4525"
+  },
+  {
+    "orth": "πρᾳότης, τητος, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "mildness, gentleness"
+      },
+      {
+        "_role": "full",
+        "__text": "mildness, gentleness, meekness, kindness."
+      }
+    ],
+    "_n": "πρᾳότης | 4236"
+  },
+  {
+    "orth": "τήκω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I make liquid, melt"
+      },
+      {
+        "_role": "full",
+        "__text": "I make liquid; pass: I melt (away)."
+      }
+    ],
+    "_n": "τήκω | 5080"
+  },
+  {
+    "orth": "ἐπείπερ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "since indeed, seeing that"
+      },
+      {
+        "_role": "full",
+        "__text": "since indeed, seeing that."
+      }
+    ],
+    "_n": "ἐπείπερ | 1897"
+  },
+  {
+    "orth": "πρόσκλησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "partiality"
+      },
+      {
+        "_role": "full",
+        "__text": "partiality, an inclination towards."
+      }
+    ],
+    "_n": "πρόσκλησις | 4346"
+  },
+  {
+    "orth": "συσταυρόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I crucify together with"
+      },
+      {
+        "_role": "full",
+        "__text": "I crucify together with."
+      }
+    ],
+    "_n": "συσταυρόω | 4957"
+  },
+  {
+    "orth": "Μαγδαλά, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Magdala"
+      },
+      {
+        "_role": "full",
+        "__text": "Magdala, Magadan, a proper name."
+      }
+    ],
+    "_n": "Μαγδαλά | 3093"
+  },
+  {
+    "orth": "ἐξολοθρεύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I destroy utterly, annihilate"
+      },
+      {
+        "_role": "full",
+        "__text": "I destroy utterly, annihilate, exterminate, root out."
+      }
+    ],
+    "_n": "ἐξολοθρεύω | 1842"
+  },
+  {
+    "orth": "μυρίοι, ίαι, ία",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "ten thousand, innumerable"
+      },
+      {
+        "_role": "full",
+        "__text": "ten thousand; also used for a very large number, innumerable."
+      }
+    ],
+    "_n": "μυρίοι | 3463"
+  },
+  {
+    "orth": "προερέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I say already, predict"
+      },
+      {
+        "_role": "full",
+        "__text": "I say already, predict, foretell."
+      }
+    ],
+    "_n": "προερέω | 4280"
+  },
+  {
+    "orth": "παρακαθίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I sit down beside"
+      },
+      {
+        "_role": "full",
+        "__text": "I sit down beside, set beside."
+      }
+    ],
+    "_n": "παρακαθίζω | 3869"
+  },
+  {
+    "orth": "τραχηλίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am laid bare, laid open"
+      },
+      {
+        "_role": "full",
+        "__text": "I am laid bare, laid open."
+      }
+    ],
+    "_n": "τραχηλίζω | 5136"
+  },
+  {
+    "orth": "φιλόφρων, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "friendly, kindly"
+      },
+      {
+        "_role": "full",
+        "__text": "friendly, kindly, courteous."
+      }
+    ],
+    "_n": "φιλόφρων | 5391"
+  },
+  {
+    "orth": "νομοθετέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I ordain, enact"
+      },
+      {
+        "_role": "full",
+        "__text": "(a) I ordain, lay down, give the sanction of law to, enact, (b) I base\n                  legally, regulate, direct."
+      }
+    ],
+    "_n": "νομοθετέω | 3549"
+  },
+  {
+    "orth": "ὑποδέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I put on my feet"
+      },
+      {
+        "_role": "full",
+        "__text": "(lit: I bind under), mid: I put on my feet, pass: I am shod."
+      }
+    ],
+    "_n": "ὑποδέω | 5265"
+  },
+  {
+    "orth": "Ἰάειρος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jairus"
+      },
+      {
+        "_role": "full",
+        "__text": "Jairus, a Jewish ruler of the synagogue."
+      }
+    ],
+    "_n": "Ἰάειρος | 2383"
+  },
+  {
+    "orth": "κλεῖς, κλειδός, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a key"
+      },
+      {
+        "_role": "full",
+        "__text": "a key."
+      }
+    ],
+    "_n": "κλεῖς | 2807"
+  },
+  {
+    "orth": "λυτρόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I ransom, liberate, deliver"
+      },
+      {
+        "_role": "full",
+        "__text": "I release on receipt of ransom; mid: I redeem, release by paying\n                  ransom, liberate."
+      }
+    ],
+    "_n": "λυτρόω | 3084"
+  },
+  {
+    "orth": "προσκαλέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I summon"
+      },
+      {
+        "_role": "full",
+        "__text": "I call to myself, summon."
+      }
+    ],
+    "_n": "προσκαλέω | 4341"
+  },
+  {
+    "orth": "πονηρότερα",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "more wicked"
+      },
+      {
+        "_role": "full",
+        "__text": "more wicked."
+      }
+    ],
+    "_n": "πονηρότερα | 4191"
+  },
+  {
+    "orth": "κνήθω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I rub, tickle"
+      },
+      {
+        "_role": "full",
+        "__text": "I rub, tickle, scratch; pass: I itch."
+      }
+    ],
+    "_n": "κνήθω | 2833"
+  },
+  {
+    "orth": "Ῥαγαῦ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Ragau, Reu"
+      },
+      {
+        "_role": "full",
+        "__text": "Ragau (or Reu), an ancestor of Jesus."
+      }
+    ],
+    "_n": "Ῥαγαῦ | 4466"
+  },
+  {
+    "orth": "πλόος, οῦς",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a voyage"
+      },
+      {
+        "_role": "full",
+        "__text": "a voyage, sailing."
+      }
+    ],
+    "_n": "πλόος | 4144"
+  },
+  {
+    "orth": "πλημμύρα, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a flood"
+      },
+      {
+        "_role": "full",
+        "__text": "a flood."
+      }
+    ],
+    "_n": "πλημμύρα | 4132"
+  },
+  {
+    "orth": "πλήθω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I fill"
+      },
+      {
+        "_role": "full",
+        "__text": "I fill, fulfill, complete."
+      }
+    ],
+    "_n": "πλήθω | 4130"
+  },
+  {
+    "orth": "χράω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I lend"
+      },
+      {
+        "_role": "full",
+        "__text": "I lend."
+      }
+    ],
+    "_n": "χράω | 5531"
+  },
+  {
+    "orth": "στεῖρος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "barren"
+      },
+      {
+        "_role": "full",
+        "__text": "barren."
+      }
+    ],
+    "_n": "στεῖρος | 4723"
+  },
+  {
+    "orth": "τρίμηνος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "lasting three months"
+      },
+      {
+        "_role": "full",
+        "__text": "lasting three months."
+      }
+    ],
+    "_n": "τρίμηνος | 5150"
+  },
+  {
+    "orth": "ὀδυνάω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I torment, pain"
+      },
+      {
+        "_role": "full",
+        "__text": "I torment, pain; mid. and pass: I am tormented, pained; I suffer acute\n                  pain, physical or mental."
+      }
+    ],
+    "_n": "ὀδυνάω | 3600"
+  },
+  {
+    "orth": "Πύθων, ωνος, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a divining spirit"
+      },
+      {
+        "_role": "full",
+        "__text": "a divining spirit, Python, called after the Pythian serpent said to\n                  have guarded the oracle at Delphi and been slain by Apollo."
+      }
+    ],
+    "_n": "Πύθων | 4436"
+  },
+  {
+    "orth": "ὀφθαλμοδουλεία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "service rendered only while the master watches"
+      },
+      {
+        "_role": "full",
+        "__text": "eye-service; service rendered only while the master watches."
+      }
+    ],
+    "_n": "ὀφθαλμοδουλεία | 3787"
+  },
+  {
+    "orth": "συναρμολογέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I fit together"
+      },
+      {
+        "_role": "full",
+        "__text": "I fit together, compact."
+      }
+    ],
+    "_n": "συναρμολογέω | 4883"
+  },
+  {
+    "orth": "οἵος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "of what kind, such as"
+      },
+      {
+        "_role": "full",
+        "__text": "of what kind, such as."
+      }
+    ],
+    "_n": "οἵος | 3634"
+  },
+  {
+    "orth": "συμμορφόω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I bring to the same form with, conform"
+      },
+      {
+        "_role": "full",
+        "__text": "I bring to the same form with, conform."
+      }
+    ],
+    "_n": "συμμορφόω | 4833"
+  },
+  {
+    "orth": "πετρώδης, ες",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "rocky, stony"
+      },
+      {
+        "_role": "full",
+        "__text": "rocky, stony."
+      }
+    ],
+    "_n": "πετρώδης | 4075"
+  },
+  {
+    "orth": "κατάλειμμα, ατος, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a remnant, small residue"
+      },
+      {
+        "_role": "full",
+        "__text": "a remnant, small residue."
+      }
+    ],
+    "_n": "κατάλειμμα | 2640"
+  },
+  {
+    "orth": "σαβαώθ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "hosts, armies"
+      },
+      {
+        "_role": "full",
+        "__text": "hosts, armies."
+      }
+    ],
+    "_n": "σαβαώθ | 4519"
+  },
+  {
+    "orth": "μεῖζον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "greater, greatest"
+      },
+      {
+        "_role": "full",
+        "__text": "greater, greatest."
+      }
+    ],
+    "_n": "μεῖζον | 3185"
+  },
+  {
+    "orth": "ἐπεῖδεν",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I looked upon, regarded"
+      },
+      {
+        "_role": "full",
+        "__text": "I looked upon, regarded."
+      }
+    ],
+    "_n": "ἐπεῖδεν | 1896"
+  },
+  {
+    "orth": "μυέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I initiate, instruct"
+      },
+      {
+        "_role": "full",
+        "__text": "I initiate, instruct; pass: I am disciplined, learn (a lesson)."
+      }
+    ],
+    "_n": "μυέω | 3453"
+  },
+  {
+    "orth": "συγκαταψηφίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am voted or classed with"
+      },
+      {
+        "_role": "full",
+        "__text": "I am voted or classed with."
+      }
+    ],
+    "_n": "συγκαταψηφίζω | 4785"
+  },
+  {
+    "orth": "προέχω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I excel, surpass"
+      },
+      {
+        "_role": "full",
+        "__text": "trans: I hold before; mid: I excuse myself; intrans: I project, excel,\n                  surpass, have preeminence."
+      }
+    ],
+    "_n": "προέχω | 4284"
+  },
+  {
+    "orth": "Ἰωρείμ, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jorim"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Jorim, an ancestor of Jesus."
+      }
+    ],
+    "_n": "Ἰωρείμ | 2497"
+  },
+  {
+    "orth": "σπένδω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I pour out as a libation"
+      },
+      {
+        "_role": "full",
+        "__text": "I pour out as a libation."
+      }
+    ],
+    "_n": "σπένδω | 4689"
+  },
+  {
+    "orth": "ἐνδοξάζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I glorify"
+      },
+      {
+        "_role": "full",
+        "__text": "I glorify, acknowledge the glory belonging to, recognize as glorious;\n                  pass: I am glorified in."
+      }
+    ],
+    "_n": "ἐνδοξάζω | 1740"
+  },
+  {
+    "orth": "σπλάγχνα, ων, τά",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "bowels, compassion, pity"
+      },
+      {
+        "_role": "full",
+        "__text": "the inward parts; the heart, affections, seat of the feelings."
+      }
+    ],
+    "_n": "σπλάγχνα | 4698"
+  },
+  {
+    "orth": "Μωσῆς, έως, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Moses"
+      },
+      {
+        "_role": "full",
+        "__text": "Moses; met: the books of Moses, the Pentateuch."
+      }
+    ],
+    "_n": "Μωσῆς | 3475"
+  },
+  {
+    "orth": "ἐπιρράπτω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I sew on"
+      },
+      {
+        "_role": "full",
+        "__text": "I sew (on)."
+      }
+    ],
+    "_n": "ἐπιρράπτω | 1976"
+  },
+  {
+    "orth": "σπῖλος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a spot, fault"
+      },
+      {
+        "_role": "full",
+        "__text": "a spot, fault, stain, blemish."
+      }
+    ],
+    "_n": "σπῖλος | 4696"
+  },
+  {
+    "orth": "Λεββαῖος, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Lebbaeus"
+      },
+      {
+        "_role": "full",
+        "__text": "Lebbaeus, a pet-name for Thaddaeus, one of the twelve apostles of\n                  Jesus; the full form of the name is not known."
+      }
+    ],
+    "_n": "Λεββαῖος | 3002"
+  },
+  {
+    "orth": "Νινευΐ, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Nineveh"
+      },
+      {
+        "_role": "full",
+        "__text": "Nineveh, a city on the Tigris in Assyria."
+      }
+    ],
+    "_n": "Νινευΐ | 3535"
+  },
+  {
+    "orth": "ἐλαχιστότερος, α, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "the smallest, least important"
+      },
+      {
+        "_role": "full",
+        "__text": "the smallest, least important."
+      }
+    ],
+    "_n": "ἐλαχιστότερος | 1647"
+  },
+  {
+    "orth": "τετράρχης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a tetrarch"
+      },
+      {
+        "_role": "full",
+        "__text": "a tetrarch, ruler over a fourth part of a region."
+      }
+    ],
+    "_n": "τετράρχης | 5076"
+  },
+  {
+    "orth": "λεγεών, ῶνος, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a legion, very large number"
+      },
+      {
+        "_role": "full",
+        "__text": "properly: a division of the Roman army, numbering about 6,000 infantry\n                  with additional cavalry; hence: a very large number; a legion."
+      }
+    ],
+    "_n": "λεγεών | 3003"
+  },
+  {
+    "orth": "ἐπιφαύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I shine upon, give light to"
+      },
+      {
+        "_role": "full",
+        "__text": "I shine upon, give light to."
+      }
+    ],
+    "_n": "ἐπιφαύω | 2017"
+  },
+  {
+    "orth": "φελόνης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a mantle, cloak"
+      },
+      {
+        "_role": "full",
+        "__text": "a mantle, cloak."
+      }
+    ],
+    "_n": "φελόνης | 5341"
+  },
+  {
+    "orth": "ἔννυχος, ον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "in the night"
+      },
+      {
+        "_role": "full",
+        "__text": "in the night."
+      }
+    ],
+    "_n": "ἔννυχος | 1773"
+  },
+  {
+    "orth": "προσεδρεύω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I wait upon, minister to"
+      },
+      {
+        "_role": "full",
+        "__text": "I wait upon, minister to, have charge of."
+      }
+    ],
+    "_n": "προσεδρεύω | 4332"
+  },
+  {
+    "orth": "ῥυπαρεύομαι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I am filthy"
+      },
+      {
+        "_role": "full",
+        "__text": "I am filthy; hence (morally): I am stained with sin."
+      }
+    ],
+    "_n": "ῥυπαρεύομαι | 4510"
+  },
+  {
+    "orth": "φαντάζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I cause to appear"
+      },
+      {
+        "_role": "full",
+        "__text": "I cause to appear, make visible."
+      }
+    ],
+    "_n": "φαντάζω | 5324"
+  },
+  {
+    "orth": "ῥώννυμι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I strengthen, farewell"
+      },
+      {
+        "_role": "full",
+        "__text": "I strengthen, render firm; imperative at the end of letters:\n                  farewell."
+      }
+    ],
+    "_n": "ῥώννυμι | 4517"
+  },
+  {
+    "orth": "Τρωγύλλιον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Trogyllium"
+      },
+      {
+        "_role": "full",
+        "__text": "Trogyllium, a promontory somewhat to the south of Ephesus."
+      }
+    ],
+    "_n": "Τρωγύλλιον | 5175"
+  },
+  {
+    "orth": "φοίνιξ, ικός, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a palm tree, palm branch"
+      },
+      {
+        "_role": "full",
+        "__text": "a palm tree, the date-palm."
+      }
+    ],
+    "_n": "φοίνιξ | 5404"
+  },
+  {
+    "orth": "πτοέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I terrify, scare"
+      },
+      {
+        "_role": "full",
+        "__text": "I terrify, scare, strike with panic."
+      }
+    ],
+    "_n": "πτοέω | 4422"
+  },
+  {
+    "orth": "χρίσμα, ατος, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "an anointing"
+      },
+      {
+        "_role": "full",
+        "__text": "an anointing."
+      }
+    ],
+    "_n": "χρίσμα | 5545"
+  },
+  {
+    "orth": "μέχρι",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "as far as, until"
+      },
+      {
+        "_role": "full",
+        "__text": "as far as, until, even to."
+      }
+    ],
+    "_n": "μέχρι | 3360"
+  },
+  {
+    "orth": "Σαμαρείτης, ου, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a Samaritan"
+      },
+      {
+        "_role": "full",
+        "__text": "a Samaritan."
+      }
+    ],
+    "_n": "Σαμαρείτης | 4541"
+  },
+  {
+    "orth": "συνάντησις, εως, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a meeting with"
+      },
+      {
+        "_role": "full",
+        "__text": "a meeting with."
+      }
+    ],
+    "_n": "συνάντησις | 4877"
+  },
+  {
+    "orth": "Ἰωνάν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jonam"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Jonam, an ancestor of Jesus."
+      }
+    ],
+    "_n": "Ἰωνάν | 2494"
+  },
+  {
+    "orth": "στέλλω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I arrange, take care, withdraw from"
+      },
+      {
+        "_role": "full",
+        "__text": "I set, arrange; mid: I provide for, take care, withdraw from, hold\n                  aloof, avoid."
+      }
+    ],
+    "_n": "στέλλω | 4724"
+  },
+  {
+    "orth": "Ῥεμφάν, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Rephan, Saturn"
+      },
+      {
+        "_role": "full",
+        "__text": "Rephan, the Saturn of later mythology."
+      }
+    ],
+    "_n": "Ῥεμφάν | 4481"
+  },
+  {
+    "orth": "ἐπαρχία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "sphere of duty, province"
+      },
+      {
+        "_role": "full",
+        "__text": "sphere of duty, province."
+      }
+    ],
+    "_n": "ἐπαρχία | 1885"
+  },
+  {
+    "orth": "Ἰαννά, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Jannai"
+      },
+      {
+        "_role": "full",
+        "__text": "Jannai, an ancestor of Jesus; Jannai was the son of Joseph, and father\n                  of Melchi."
+      }
+    ],
+    "_n": "Ἰαννά | 2388"
+  },
+  {
+    "orth": "ῥαββουνί",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Rabbi, my master"
+      },
+      {
+        "_role": "full",
+        "__text": "Rabbi, my master, teacher; a title of respect often applied to\n                  Christ."
+      }
+    ],
+    "_n": "ῥαββουνί | 4462"
+  },
+  {
+    "orth": "φάγω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I eat"
+      },
+      {
+        "_role": "full",
+        "__text": "I eat, partake of food; met: I devour, consume (e.g. as rust does);\n                  used only in fut. and 2nd aor. tenses."
+      }
+    ],
+    "_n": "φάγω | 5315"
+  },
+  {
+    "orth": "λοιποῦ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "from now on, henceforth, finally"
+      },
+      {
+        "_role": "full",
+        "__text": "from now on, henceforth, finally."
+      }
+    ],
+    "_n": "λοιποῦ | 3064"
+  },
+  {
+    "orth": "προαιρέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I propose, purpose"
+      },
+      {
+        "_role": "full",
+        "__text": "I propose; mid: I propose to myself, purpose."
+      }
+    ],
+    "_n": "προαιρέω | 4255"
+  },
+  {
+    "orth": "συκομωραία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a sycamore tree"
+      },
+      {
+        "_role": "full",
+        "__text": "a sycamore tree."
+      }
+    ],
+    "_n": "συκομωραία | 4809"
+  },
+  {
+    "orth": "Λευΐς, ὁ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Levi"
+      },
+      {
+        "_role": "full",
+        "__text": "(Hebrew), Levi, son of Alphaeus, the publican."
+      }
+    ],
+    "_n": "Λευΐς | 3018"
+  },
+  {
+    "orth": "τετραρχέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I rule over as a tetrarch"
+      },
+      {
+        "_role": "full",
+        "__text": "I rule over as a tetrarch."
+      }
+    ],
+    "_n": "τετραρχέω | 5075"
+  },
+  {
+    "orth": "σαβαχθανί",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "thou hast forsaken me"
+      },
+      {
+        "_role": "full",
+        "__text": "thou hast forsaken me."
+      }
+    ],
+    "_n": "σαβαχθανί | 4518"
+  },
+  {
+    "orth": "συνελαύνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I compel, urge"
+      },
+      {
+        "_role": "full",
+        "__text": "I compel, urge, force together."
+      }
+    ],
+    "_n": "συνελαύνω | 4900"
+  },
+  {
+    "orth": "μεγαλαυχέω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I boast, am arrogant, vaunt"
+      },
+      {
+        "_role": "full",
+        "__text": "I boast, am arrogant, vaunt."
+      }
+    ],
+    "_n": "μεγαλαυχέω | 3166"
+  },
+  {
+    "orth": "προσλαμβάνω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I take to myself, welcome"
+      },
+      {
+        "_role": "full",
+        "__text": "(a) I take to myself, (b) I take aside, (c) I welcome."
+      }
+    ],
+    "_n": "προσλαμβάνω | 4355"
+  },
+  {
+    "orth": "Χερουβίμ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Cherubim"
+      },
+      {
+        "_role": "full",
+        "__text": "Cherubim."
+      }
+    ],
+    "_n": "Χερουβίμ | 5502"
+  },
+  {
+    "orth": "λογία, ας, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a collection, collecting"
+      },
+      {
+        "_role": "full",
+        "__text": "a collection, collecting (of money), particularly of an irregular local\n                  contribution for religious purposes."
+      }
+    ],
+    "_n": "λογία | 3048"
+  },
+  {
+    "orth": "στοιβάς, άδος, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "a bough, branch of a tree"
+      },
+      {
+        "_role": "full",
+        "__text": "a bough, branch of a tree."
+      }
+    ],
+    "_n": "στοιβάς | 4746"
+  },
+  {
+    "orth": "ὁπλίζω",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "I arm, equip"
+      },
+      {
+        "_role": "full",
+        "__text": "I make ready, arm, equip."
+      }
+    ],
+    "_n": "ὁπλίζω | 3695"
+  },
+  {
+    "orth": "πρότερον",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "formerly, before"
+      },
+      {
+        "_role": "full",
+        "__text": "formerly, before."
+      }
+    ],
+    "_n": "πρότερον | 4386"
+  },
+  {
+    "orth": "χθές",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "yesterday"
+      },
+      {
+        "_role": "full",
+        "__text": "yesterday."
+      }
+    ],
+    "_n": "χθές | 5504"
+  },
+  {
+    "orth": "σκῦλον, ου, τό",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "spoil taken from a foe"
+      },
+      {
+        "_role": "full",
+        "__text": "spoil taken from a foe."
+      }
+    ],
+    "_n": "σκῦλον | 4661"
+  },
+  {
+    "orth": "Χαναάν, ἡ",
+    "def": [
+      {
+        "_role": "brief",
+        "__text": "Canaan"
+      },
+      {
+        "_role": "full",
+        "__text": "Canaan, the whole of Palestine or Palestine west of the river\n                  Jordan."
+      }
+    ],
+    "_n": "Χαναάν | 5477"
+  }
+]

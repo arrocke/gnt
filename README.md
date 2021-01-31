@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
+```bash 
 npm run dev
 # or
 yarn dev
@@ -28,3 +28,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Other Notes: 
+[LSJ Key](https://github.com/nikita-moor/latin-dictionary/tree/2020-02-14/LiddellScott1940)
+[LSJ Source](https://github.com/gcelano/lexica/tree/master/CTS_XML_TEI/perseus/pdllex/grc/lsj)
+[Dodson Source](https://raw.githubusercontent.com/biblicalhumanities/Dodson-Greek-Lexicon/master/dodson.xml)
