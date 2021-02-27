@@ -1,24 +1,28 @@
-import { Text } from "@prisma/client"
 import { forwardRef } from "react"
 
 interface WordPopoverProps {
-  word?: Text
+  word?: {
+    parsing: string,
+    definition: string,
+    strongs: number,
+    normalized: string
+  }
 }
 
 const speechMap: {[code: string]: string } = {
-  A: 'adjective',
-  C: "conjunction",
-  D: "adverb",
-  I: "interjection",
-  N: "noun",
-  P: "preposition",
+  'A-': 'adjective',
+  'C-': "conjunction",
+  'D-': "adverb",
+  'I-': "interjection",
+  'N-': "noun",
+  'P-': "preposition",
   RA: "definite article",
   RD: "demonst pronoun",
   RI: "inter/indef pronoun",
   RP: "pers pronoun",
   RR: "rel pronoun",
-  V: "verb",
-  X: "particle"
+  'V-': "verb",
+  'X-': "particle"
 }
 
 const personMap: {[code: string]: string } = {
@@ -76,14 +80,14 @@ const degreeMap: {[code: string]: string } = {
 
 function convertCodeToParsing(code: string) {
   return [
-    personMap[code[0]],
-    tenseMap[code[1]],
-    voiceMap[code[2]],
-    moodMap[code[3]],
-    caseMap[code[4]],
-    numberMap[code[5]],
-    genderMap[code[6]],
-    degreeMap[code[7]]
+    personMap[code[3]],
+    tenseMap[code[4]],
+    voiceMap[code[5]],
+    moodMap[code[6]],
+    caseMap[code[7]],
+    numberMap[code[8]],
+    genderMap[code[9]],
+    degreeMap[code[10]]
   ].filter(x => !!x).join(' ')
 }
 
@@ -97,8 +101,8 @@ const WordPopover = forwardRef<HTMLDivElement, WordPopoverProps>(({ word }, ref)
     "
   >
     <p>
-      <span className="font-greek">{word.lemma}</span>{' '}
-      <span className="font-bold text-xs ml-1">{speechMap[word.speech].toUpperCase()}</span>
+      <span className="font-greek">{word.normalized}</span>{' '}
+      <span className="font-bold text-xs ml-1">{speechMap[word.parsing.substr(0, 2)].toUpperCase()}</span>
     </p>
     <p className="text-sm">{convertCodeToParsing(word.parsing)}</p>
   </div>) : null

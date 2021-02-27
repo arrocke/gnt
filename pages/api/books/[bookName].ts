@@ -1,6 +1,5 @@
-import { ParagraphWhereInput } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next";
-import client from '../../../prisma/client'
+import { paragraphRepo } from '../../../db/paragraph-repo'
 
 const DEFAULT_PAGE_SIZE = 5
 const MAX_PAGE_SIZE = 20
@@ -125,96 +124,37 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   const pageSize = pageSizeResult.value || DEFAULT_PAGE_SIZE
-  const startCursor = startCursorResult.value
+  let startCursor = startCursorResult.value
   const endCursor = endCursorResult.value
   const bookName = (req.query.bookName as string).replace('-', ' ')
   const reference = referenceResult.value
 
-  const paragraphQuery: ParagraphWhereInput = {
-    book: { name: bookName }
-  }
-
   if (reference) {
-    const [{ verses: [verse] = [] } = {}] = await client.book.findOne({
-      where: {
-        name: bookName 
-      }
-    }).chapters({
-      where: {
-        number: reference[0]
-      },
-      select: {
-        verses: {
-          where: {
-            number: reference[1]
-          },
-          select: {
-            words: {
-              take: 1,
-              select: {
-                paragraphId: true
-              }
-            }
-          }
-        }
-      }
+    const paragraphId = await paragraphRepo.findParagraphIdByReference({
+      book: bookName,
+      chapter: reference[0],
+      verse: reference[1]
     })
-    if (verse) {
-      paragraphQuery.id = { gte: verse.words[0].paragraphId }
+    if (typeof paragraphId === 'number') {
+      startCursor = paragraphId - 1
     } else {
       res.status(400).end()
     }
-  } else if (startCursor) {
-    paragraphQuery.id = { gt: startCursor }
-  } else if (endCursor) {
-    paragraphQuery.id = { gt: endCursor - pageSize - 1, lt: endCursor }
   }
 
-  const content = await client.paragraph.findMany({
-    where: paragraphQuery,
-    select: {
-      id: true,
-      text: {
-        select: {
-          id: true,
-          chapter: true,
-          verseNumber: true,
-          text: true,
-          lemma: true,
-          speech: true,
-          parsing: true
-        }
-      }
-    },
-    orderBy: {
-      id: 'asc'
-    },
-    take: pageSize
+  const { data, nextCursor, prevCursor } = await paragraphRepo.findParagraphs({
+    book: bookName,
+    startCursor,
+    endCursor,
+    limit: pageSize
   })
 
-  const links: { next: string | null, prev: string | null } = { next: null, prev: null }
-  const nextCursor = content.length === pageSize ? content.slice(-1)[0].id : null
-  const prevCursor = content.length > 0 ? content[0].id : null
-  if (nextCursor && 1 === (await client.paragraph.count({
-    where: {
-      id: nextCursor + 1,
-      book: { name: bookName }
-    }
-  }))) {
-    links.next = `/api/books/${bookName}?page[after]=${nextCursor}&page[size]=${pageSize}`
+  const links = {
+    next: nextCursor ? `/api/books/${bookName}?page[after]=${nextCursor}&page[size]=${pageSize}` : null,
+    prev: prevCursor ? `/api/books/${bookName}?page[before]=${prevCursor}&page[size]=${pageSize}` : null
   }
 
-  if (prevCursor && 1 === (await client.paragraph.count({
-    where: {
-      id: prevCursor - 1,
-      book: { name: bookName }
-    }
-  }))) {
-    links.prev = `/api/books/${bookName}?page[before]=${prevCursor}&page[size]=${pageSize}`
-  }
-
-
-  res.status(200).json({ links, data: content })
+  res.status(200).json({ links, data })
 }
 
 

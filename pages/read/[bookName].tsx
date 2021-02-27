@@ -1,20 +1,31 @@
 import { useRouter } from 'next/router'
 import ChapterSelector from "../../components/ChapterSelector";
-import { Text, Paragraph } from "@prisma/client";
 import { useState, useEffect, Fragment } from "react";
 import usePopover from '../../components/usePopover'
 import WordPopover from "../../components/WordPopover";
 import { useInfiniteQuery } from "react-query";
 import InfiniteScrollContainer from '../../components/InfiniteScrollContainer';
 
+interface Word {
+  chapter: number,
+  verse: number,
+  paragraph: number,
+  text: string,
+  parsing: string,
+  definition: string,
+  strongs: number,
+  normalized: string
+}
+
 interface QueryResult {
   links: {
     next: string | null
     prev: string | null
   }
-  data: (Paragraph & {
-    text: Text[];
-  })[];
+  data: {
+    _id: number,
+    words: Word[]
+  }[]
 }
 
 const PAGE_SIZE = 6 
@@ -47,7 +58,7 @@ const ReadPage: React.FC = () => {
     }
   })
 
-  const [selectedWord, setWord] = useState<Text | undefined>(undefined)
+  const [selectedWord, setWord] = useState<Word | undefined>(undefined)
   const { popoverRef, popoverParentRef } = usePopover()
 
   useEffect(() => {
@@ -76,17 +87,17 @@ const ReadPage: React.FC = () => {
         hasPrev={hasPreviousPage}
         loadingPrev={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
         loadingNext={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
-        getPageId={(page) => page.data[0]?.id.toString() ?? ''}
+        getPageId={(page) => page.data[0]?._id.toString() ?? ''}
       >
         {(page) => 
-          <div key={page.data[0]?.id ?? ''}>
+          <div key={page.data[0]?._id ?? ''}>
             {page.data?.map(paragraph => (
-              <p key={paragraph.id} className="pt-2 max-w-screen-md mx-auto px-4 sm:px-8">
-                {paragraph.text.map((word, i, words) => (
-                  <Fragment key={word.id}> 
-                    {(i === 0 || words[i - 1].verseNumber !== word.verseNumber) && (
+              <p key={paragraph._id} className="pt-2 max-w-screen-md mx-auto px-4 sm:px-8">
+                {paragraph.words.map((word, i, words) => (
+                  <Fragment key={i}> 
+                    {(i === 0 || words[i - 1].verse !== word.verse) && (
                       <span className="font-bold font-sans text-xs">
-                        {`${word.verseNumber === 1 ? `${word.chapter}:` : ''}${word.verseNumber} `}
+                        {`${word.verse === 1 ? `${word.chapter}:` : ''}${word.verse} `}
                       </span>
                     )}
                     <span
