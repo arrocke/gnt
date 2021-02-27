@@ -67,7 +67,7 @@ function InfiniteScrollContainer<Page> (props: InfiniteScrollContainerProps<Page
       }
     }, {
       root: container.current,
-      rootMargin: '0px 0px'
+      rootMargin: '100% 0px'
     })
     observer.current = currentObserver
 
