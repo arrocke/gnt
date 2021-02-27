@@ -8,6 +8,10 @@ import { useInfiniteQuery } from "react-query";
 import InfiniteScrollContainer from '../../components/InfiniteScrollContainer';
 
 interface QueryResult {
+  links: {
+    next: string | null
+    prev: string | null
+  }
   data: (Paragraph & {
     text: Text[];
   })[];
@@ -20,25 +24,26 @@ const ReadPage: React.FC = () => {
   const bookName = (router.query.bookName as string || '').replace('-', ' ')
   const reference = router.query.reference as string || '1:1'
 
-  const { data, fetchNextPage, fetchPreviousPage } = useInfiniteQuery<QueryResult>(
+  const { data, fetchNextPage, fetchPreviousPage, hasNextPage, hasPreviousPage } = useInfiniteQuery<QueryResult>(
     ['book-paragraphs', bookName], {
-    async queryFn({ queryKey: [, bookName], pageParam = `reference=${reference}`}) {
+    async queryFn({ queryKey: [, bookName], pageParam}) {
       if (bookName) {
-        const response = await fetch(`/api/books/${bookName}?page[size]=${PAGE_SIZE}${pageParam ? `&${pageParam}` : ''}`)
+        let response
+        if (pageParam) {
+          response = await fetch(pageParam)
+        } else {
+          response = await fetch(`/api/books/${bookName}?page[size]=${PAGE_SIZE}&reference=${reference}`)
+        }
         return response.json()
       } else {
         return {}
       }
     },
     getNextPageParam(lastPage) {
-      if (lastPage.data.length > 0) {
-        return `page[start]=${lastPage.data.slice(-1)[0].id}`
-      }
+      return lastPage.links.next || undefined
     },
     getPreviousPageParam(firstPage) {
-      if (firstPage.data.length > 0) {
-        return `page[end]=${firstPage.data[0].id}`
-      }
+      return firstPage.links.prev || undefined
     }
   })
 
@@ -53,23 +58,29 @@ const ReadPage: React.FC = () => {
     }
   }, [selectedWord])
 
-  if (data) {
-    return (
-      <div
-        className="h-screen flex flex-col"
-        onClick={() => setWord(undefined)}
+
+  return (
+    <div
+      className="h-screen flex flex-col"
+      onClick={() => setWord(undefined)}
+    >
+      <ChapterSelector className="max-w-screen-md w-full mx-auto px-4 sm:px-8 mt-4" book={bookName} chapter={1} />
+      <h1 className="max-w-screen-md w-full mx-auto px-4 sm:px-8 font-bold mt-4">{bookName.toUpperCase()}</h1>
+      <WordPopover key="popover" ref={popoverRef} word={selectedWord} />
+      <InfiniteScrollContainer
+        className="w-full leading-relaxed flex-1"
+        pages={data?.pages ?? []}
+        loadNext={fetchNextPage}
+        loadPrev={fetchPreviousPage}
+        hasNext={hasNextPage}
+        hasPrev={hasPreviousPage}
+        loadingPrev={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
+        loadingNext={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
+        getPageId={(page) => page.data[0]?.id.toString() ?? ''}
       >
-        <ChapterSelector className="max-w-screen-md w-full mx-auto px-4 sm:px-8 mt-4" book={bookName} chapter={1} />
-        <h1 className="max-w-screen-md w-full mx-auto px-4 sm:px-8 font-bold mt-4">{bookName.toUpperCase()}</h1>
-        <WordPopover key="popover" ref={popoverRef} word={selectedWord} />
-        <InfiniteScrollContainer
-          className="w-full mt-4 leading-relaxed flex-1"
-          loadNext={async () => { await fetchNextPage() }}
-          loadPrev={async () => { await fetchPreviousPage() }}
-          loadingPrev={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
-          loadingNext={<div className="max-w-screen-md mx-auto px-4 sm:px-8">Loading...</div>}
-        >
-            {data.pages.map(group =>  group.data?.map(paragraph => (
+        {(page) => 
+          <div key={page.data[0]?.id ?? ''}>
+            {page.data?.map(paragraph => (
               <p key={paragraph.id} className="pt-2 max-w-screen-md mx-auto px-4 sm:px-8">
                 {paragraph.text.map((word, i, words) => (
                   <Fragment key={word.id}> 
@@ -91,12 +102,11 @@ const ReadPage: React.FC = () => {
                   </Fragment>
                 ))}
               </p>
-            )))}
-        </InfiniteScrollContainer>
-      </div>
-    )
-  } else {
-    return null
-  }
+            ))}
+          </div>
+        }
+      </InfiniteScrollContainer>
+    </div>
+  )
 }
 export default ReadPage

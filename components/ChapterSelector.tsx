@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from 'next/link'
 import SelectInput from "./SelectInput"
 import LinkButton from "./LinkButton"
@@ -51,6 +51,10 @@ const ChapterSelector: React.FC<ChapterSelectorProps> = ({
   const [book, setBook] = useState(defaultBook)
   const [chapter, setChapter] = useState(defaultChapter)
 
+  useEffect(() => {
+    setBook(defaultBook)
+  }, [defaultBook])
+
   const bookId = `select-book`
   const chapterId = `select-chapter`
 
@@ -76,23 +80,22 @@ const ChapterSelector: React.FC<ChapterSelectorProps> = ({
         }
       </SelectInput>
     </div>
-    {/* <div className="ml-4">
+    <div className="ml-4">
       <label className="block font-bold text-xs h-5 ml-1" htmlFor={chapterId}>CHAPTER</label>
       <SelectInput
         className="w-20"
         id={chapterId}
         value={chapter}
         onChange={(e: any) => setChapter(e.target.value)}
-        aria-label="Chapter"
       >
         {
           Array.from({ length: books[book] }, (_, chapter) =>
             <option value={chapter + 1} key={chapter}>{chapter + 1}</option>)
         }
       </SelectInput>
-    </div> */}
+    </div>
     <Link
-      href={`/read/${book.replace(' ', '-')}`}
+      href={`/read/${book.replace(' ', '-')}?reference=${chapter}:1`}
       passHref
     >
       <LinkButton className="ml-4 mt-5">Go</LinkButton>

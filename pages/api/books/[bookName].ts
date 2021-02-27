@@ -107,8 +107,8 @@ function getReference(query: { [key: string]: string | string[] }) {
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const pageSizeResult = getPageSize(req.query)
-  const startCursorResult = getCursor('start', req.query)
-  const endCursorResult = getCursor('end', req.query)
+  const startCursorResult = getCursor('after', req.query)
+  const endCursorResult = getCursor('before', req.query)
   const verifyCursorsResult = verifyCursors(startCursorResult.value, endCursorResult.value)
   const referenceResult = getReference(req.query)
 
@@ -167,7 +167,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } else if (startCursor) {
     paragraphQuery.id = { gt: startCursor }
   } else if (endCursor) {
-    paragraphQuery.id = { gt: endCursor - pageSize - 1 }
+    paragraphQuery.id = { gt: endCursor - pageSize - 1, lt: endCursor }
   }
 
   const content = await client.paragraph.findMany({
@@ -192,7 +192,29 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     take: pageSize
   })
 
-  res.status(200).json({ data: content })
+  const links: { next: string | null, prev: string | null } = { next: null, prev: null }
+  const nextCursor = content.length === pageSize ? content.slice(-1)[0].id : null
+  const prevCursor = content.length > 0 ? content[0].id : null
+  if (nextCursor && 1 === (await client.paragraph.count({
+    where: {
+      id: nextCursor + 1,
+      book: { name: bookName }
+    }
+  }))) {
+    links.next = `/api/books/${bookName}?page[after]=${nextCursor}&page[size]=${pageSize}`
+  }
+
+  if (prevCursor && 1 === (await client.paragraph.count({
+    where: {
+      id: prevCursor - 1,
+      book: { name: bookName }
+    }
+  }))) {
+    links.prev = `/api/books/${bookName}?page[before]=${prevCursor}&page[size]=${pageSize}`
+  }
+
+
+  res.status(200).json({ links, data: content })
 }
 
 
