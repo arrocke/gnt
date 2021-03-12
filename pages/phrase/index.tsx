@@ -1,4 +1,4 @@
-import Phrase from "../../components/phrase/Phrase"
+import Phrase from "../../components/phrase/v1/Phrase"
 
 const phrase = [
   {
