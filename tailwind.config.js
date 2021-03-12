@@ -131,6 +131,7 @@ module.exports = {
     },
     spacing: {
       px: '1px',
+      '2px': '2px',
       '0': '0',
       '1': '0.25rem',
       '2': '0.5rem',
@@ -663,7 +664,7 @@ module.exports = {
     alignSelf: ['responsive'],
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColor: ['responsive', 'hover', 'focus'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus'],
     backgroundOpacity: ['responsive', 'hover', 'focus'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],

@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/node": "14.0.27",
     "@types/react": "16.9.46",
+    "immer": "8.0.1",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "6.7.0",
     "react-query-devtools": "2.6.3",
