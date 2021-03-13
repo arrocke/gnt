@@ -1,6 +1,7 @@
-import { useRef, useState } from "react"
-import { indentLine, LineMoveDirection, moveLine, PhraseData } from "./phrase-data"
+import { useState } from "react"
 import PhraseLine from "./PhraseLine"
+import { useLineFocus } from "./useLineFocus"
+import { usePhrase, PhraseData } from "./usePhrase"
 
 export interface PhraseProps {
   phrase: PhraseData
@@ -14,11 +15,13 @@ enum FocusState {
 
 const Phrase: React.FC<PhraseProps> = ({ phrase }) => {
   const [focusState, setFocusState] = useState(FocusState.Idle)
-  const [lines, setLines] = useState(phrase)
-  const [focusedLineId, setFocusedLine] = useState<number>(0)
-
-  const focusedLineIndex = lines.findIndex(line => line.id === focusedLineId)!
-  const focusedLine = lines[focusedLineIndex]
+  const { lines, dispatch } = usePhrase({ phrase })
+  const {
+    index: focusedIndex,
+    line: focusedLine,
+    focusLine,
+    moveFocus
+  } = useLineFocus(lines)
 
   return (
     <div
@@ -41,36 +44,54 @@ const Phrase: React.FC<PhraseProps> = ({ phrase }) => {
           case 'ArrowUp':
             if (focusState === FocusState.Active) {
               if (e.shiftKey) {
-                setLines(moveLine(lines, { lineId: focusedLineId, index: Math.max(0, focusedLineIndex - 1) }))
+                dispatch({
+                  type: 'move-line',
+                  lineId: focusedLine.id,
+                  index: focusedIndex - 1
+                })
               } else {
-                const index = focusedLineIndex === 0 ? lines.length - 1 : focusedLineIndex - 1
-                setFocusedLine(lines[index].id)
+                moveFocus(-1)
               }
             }
             break
           case 'ArrowDown':
             if (focusState === FocusState.Active) {
               if (e.shiftKey) {
-                setLines(moveLine(lines, { lineId: focusedLineId, index: Math.min(lines.length - 1, focusedLineIndex + 1) }))
+                dispatch({
+                  type: 'move-line',
+                  lineId: focusedLine.id,
+                  index: focusedIndex + 1
+                })
               } else {
-                const index = focusedLineIndex + 1 === lines.length ? 0 : focusedLineIndex + 1
-                setFocusedLine(lines[index].id)
+                moveFocus(1)
               }
             }
             break
           case 'ArrowRight':
             if (focusState === FocusState.Active && e.shiftKey) {
-              setLines(indentLine(lines, { lineId: focusedLineId, indent: focusedLine.indent + 1 }))
+              dispatch({
+                type: 'indent-line',
+                lineId: focusedLine.id,
+                indent: focusedLine.indent + 1
+              })
             }
             break
           case 'ArrowLeft':
             if (focusState === FocusState.Active && e.shiftKey) {
-              setLines(indentLine(lines, { lineId: focusedLineId, indent: focusedLine.indent - 1 }))
+              dispatch({
+                type: 'indent-line',
+                lineId: focusedLine.id,
+                indent: focusedLine.indent - 1
+              })
             }
             break
           case 'Tab':
             if (focusState === FocusState.Active) {
-              setLines(indentLine(lines, { lineId: focusedLineId, indent: focusedLine.indent + (e.shiftKey ? -1 : 1) }))
+              dispatch({
+                type: 'indent-line',
+                lineId: focusedLine.id,
+                indent: focusedLine.indent + (e.shiftKey ? -1 : 1)
+              })
             } else {
               handled = false
             }
@@ -86,13 +107,13 @@ const Phrase: React.FC<PhraseProps> = ({ phrase }) => {
       {lines.map((line, i) => (
         <PhraseLine
           key={line.id}
+          lineId={line.id}
           index={i}
           text={line.text}
           indent={line.indent}
-          isFocused={focusState === FocusState.Active && line.id === focusedLineId}
-          onIndent={indent => setLines(indentLine(lines, { lineId: line.id, indent }))}
-          onMove={index => setLines(moveLine(lines, { lineId: line.id, index }))}
-          onFocus={() => setFocusedLine(line.id)}
+          isFocused={focusState === FocusState.Active && line.id === focusedLine.id}
+          dispatch={dispatch}
+          onFocus={() => focusLine(line.id)}
         />
       ))}
     </div>

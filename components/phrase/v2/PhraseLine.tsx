@@ -1,17 +1,17 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { LineMoveDirection } from "./phrase-data"
+import { PhraseDispatch } from "./usePhrase"
 
 const INDENT_SIZE = 32
 const LINE_HEIGHT = 32
 
 interface PhraseLineProps {
+  lineId: number
   text: string
   index: number,
   indent: number
   isFocused: boolean
-  onIndent?(delta: number): void
-  onMove?(delta: number): void
+  dispatch: PhraseDispatch
   onFocus?(): void
   onBlur?(): void
 }
@@ -22,23 +22,7 @@ interface DragState {
   index: number
 }
 
-function createThrottle() {
-  let queued: (() => void) | null = null
-  return (callback: () => void) => {
-    if (!queued) {
-      requestAnimationFrame(() => {
-        const cb = queued!
-        queued = null
-        cb()
-      })
-    }
-    queued = callback
-  }
-}
-
-const throttler = createThrottle()
-
-const PhraseLine: React.FC<PhraseLineProps> = ({ text, index, indent, isFocused, onIndent, onMove, onFocus, onBlur }) => {
+const PhraseLine: React.FC<PhraseLineProps> = ({ lineId, text, index, indent, isFocused, dispatch, onFocus, onBlur }) => {
   const [dragState, setDragState] = useState<DragState>()
 
 
@@ -55,10 +39,18 @@ const PhraseLine: React.FC<PhraseLineProps> = ({ text, index, indent, isFocused,
           const newIndex = dragState.index + dIndex
           // console.log('move', dragState.index, newIndex)
           if (newIndent !== indent) {
-            onIndent?.(newIndent)
+            dispatch({
+              type: 'indent-line',
+              lineId,
+              indent: newIndent
+            })
           }
           if (newIndex !== index) {
-            onMove?.(newIndex) 
+            dispatch({
+              type: 'move-line',
+              lineId,
+              index: newIndex
+            })
           }
         }
       }
@@ -67,7 +59,7 @@ const PhraseLine: React.FC<PhraseLineProps> = ({ text, index, indent, isFocused,
         window.removeEventListener('pointermove', moveHandler)
       }
     }
-  }, [dragState, indent, index, onIndent, onMove])
+  }, [dragState, indent, index, dispatch])
 
   useEffect(() => {
     if (dragState) {
@@ -112,7 +104,6 @@ const PhraseLine: React.FC<PhraseLineProps> = ({ text, index, indent, isFocused,
           `}
           onPointerDown={e => {
             if (e.isPrimary) {
-              console.log('start')
               setDragState({
                 mouse: { x: e.clientX, y: e.clientY },
                 indent,
