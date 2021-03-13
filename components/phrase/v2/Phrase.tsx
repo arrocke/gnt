@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import PhraseLine from "./PhraseLine"
 import { useLineFocus } from "./useLineFocus"
 import { usePhrase, PhraseData } from "./usePhrase"
@@ -33,74 +33,32 @@ const Phrase: React.FC<PhraseProps> = ({ phrase }) => {
       }
       onBlur={e => !e.currentTarget.contains(e.relatedTarget as Node) && setFocusState(FocusState.Idle)}
       onKeyDown={e => {
-        let handled = true
+        let handled = false
         switch(e.key) {
           case 'Enter':
-            setFocusState(FocusState.Active)
+            if (focusState !== FocusState.Active) {
+              handled = true
+              setFocusState(FocusState.Active)
+            }
             break
           case 'Escape':
-            setFocusState(FocusState.Focused)
+            if (focusState !== FocusState.Focused) {
+              handled = true
+              setFocusState(FocusState.Focused)
+            }
             break
           case 'ArrowUp':
-            if (focusState === FocusState.Active) {
-              if (e.shiftKey) {
-                dispatch({
-                  type: 'move-line',
-                  lineId: focusedLine.id,
-                  index: focusedIndex - 1
-                })
-              } else {
-                moveFocus(-1)
-              }
-            }
+            handled = true
+            moveFocus(-1)
             break
           case 'ArrowDown':
-            if (focusState === FocusState.Active) {
-              if (e.shiftKey) {
-                dispatch({
-                  type: 'move-line',
-                  lineId: focusedLine.id,
-                  index: focusedIndex + 1
-                })
-              } else {
-                moveFocus(1)
-              }
-            }
+            handled = true
+            moveFocus(1)
             break
-          case 'ArrowRight':
-            if (focusState === FocusState.Active && e.shiftKey) {
-              dispatch({
-                type: 'indent-line',
-                lineId: focusedLine.id,
-                indent: focusedLine.indent + 1
-              })
-            }
-            break
-          case 'ArrowLeft':
-            if (focusState === FocusState.Active && e.shiftKey) {
-              dispatch({
-                type: 'indent-line',
-                lineId: focusedLine.id,
-                indent: focusedLine.indent - 1
-              })
-            }
-            break
-          case 'Tab':
-            if (focusState === FocusState.Active) {
-              dispatch({
-                type: 'indent-line',
-                lineId: focusedLine.id,
-                indent: focusedLine.indent + (e.shiftKey ? -1 : 1)
-              })
-            } else {
-              handled = false
-            }
-            break
-          default:
-            handled = false
         }
         if (handled) {
           e.preventDefault()
+          e.stopPropagation()
         }
       }}
     >

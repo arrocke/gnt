@@ -1,3 +1,4 @@
+import { faGripLines } from "@fortawesome/free-solid-svg-icons"
 import produce, { castDraft, Draft } from "immer"
 import { Dispatch, useEffect, useReducer } from "react"
 
@@ -10,7 +11,8 @@ interface MutablePhraseLine {
 export type PhraseLine = Readonly<MutablePhraseLine>
 
 export type PhraseState = {
-  lines: readonly PhraseLine[]
+  readonly nextLineId: number
+  readonly lines: readonly PhraseLine[]
 }
 
 export interface ResetAction {
@@ -27,10 +29,16 @@ export interface IndentLineAction {
 export interface MoveLineAction {
   type: 'move-line'
   lineId: number
-  index: number
+  lineIndex: number
 }
 
-export type PhraseAction = ResetAction | IndentLineAction | MoveLineAction
+export interface SplitLineAction {
+  type: 'split-line'
+  lineId: number
+  wordIndex: number
+}
+
+export type PhraseAction = ResetAction | IndentLineAction | MoveLineAction | SplitLineAction
 
 function findLineById({ lines }: PhraseState, lineId: number): { line: MutablePhraseLine, index: number } {
   const index = lines.findIndex(line => line.id === lineId)
@@ -43,6 +51,7 @@ function findLineById({ lines }: PhraseState, lineId: number): { line: MutablePh
 const reducer = produce((state: Draft<PhraseState>, action: PhraseAction) => {
   switch(action.type) {
     case 'reset':
+      state.nextLineId = 1 + action.phrase.reduce((id, line) => Math.max(id, line.id), 0)
       state.lines = castDraft(action.phrase)
       break
     case 'indent-line': {
@@ -52,9 +61,20 @@ const reducer = produce((state: Draft<PhraseState>, action: PhraseAction) => {
     }
     case 'move-line': {
       const { line, index } = findLineById(state, action.lineId)
-      const newIndex = Math.max(0, Math.min(state.lines.length - 1, action.index))
+      const newIndex = Math.max(0, Math.min(state.lines.length - 1, action.lineIndex))
       state.lines.splice(index, 1)
       state.lines.splice(newIndex, 0, line)
+      break
+    }
+    case 'split-line': {
+      const { line, index } = findLineById(state, action.lineId)
+      const words = line.text.split(' ')
+      line.text = words.slice(0, action.wordIndex + 1).join(' ')
+      state.lines.splice(index + 1, 0, {
+        ...line,
+        id: state.nextLineId++,
+        text: words.splice(action.wordIndex + 1).join(' ')
+      })
       break
     }
     default:
@@ -75,7 +95,7 @@ export interface UsePhrase {
 }
 
 export function usePhrase(options: UsePhraseOptions): UsePhrase {
-  const [{ lines }, dispatch] = useReducer(reducer, { lines: [] })
+  const [{ lines }, dispatch] = useReducer(reducer, { nextLineId: 0, lines: [] })
 
   useEffect(() => {
     if (options.phrase !== lines) {
