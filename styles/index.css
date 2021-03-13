@@ -8,3 +8,7 @@
 
 @tailwind components;
 @tailwind utilities;
+
+.scroll-none {
+  touch-action: none;
+}
