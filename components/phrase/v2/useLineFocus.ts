@@ -16,7 +16,7 @@ export function useLineFocus(phrase: PhraseData): UseLineFocus {
 
   const moveFocus = useCallback((delta: number) => {
     let newIndex = index + delta
-    if (newIndex < 0) newIndex = phrase.length - newIndex
+    if (newIndex < 0) newIndex = phrase.length + newIndex
     if (newIndex >= phrase.length) newIndex = newIndex - phrase.length
     focusLine(phrase[newIndex].id)
   }, [index, phrase])
